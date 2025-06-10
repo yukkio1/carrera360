@@ -1,0 +1,539 @@
+<resources>
+    <string name="app_name">INLAB</string>
+    <string name="sector_energia">Energía y servicios públicos</string>
+    <string name="sector_tecnologia">Software y tecnología</string>
+    <string name="sector_finanzas">Servicios financieros</string>
+    <string name="sector_educacion">Educación</string>
+    <string name="sector_ong">Trabajo en ONG</string>
+    <string name="sector_salud">Cuidado de la salud</string>
+    <string name="dashboard_title">Explora estrategias y crecimiento laboral</string>
+    <string name="cv_title">Elabora un CV Ganador</string>
+    <string name="cv_description">Aprende a estructurar un CV efectivo y resaltar tus habilidades.</string>
+    <string name="cv_button">Ver detalles</string>
+    <string name="salary_title">Negocia tu salario como un profesional</string>
+    <string name="salary_description">Descubre estrategias para defender tu posición laboral y lograr acuerdos exitosos.</string>
+    <string name="salary_button">Ver detalles</string>
+
+    <!-- Mensajes generales -->
+    <string name="next_button_text">Siguiente</string>
+    <!-- CUESTIONARIO 1 -->
+    <string name="option1_text">No estoy seguro</string>
+    <string name="option2_text">Estoy explorando mis opciones</string>
+    <string name="option3_text">Tengo una carrera especifica en mente</string>
+    <string name="pregunta1">¿Cuál es tu principal interés?</string>
+    <string name="question_background_text">Fondo de pregunta</string>
+    <!-- CUESTIONARIO 2 -->
+    <string name="pregunta2">¿Tienes experiencia en atención al cliente?</string>
+    <string name="option1_2_text">No tengo experiencia</string>
+    <string name="option2_2_text">Menos de un año</string>
+    <string name="option3_2_text">Más de un año</string>
+    <!-- CUESTIONARIO 3 -->
+    <string name="pregunta3">¿Cuál es su preferencia en cuanto a tipos de trabajo?</string>
+    <string name="pregunta3_1">Selecciona las opciones que más te interesen</string>
+    <string name="option1_3_text">Energía y servicios públicos</string>
+    <string name="option2_3_text">Software y tecnología</string>
+    <string name="option3_3_text">Servicios financieros</string>
+    <string name="option4_3_text">Educación</string>
+    <string name="option5_3_text">Gobierno y ONG</string>
+    <string name="option6_3_text">Cuidado de la salud</string>
+    <!-- CUESTIONARIO 4 -->
+    <string name="pregunta4">¿Cuál de estas habilidades consideras más importante?</string>
+    <!-- Opción 1 -->
+    <string name="option1_4_title">Colaboración en equipo</string>
+    <string name="option1_4_desc">Prospera en proyectos grupales, lluvia de ideas y objetivos compartidos.</string>
+    <!-- Opción 2 -->
+    <string name="option2_4_title">Pensamiento crítico</string>
+    <string name="option2_4_desc">Analiza situaciones, identifica patrones y toma decisiones fundamentadas.</string>
+    <!-- Opción 3 -->
+    <string name="option3_4_title">Creatividad e innovación</string>
+    <string name="option3_4_desc">Genera ideas nuevas, encuentra soluciones originales y aporta perspectivas frescas.</string>
+
+    <!-- CUESTIONARIO 5 -->
+    <string name="pregunta5">Prioriza tus objetivos de carrera a largo plazo</string>
+    <string name="pregunta5_1">Ordena las siguientes prioridades según tu interés</string>
+
+    <!-- Opciones para priorización -->
+    <string name="option1_5">Aprender nuevas tecnologías</string>
+    <string name="option2_5">Mejorar habilidades de liderazgo</string>
+    <string name="option3_5">Obtener experiencia práctica en proyectos</string>
+    <string name="option4_5">Desarrollar networking y conexiones profesionales</string>
+    <string name="option5_5">Dominar metodologías ágiles y gestión de proyectos</string>
+
+    <!-- Accesibilidad -->
+    <string name="question_background_desc">Imagen de fondo del cuestionario 5</string>
+    <string name="priorities_list_desc">Lista de prioridades para ordenación</string>
+
+    <!-- Botón -->
+    <string name="finish_button_text">Finalizar</string>
+
+    <string name="preguntaX">¿Cuál es tu prioridad en el desarrollo profesional?</string>
+
+    <string name="habilidad">Habilidad</string>
+    <string name="titulo_consejo">Aprendizaje de la insercion laboral</string>
+    <string name="home_label">Inicio</string>
+
+    <string name="learn_label">Aprender</string>
+    <string name="profile_label">Perfil</string>
+    <string name="back_button_desc">Regresar a Inicio</string>
+    <string name="back_button_desc2">Regresar a Aprender</string>
+
+    <!-- Marketing Personal y Visibilidad Profesional -->
+    <string name="marketing_label">Marketing Personal y Visibilidad Profesional</string>
+    <string name="marketing_intro">Tu marca personal impulsa tu reputación y atrae nuevas oportunidades. 🚀</string>
+    <string name="marketing_definition">El marketing personal gestiona tu imagen y posicionamiento en la industria.</string>
+
+    <string name="marketing_importancia_title">📌 ¿Por qué es importante el marketing personal?</string>
+    <string name="marketing_importancia_description_1">🔹 Te hace visible ante nuevas oportunidades.</string>
+    <string name="marketing_importancia_description_2">🔹 Genera confianza y credibilidad profesional.</string>
+    <string name="marketing_importancia_description_3">🔹 Te diferencia de la competencia y fortalece tu posicionamiento.</string>
+    <string name="marketing_importancia_description_4">✅ Si trabajas en tu marca personal, las oportunidades llegan a ti.</string>
+    <string name="marketing_importancia_description_5">✅ Si no lo haces, dependerás de la suerte para avanzar.</string>
+
+    <string name="marketing_mejorar_title">📌 Estrategias para mejorar tu visibilidad profesional</string>
+
+    <string name="marketing_step_1">1️⃣ Define tu propuesta de valor 🎯</string>
+    <string name="marketing_step_1_details_1">✔️ Destaca tus fortalezas y crea un mensaje claro sobre tu aporte.</string>
+    <string name="marketing_step_1_details_2">💡 Pregunta a colegas y clientes qué valoran de tu trabajo.</string>
+
+    <string name="marketing_step_2">2️⃣ Construye una presencia digital sólida 🌍</string>
+    <string name="marketing_step_2_details_1">✔️ Optimiza tu perfil en LinkedIn y otras redes profesionales.</string>
+    <string name="marketing_step_2_details_2">✔️ Comparte contenido relevante sobre tu especialidad.</string>
+    <string name="marketing_step_2_details_3">💡 Andrea publicó análisis digitales y fue invitada a conferencias.</string>
+
+    <string name="marketing_step_3">3️⃣ Genera contenido de valor 📢</string>
+    <string name="marketing_step_3_details_1">✔️ Escribe artículos, comparte experiencias y publica contenido.</string>
+    <string name="marketing_step_3_details_2">💡 Si no te gusta escribir, prueba videos o podcasts.</string>
+
+    <string name="marketing_step_4">4️⃣ Expande tu red de contactos 🤝</string>
+    <string name="marketing_step_4_details_1">✔️ Conéctate con expertos, participa en eventos y busca colaboraciones.</string>
+    <string name="marketing_step_4_details_2">💡 Javier interactuó con líderes en IA y consiguió oportunidades laborales.</string>
+
+    <string name="marketing_situaciones_title">🎯 Casos donde el marketing personal hizo la diferencia</string>
+    <string name="marketing_situation_1">✨ Caso 1: Un diseñador optimiza su perfil y recibe propuestas de trabajo.</string>
+    <string name="marketing_situation_2">✨ Caso 2: Un consultor comparte contenido y es invitado a eventos.</string>
+    <string name="marketing_situation_3">✨ Caso 3: Un emprendedor mejora su visibilidad y consigue inversionistas.</string>
+
+    <string name="marketing_prevenciones_title">🚨 Errores que afectan tu marca personal</string>
+    <string name="marketing_prevenciones_1">🚫 No definir tu propuesta de valor.</string>
+    <string name="marketing_prevenciones_2">🚫 Descuidar tu presencia digital.</string>
+    <string name="marketing_prevenciones_3">🚫 No generar contenido relevante.</string>
+    <string name="marketing_prevenciones_4">🚫 No interactuar con tu comunidad profesional.</string>
+    <string name="marketing_prevenciones_5">💡 Revisa tu presencia digital cada seis meses y ajusta tu estrategia.</string>
+
+    <string name="marketing_conclusion_title">📌 Conclusión</string>
+    <string name="marketing_conclusion_text_1">🌟 Posicionar tu marca personal es una inversión estratégica.</string>
+    <string name="marketing_conclusion_text_2">🌟 La clave es autenticidad, constancia e interacción profesional.</string>
+    <string name="marketing_conclusion_text_3">🌟 Refuerza tu presencia para atraer oportunidades y reconocimiento.</string>
+
+    <string name="marketing_final_message">🚀 ¿Cómo mejorar tu visibilidad profesional? 🔥📲</string>
+
+
+    <!-- Desarrollo de Habilidades Clave -->
+    <string name="habilidades_label">Desarrollo de Habilidades Clave</string>
+    <string name="habilidades_intro">Las habilidades clave potencian el crecimiento profesional y te ayudan a destacar en tu carrera. 🚀</string>
+    <string name="habilidades_definition">El éxito no depende solo del conocimiento técnico, sino de competencias estratégicas como comunicación y liderazgo.</string>
+
+    <string name="habilidades_importancia_title">📌 ¿Por qué es importante desarrollar habilidades clave?</string>
+    <string name="habilidades_importancia_description_1">🔹 Mejoran tu desempeño y potencian el crecimiento profesional.</string>
+    <string name="habilidades_importancia_description_2">🔹 Te hacen más competitivo y te permiten destacarte en la industria.</string>
+    <string name="habilidades_importancia_description_3">🔹 Incrementan tu capacidad de resolver problemas y adaptarte a cambios.</string>
+    <string name="habilidades_importancia_description_4">✅ Al fortalecer tus habilidades clave, ampliarás tus oportunidades laborales.</string>
+    <string name="habilidades_importancia_description_5">✅ Si no las desarrollas, estarás limitado en tu crecimiento profesional.</string>
+
+    <string name="habilidades_mejorar_title">📌 Estrategias para desarrollar habilidades clave</string>
+
+    <string name="habilidades_step_1">1️⃣ Identifica las habilidades esenciales para tu campo 🎯</string>
+    <string name="habilidades_step_1_details_1">✔️ Analiza las competencias clave que requiere tu industria.</string>
+    <string name="habilidades_step_1_details_2">✔️ Observa qué habilidades tienen los profesionales exitosos.</string>
+    <string name="habilidades_step_1_details_3">✔️ Define tres habilidades clave para fortalecer tu perfil.</string>
+    <string name="habilidades_step_1_details_4">💡 Revisa perfiles de empleo y analiza competencias más solicitadas.</string>
+
+    <string name="habilidades_step_2">2️⃣ Capacitación y aprendizaje continuo 📚</string>
+    <string name="habilidades_step_2_details_1">✔️ Inscríbete en cursos y certificaciones relevantes.</string>
+    <string name="habilidades_step_2_details_2">✔️ Aplica lo aprendido en proyectos y actividades laborales.</string>
+    <string name="habilidades_step_2_details_3">✔️ Busca mentores o expertos que te ayuden a perfeccionar tus habilidades.</string>
+    <string name="habilidades_step_2_details_4">💡 Ricardo tomó un curso de UX/UI y logró liderar un equipo de diseño.</string>
+
+    <string name="habilidades_step_3">3️⃣ Mejora tu comunicación y trabajo en equipo 🤝</string>
+    <string name="habilidades_step_3_details_1">✔️ Desarrolla tu capacidad de presentar ideas con claridad.</string>
+    <string name="habilidades_step_3_details_2">✔️ Aprende estrategias de negociación y manejo de conflictos.</string>
+    <string name="habilidades_step_3_details_3">✔️ Practica la inteligencia emocional para mejorar la colaboración.</string>
+    <string name="habilidades_step_3_details_4">💡 Usa storytelling para hacer tus ideas más impactantes.</string>
+
+    <string name="habilidades_step_4">4️⃣ Cultiva la adaptabilidad y pensamiento estratégico 🔄</string>
+    <string name="habilidades_step_4_details_1">✔️ Aprende a manejar cambios y resolver problemas con confianza.</string>
+    <string name="habilidades_step_4_details_2">✔️ Mantente actualizado con las últimas tendencias de tu industria.</string>
+    <string name="habilidades_step_4_details_3">✔️ Optimiza tu capacidad para tomar decisiones basadas en datos.</string>
+    <string name="habilidades_step_4_details_4">💡 Sofía mejoró su adaptabilidad y logró liderar proyectos dinámicos.</string>
+
+    <string name="habilidades_situaciones_title">🎯 Casos donde el desarrollo de habilidades marcó la diferencia</string>
+    <string name="habilidades_situation_1">✨ Un programador mejora su comunicación y empieza a liderar proyectos.</string>
+    <string name="habilidades_situation_2">✨ Un especialista en datos optimiza su capacidad analítica y es promovido a gerente.</string>
+    <string name="habilidades_situation_3">✨ Un consultor refuerza su adaptabilidad y expande su negocio a otros mercados.</string>
+
+    <string name="habilidades_prevenciones_title">🚨 Errores comunes en el desarrollo de habilidades</string>
+    <string name="habilidades_prevenciones_1">🚫 No identificar qué habilidades son esenciales para el éxito.</string>
+    <string name="habilidades_prevenciones_2">🚫 Descuidar la comunicación y habilidades de liderazgo.</string>
+    <string name="habilidades_prevenciones_3">🚫 No aplicar lo aprendido en la práctica laboral diaria.</string>
+    <string name="habilidades_prevenciones_4">🚫 Resistirse al cambio y evitar la mejora constante.</string>
+    <string name="habilidades_prevenciones_5">💡 Evalúa tus habilidades cada seis meses y ajusta tu desarrollo profesional.</string>
+
+    <string name="habilidades_conclusion_title">📌 Conclusión</string>
+    <string name="habilidades_conclusion_text_1">🌟 Invertir en el desarrollo de habilidades clave impulsa tu crecimiento.</string>
+    <string name="habilidades_conclusion_text_2">🌟 La comunicación y adaptabilidad te permiten sobresalir profesionalmente.</string>
+    <string name="habilidades_conclusion_text_3">🌟 Dedica tiempo a mejorar tus competencias y potencia tu éxito laboral.</string>
+
+    <string name="habilidades_final_message">🚀 ¿Qué habilidades te gustaría fortalecer para potenciar tu carrera? 🔥📲</string>
+
+
+    <!-- Realidad Laboral y Adaptación -->
+    <string name="realidad_label">Realidad Laboral y Adaptación</string>
+    <string name="realidad_intro">El mundo laboral evoluciona constantemente. Adaptarse es clave para crecer profesionalmente. 🚀</string>
+    <string name="realidad_definition">Las industrias cambian, las reglas evolucionan y las habilidades requeridas se transforman. La adaptación es esencial.</string>
+
+    <string name="realidad_importancia_title">📌 ¿Cómo ha cambiado la realidad laboral?</string>
+    <string name="realidad_importancia_description_1">🔹 Transformación digital y automatización.</string>
+    <string name="realidad_importancia_description_2">🔹 Crecimiento del trabajo híbrido y remoto.</string>
+    <string name="realidad_importancia_description_3">🔹 Nuevas habilidades demandadas en todas las industrias.</string>
+    <string name="realidad_importancia_description_4">✅ Si te mantienes actualizado, las oportunidades seguirán llegando.</string>
+    <string name="realidad_importancia_description_5">✅ Si te resistes al cambio, tu crecimiento profesional se verá afectado.</string>
+
+    <string name="realidad_mejorar_title">📌 Estrategias para Adaptarse a la Nueva Realidad Laboral</string>
+
+    <string name="realidad_step_1">1️⃣ Mantente en aprendizaje constante 📚</string>
+    <string name="realidad_step_1_details_1">✔️ Actualiza tus conocimientos, investiga tendencias y fortalece habilidades digitales.</string>
+    <string name="realidad_step_1_details_2">💡 No esperes a que tu empresa te capacite, aprende por tu cuenta.</string>
+
+    <string name="realidad_step_2">2️⃣ Desarrolla resiliencia y mentalidad flexible 🧠</string>
+    <string name="realidad_step_2_details_1">✔️ Acepta el cambio como parte natural del crecimiento.</string>
+    <string name="realidad_step_2_details_2">✔️ Aprende a manejar la incertidumbre con estrategias de adaptación.</string>
+    <string name="realidad_step_2_details_3">💡 Javier enfrentó una reestructuración y mejoró su liderazgo.</string>
+
+    <string name="realidad_step_3">3️⃣ Expande tu red de contactos y oportunidades 🤝</string>
+    <string name="realidad_step_3_details_1">✔️ Conéctate con profesionales de diferentes sectores.</string>
+    <string name="realidad_step_3_details_2">✔️ Participa en eventos y comunidades digitales.</string>
+    <string name="realidad_step_3_details_3">💡 Si trabajas en tecnología, únete a foros especializados.</string>
+
+    <string name="realidad_step_4">4️⃣ Sé estratégico en tu crecimiento profesional 🚀</string>
+    <string name="realidad_step_4_details_1">✔️ Evalúa constantemente tu posición en el mercado laboral.</string>
+    <string name="realidad_step_4_details_2">✔️ Identifica áreas de mejora y trabaja en ellas.</string>
+    <string name="realidad_step_4_details_3">💡 Laura fortaleció su perfil aprendiendo herramientas digitales.</string>
+
+    <string name="realidad_situaciones_title">🎯 Casos donde la adaptación laboral marcó la diferencia</string>
+    <string name="realidad_situation_1">✨ Un analista financiero aprende big data y mejora su empleabilidad.</string>
+    <string name="realidad_situation_2">✨ Un ingeniero se capacita en IA y expande sus oportunidades.</string>
+    <string name="realidad_situation_3">✨ Un especialista en marketing digital se adapta y aumenta su impacto.</string>
+
+    <string name="realidad_prevenciones_title">🚨 Errores que pueden frenar la adaptación laboral</string>
+    <string name="realidad_prevenciones_1">🚫 Resistirse al cambio y no aceptar nuevas oportunidades.</string>
+    <string name="realidad_prevenciones_2">🚫 No actualizar habilidades según las demandas del mercado.</string>
+    <string name="realidad_prevenciones_3">🚫 No construir una red de contactos que facilite el crecimiento.</string>
+    <string name="realidad_prevenciones_4">🚫 Esperar estabilidad en un entorno laboral dinámico.</string>
+    <string name="realidad_prevenciones_5">💡 Evalúa tu perfil profesional cada seis meses y ajusta tu estrategia.</string>
+
+    <string name="realidad_conclusion_title">📌 Conclusión</string>
+    <string name="realidad_conclusion_text_1">🌟 La adaptación laboral es clave para mantenerse vigente y competitivo.</string>
+    <string name="realidad_conclusion_text_2">🌟 La resiliencia y el aprendizaje continuo fortalecen tu carrera.</string>
+    <string name="realidad_conclusion_text_3">🌟 Ajusta tu perfil profesional y abre nuevas oportunidades de desarrollo.</string>
+
+    <string name="realidad_final_message">🚀 ¿Cómo mejorar tu capacidad de adaptación laboral? 🔥📲</string>
+    <!-- Red de Contactos y Confianza -->
+    <string name="contactos_label">Red de Contactos y Confianza</string>
+    <string name="contactos_intro">El éxito profesional no depende solo de habilidades técnicas, sino de relaciones estratégicas. 🚀</string>
+    <string name="contactos_definition">Una red sólida te brinda acceso a oportunidades, conocimientos y posicionamiento en tu industria.</string>
+
+    <string name="contactos_importancia_title">📌 ¿Por qué es importante construir una red de confianza?</string>
+    <string name="contactos_importancia_description_1">🔹 Acceso a oportunidades laborales que no siempre se publican.</string>
+    <string name="contactos_importancia_description_2">🔹 Intercambio de conocimientos con expertos en diferentes áreas.</string>
+    <string name="contactos_importancia_description_3">🔹 Posicionamiento en la industria y fortalecimiento de credibilidad.</string>
+    <string name="contactos_importancia_description_4">✅ Si cultivas relaciones genuinas, tu carrera crecerá rápidamente.</string>
+    <string name="contactos_importancia_description_5">✅ Si descuidas el networking, dependerás solo de la competencia.</string>
+
+    <string name="contactos_mejorar_title">📌 Estrategias para Construir una Red de Confianza</string>
+
+    <string name="contactos_step_1">1️⃣ Genera conexiones auténticas 🤝</string>
+    <string name="contactos_step_1_details_1">✔️ Acércate a personas con intereses alineados con los tuyos.</string>
+    <string name="contactos_step_1_details_2">✔️ Interactúa en espacios digitales y presenciales relevantes.</string>
+    <string name="contactos_step_1_details_3">✔️ Sé genuino y muestra interés por el crecimiento de los demás.</string>
+    <string name="contactos_step_1_details_4">💡 El networking no es solo pedir ayuda, primero aporta valor.</string>
+
+    <string name="contactos_step_2">2️⃣ Fortalece la confianza profesional 🔒</string>
+    <string name="contactos_step_2_details_1">✔️ Sé transparente y confiable en tus interacciones.</string>
+    <string name="contactos_step_2_details_2">✔️ Cumple tus compromisos y demuestra ética profesional.</string>
+    <string name="contactos_step_2_details_3">✔️ Comparte tu conocimiento y experiencia para generar credibilidad.</string>
+    <string name="contactos_step_2_details_4">💡 Carla ganó reconocimiento al compartir estudios en redes.</string>
+
+    <string name="contactos_step_3">3️⃣ Participa en eventos y comunidades 📅</string>
+    <string name="contactos_step_3_details_1">✔️ Asiste a reuniones, conferencias y foros de tu sector.</string>
+    <string name="contactos_step_3_details_2">✔️ Únete a grupos profesionales donde puedas aportar y aprender.</string>
+    <string name="contactos_step_3_details_3">✔️ Conéctate con expertos y líderes de tu industria.</string>
+    <string name="contactos_step_3_details_4">💡 Participar en hackathons y meetups abre oportunidades únicas.</string>
+
+    <string name="contactos_step_4">4️⃣ Construye relaciones a largo plazo 🌱</string>
+    <string name="contactos_step_4_details_1">✔️ Mantén contacto frecuente con tus conexiones clave.</string>
+    <string name="contactos_step_4_details_2">✔️ Comparte contenido útil y recursos valiosos con tu red.</string>
+    <string name="contactos_step_4_details_3">✔️ Sé un puente entre profesionales con intereses complementarios.</string>
+    <string name="contactos_step_4_details_4">💡 Luis expandió su negocio al colaborar con contactos clave.</string>
+
+    <string name="contactos_situaciones_title">🎯 Casos donde el networking y la confianza marcaron la diferencia</string>
+    <string name="contactos_situation_1">✨ Un diseñador fortalece su red y recibe proyectos sin buscarlos.</string>
+    <string name="contactos_situation_2">✨ Un consultor genera confianza y es invitado a eventos estratégicos.</string>
+    <string name="contactos_situation_3">✨ Un profesional de tecnología amplía sus contactos y obtiene recomendaciones clave.</string>
+
+    <string name="contactos_prevenciones_title">🚨 Errores que pueden afectar la confianza en tu red</string>
+    <string name="contactos_prevenciones_1">🚫 Solo buscar networking cuando lo necesitas.</string>
+    <string name="contactos_prevenciones_2">🚫 No aportar valor en las conversaciones profesionales.</string>
+    <string name="contactos_prevenciones_3">🚫 Descuidar la comunicación estratégica y relaciones clave.</string>
+    <string name="contactos_prevenciones_4">🚫 Ignorar oportunidades de conexión y aprendizaje.</string>
+    <string name="contactos_prevenciones_5">💡 Haz seguimiento de tus relaciones y fortalécelas constantemente.</string>
+
+    <string name="contactos_conclusion_title">📌 Conclusión</string>
+    <string name="contactos_conclusion_text_1">🌟 Construir una red sólida es clave para el crecimiento profesional.</string>
+    <string name="contactos_conclusion_text_2">🌟 La confianza y autenticidad fortalecen relaciones duraderas.</string>
+    <string name="contactos_conclusion_text_3">🌟 Dedica tiempo a conectar estratégicamente para potenciar tu éxito.</string>
+
+    <string name="contactos_final_message">🚀 ¿Cómo mejorar tu red de contactos y confianza? 🔥📲</string>
+
+    <!-- Errores que dificultan la inserción laboral -->
+    <string name="errores_label">Errores que dificultan la inserción laboral</string>
+    <string name="errores_intro">Evitar errores en la inserción laboral es clave para asegurar oportunidades y crecimiento profesional. 🚀</string>
+    <string name="errores_definition">Muchos profesionales cometen errores que afectan su empleabilidad. Identificarlos y corregirlos es esencial.</string>
+
+    <string name="errores_importancia_title">📌 ¿Por qué es clave evitar estos errores?</string>
+    <string name="errores_importancia_description_1">🔹 Un perfil poco definido puede hacerte invisible en el mercado laboral.</string>
+    <string name="errores_importancia_description_2">🔹 No actualizar habilidades limita tu crecimiento en una industria cambiante.</string>
+    <string name="errores_importancia_description_3">🔹 Una mala estrategia de networking reduce tus posibilidades laborales.</string>
+    <string name="errores_importancia_description_4">✅ Si mejoras estos aspectos, tu empleabilidad aumentará significativamente.</string>
+    <string name="errores_importancia_description_5">✅ La adaptación y actualización constante son claves en el mundo profesional.</string>
+
+    <string name="errores_mejorar_title">📌 Estrategias para superar obstáculos laborales</string>
+
+    <string name="errores_step_1">1️⃣ Define tu perfil profesional con claridad 🎯</string>
+    <string name="errores_step_1_details_1">✔️ Destaca tus habilidades y fortalezas en tu sector.</string>
+    <string name="errores_step_1_details_2">✔️ Ajusta tu CV y redes para reflejar tu especialización.</string>
+    <string name="errores_step_1_details_3">💡 Analiza el mercado y adapta tu perfil a sus demandas.</string>
+
+    <string name="errores_step_2">2️⃣ Mantente actualizado y aprende constantemente 📚</string>
+    <string name="errores_step_2_details_1">✔️ Capacítate en nuevas tecnologías y metodologías.</string>
+    <string name="errores_step_2_details_2">✔️ Identifica tendencias y ajústate a ellas.</string>
+    <string name="errores_step_2_details_3">💡 Revisa plataformas de cursos y mejora tus habilidades.</string>
+
+    <string name="errores_step_3">3️⃣ Optimiza tu presentación en CV y entrevistas 📝</string>
+    <string name="errores_step_3_details_1">✔️ Usa un CV bien estructurado y sin errores.</string>
+    <string name="errores_step_3_details_2">✔️ Practica respuestas y mejora tu lenguaje corporal.</string>
+    <string name="errores_step_3_details_3">💡 Destaca logros concretos y resultados medibles.</string>
+
+    <string name="errores_step_4">4️⃣ Construye una red de contactos estratégicos 🤝</string>
+    <string name="errores_step_4_details_1">✔️ Conéctate con expertos y profesionales de tu área.</string>
+    <string name="errores_step_4_details_2">✔️ Participa en eventos y grupos de tu industria.</string>
+    <string name="errores_step_4_details_3">💡 Usa LinkedIn para fortalecer tu red de oportunidades.</string>
+
+    <string name="errores_situaciones_title">🎯 Casos donde corregir errores marcó la diferencia</string>
+    <string name="errores_situation_1">✨ Caso: Un diseñador optimiza su CV y recibe más entrevistas.</string>
+    <string name="errores_situation_2">✨ Caso: Un desarrollador aprende nuevas tecnologías y es contratado.</string>
+    <string name="errores_situation_3">✨ Caso: Un profesional mejora su networking y obtiene recomendaciones clave.</string>
+
+    <string name="errores_prevenciones_title">🚨 Cómo evitar errores antes de que te afecten</string>
+    <string name="errores_prevenciones_1">🚫 No definir una propuesta clara de valor.</string>
+    <string name="errores_prevenciones_2">🚫 Descuidar la actualización profesional.</string>
+    <string name="errores_prevenciones_3">🚫 No fortalecer la red de contactos estratégicos.</string>
+    <string name="errores_prevenciones_4">🚫 No preparar bien entrevistas y oportunidades laborales.</string>
+    <string name="errores_prevenciones_5">💡 Evalúa tu perfil y ajusta tu estrategia cada seis meses.</string>
+
+    <string name="errores_conclusion_title">📌 Conclusión</string>
+    <string name="errores_conclusion_text_1">🌟 Evitar errores laborales multiplica tus oportunidades de éxito.</string>
+    <string name="errores_conclusion_text_2">🌟 La actualización y networking son esenciales para crecer profesionalmente.</string>
+    <string name="errores_conclusion_text_3">🌟 Dedica tiempo a mejorar tu perfil y aumentar tu empleabilidad.</string>
+
+    <string name="errores_final_message">🚀 ¿Cómo optimizar tu estrategia para lograr una inserción laboral efectiva? 🔥📲</string>
+
+        <!-- Título del módulo -->
+        <string name="entrevistas_label">Dominar Entrevistas de Trabajo</string>
+
+        <!-- Título e introducción -->
+        <string name="inter_title">Dominar Entrevistas de Trabajo: Guía para el Éxito</string>
+        <string name="inter_overview">La entrevista se entiende como un proceso estratégico en el cual se deben demostrar habilidades, experiencia y propuesta de valor de forma clara y estructurada.</string>
+
+        <!-- 1. La Entrevista como Oportunidad -->
+        <string name="inter_section1_title">1. La Entrevista como Oportunidad</string>
+        <string name="inter_section1_desc">La entrevista es una plataforma para exponer el perfil profesional, demostrando capacidades técnicas y valor personal.</string>
+
+        <!-- 2. La Red de Contactos -->
+        <string name="inter_section2_title">2. La Red de Contactos</string>
+        <string name="inter_section2_desc">Una red de contactos bien construida facilita el acceso a oportunidades laborales no publicadas formalmente.</string>
+        <string name="inter_section2_example">Ejemplo: Una profesional en marketing amplió su red mediante LinkedIn y eventos, recibiendo una recomendación crucial para una vacante.</string>
+        <string name="inter_section2_rec">Recomendaciones: Mantener conexiones activas, participar en eventos y foros y compartir recursos profesionales.</string>
+        <string name="inter_section2_err">Errores: Usar la red solo cuando se necesita algo puntual o no dar seguimiento a las relaciones.</string>
+
+        <!-- 3. La Preparación de la Entrevista -->
+        <string name="inter_section3_title">3. La Preparación de la Entrevista</string>
+        <string name="inter_section3_desc">Una preparación exhaustiva es esencial para transmitir seguridad y conocimiento del puesto.</string>
+        <string name="inter_section3_points">Aspectos clave: Investigar la empresa, practicar respuestas, estructurar la propia historia profesional y preparar preguntas.</string>
+        <string name="inter_section3_example">Caso: Un candidato sin investigar la empresa ofreció respuestas vagas y fue evaluado negativamente.</string>
+        <string name="inter_section3_rec">Consejos: Realizar simulacros de entrevista y estructurar respuestas basadas en ejemplos concretos y medibles.</string>
+
+        <!-- 4. La Primera Impresión: Imagen y Comunicación No Verbal -->
+        <string name="inter_section4_title">4. La Primera Impresión: Imagen y Comunicación No Verbal</string>
+        <string name="inter_section4_desc">La apariencia y forma de comunicarse son fundamentales, ya que transmiten profesionalismo antes de las palabras.</string>
+        <string name="inter_section4_appearance">Vestimenta: En entornos corporativos se recomiendan trajes y colores neutros; en sectores creativos o tecnológicos, un estilo casual business mantiene la profesionalidad.</string>
+        <string name="inter_section4_bodylang">Lenguaje corporal: Mantener postura erguida, contacto visual y evitar muletillas excesivas.</string>
+        <string name="inter_section4_example">Ejemplo: Una candidata a un puesto directivo se destacó por su imagen limpia y segura, siendo seleccionada.</string>
+        <string name="inter_section4_err">Errores: Vestimenta inadecuada o descuidada y uso excesivo de accesorios o tono de voz inadecuado.</string>
+
+        <!-- 5. El Arte de Responder Preguntas Difíciles -->
+        <string name="inter_section5_title">5. El Arte de Responder Preguntas Difíciles</string>
+        <string name="inter_section5_desc">Responder de forma estructurada es esencial para demostrar capacidad de análisis y resolución de problemas.</string>
+        <string name="inter_section5_star">Técnica STAR: Utilizar la estructura de Situación, Tarea, Acción y Resultado para organizar las respuestas.</string>
+        <string name="inter_section5_examples">Ejemplos: "Cuéntame sobre ti" y "Describe una situación difícil en el trabajo".</string>
+        <string name="inter_section5_rec">Consejos: Evitar respuestas vagas y centrarse en aprendizajes y resultados obtenidos.</string>
+
+        <!-- 6. Errores Comunes y Prevenciones -->
+        <string name="inter_section6_title">6. Errores Comunes y Prevenciones</string>
+        <string name="inter_section6_desc">Identificar y evitar errores que pueden restar confiabilidad al candidato es crucial.</string>
+        <string name="inter_section6_errpoints">Errores frecuentes: No definir claramente fortalezas, improvisar sin preparación y hablar de forma desorganizada.</string>
+        <string name="inter_section6_prev">Prevenciones: Practicar respuestas, simular entrevistas, actualizar el currículum y solicitar retroalimentación.</string>
+
+        <!-- 7. Casos de Éxito, Tips y Recomendaciones Finales -->
+        <string name="inter_section7_title">7. Casos de Éxito, Tips y Recomendaciones Finales</string>
+        <string name="inter_section7_desc">Casos documentados demuestran que la preparación, la buena imagen y una red robusta marcan la diferencia.</string>
+        <string name="inter_section7_examples">Ejemplos: Un candidato preparado recibió una oferta antes de la formalización de la vacante; otra profesional destacó por su seguridad y claridad tras practicar entrevistas.</string>
+        <string name="inter_section7_rec">Consejos adicionales: Enviar un correo de agradecimiento posterior a la entrevista, mantener una actitud positiva y actualizarse profesionalmente.</string>
+
+        <!-- Conclusión -->
+        <string name="inter_conclusion_title">Conclusión</string>
+        <string name="inter_conclusion_desc">El dominio de una entrevista se fundamenta en la preparación, imagen profesional y comunicación clara. La estrategia y actualización constante son claves para el éxito.</string>
+
+
+
+        <!-- VISTA APRENDER -->
+        <string name="learn_title">Administracion de carrera</string>
+
+        <!-- Módulos de aprendizaje -->
+        <string name="module_1_title">Diseño y Planificación de Carrera</string>
+        <string name="module_2_title">Adaptabilidad y Crecimiento Profesional</string>
+        <string name="module_3_title">Evaluación de Oportunidades y Crecimiento</string>
+        <string name="module_4_title">Gestión de Riesgos en la Carrera Profesional</string>
+        <string name="module_5_title">Transiciones Laborales y Evolución Profesional</string>
+        <string name="module_6_title">Cómo Buscar Empleos</string>
+        <string name="module_7_title">Actualización de Habilidades</string>
+
+        <!-- Iconos y descripciones -->
+        <string name="module_icon_desc">Ícono de módulo de aprendizaje</string>
+        <string name="module_status_desc">Estado del módulo de aprendizaje</string>
+
+        <!-- Botón de actualización -->
+        <string name="button_refresh">Actualizar recursos</string>
+
+    <!-- MODULE 1 -->
+
+        <string name="module_title">Diseño y Planificación de Carrera</string>
+        <string name="concept_title">Concepto Clave</string>
+        <string name="concept_description">La planificación estratégica permite definir objetivos profesionales alineados con valores, necesidades y habilidades.</string>
+        <string name="evaluation_title">¿Cómo evalúas tus habilidades, valores y metas?</string>
+        <string name="respond_button">Responder</string>
+        <string name="recommendations_title">Recomendaciones y Tips</string>
+        <string name="recommendations_text">- La autoevaluación profunda mejora la toma de decisiones.\n- Establece metas medibles y alcanzables.\n- Mantén actualización constante de tus habilidades.\n- La red de contactos es clave para nuevas oportunidades.</string>
+        <string name="button_define_objectives">Cómo definir objetivos profesionales</string>
+        <string name="button_strengthen_skills">Métodos para fortalecer destrezas clave</string>
+
+    <!-- cuestionario -->
+    <string name="evaluation_contenido">Cuestionario de Autoevaluación Profesional</string>
+
+        <!-- Pregunta 1 -->
+        <string name="question1">¿Qué aspecto consideras más importante al elegir tu carrera profesional?</string>
+        <string name="optionA1">A) Desarrollo personal y alineación con mis valores.</string>
+        <string name="optionB1">B) Seguridad financiera y estabilidad laboral.</string>
+        <string name="optionC1">C) Oportunidades de crecimiento y proyección profesional.</string>
+        <string name="optionD1">D) Creatividad y autonomía en el trabajo.</string>
+
+        <!-- Interpretación Pregunta 1 -->
+        <string name="evaluation_result_part1">Se recomienda profundizar en la autoevaluación para definir un propósito claro.</string>
+        <string name="evaluation_result_part2">Se sugiere analizar sectores con estabilidad y condiciones laborales favorables.</string>
+        <string name="evaluation_result_part3">Se recomienda enfocarse en habilidades estratégicas y networking.</string>
+        <string name="evaluation_result_part4">Puede ser ideal considerar roles con enfoque emprendedor o independiente.</string>
+
+        <!-- Pregunta 2 -->
+        <string name="question2">¿Cómo evalúas tu nivel de habilidades clave para tu carrera?</string>
+        <string name="optionA2">A) Tengo habilidades sólidas y especializadas.</string>
+        <string name="optionB2">B) Tengo habilidades básicas pero necesito mejorar.</string>
+        <string name="optionC2">C) Me falta experiencia y necesito formación.</string>
+        <string name="optionD2">D) No tengo claro qué habilidades necesito.</string>
+
+        <!-- Interpretación Pregunta 2 -->
+        <string name="evaluation_result_part5">Se recomienda enfocarse en posicionamiento profesional y liderazgo.</string>
+        <string name="evaluation_result_part6">Se sugiere fortalecer destrezas mediante cursos y mentorías.</string>
+        <string name="evaluation_result_part7">Se recomienda explorar programas de capacitación y prácticas.</string>
+        <string name="evaluation_result_part8">Se sugiere revisar los objetivos y tendencias laborales.</string>
+
+        <!-- Pregunta 3 -->
+        <string name="question3">¿Cómo manejas las oportunidades en tu entorno profesional?</string>
+        <string name="optionA3">A) Me adelanto a cambios y busco crecimiento constantemente.</string>
+        <string name="optionB3">B) Aprovecho oportunidades cuando aparecen.</string>
+        <string name="optionC3">C) Siento que me falta preparación para actuar ante cambios.</string>
+        <string name="optionD3">D) No sé cómo identificar oportunidades en mi campo.</string>
+
+        <!-- Interpretación Pregunta 3 -->
+        <string name="evaluation_result_part9">Se recomienda potenciar networking y explorar nuevos retos.</string>
+        <string name="evaluation_result_part10">Se sugiere fortalecer estrategias de empleabilidad.</string>
+        <string name="evaluation_result_part11">Se recomienda trabajar en autoevaluación y planificación.</string>
+        <string name="evaluation_result_part12">Se sugiere analizar el mercado y definir una ruta clara.</string>
+
+        <!-- Mensajes generales -->
+        <string name="evaluation_result">%1$s\n\n%2$s\n\n%3$s</string>
+        <string name="evaluation_error">Por favor, selecciona una opción antes de continuar.</string>
+        <string name="submit_button">Enviar Respuesta</string>
+
+        <string name="result_title">Tu Resultado de Evaluación</string>
+        <string name="button_return_to_module">Volver al módulo</string>
+        <string name="evaluation_final_message">Aquí están tus interpretaciones:</string>
+
+
+
+    <!-- MODULE 2 -->
+    <!-- Título y Introducción -->
+    <string name="titulo_modulo">Informe: Adaptabilidad y Crecimiento Profesional</string>
+    <string name="introduccion_modulo">En un mundo laboral en constante cambio, la adaptabilidad es clave para el éxito profesional. Este módulo ayudará a los usuarios a comprender la importancia de evolucionar con el entorno, desarrollar nuevas habilidades y fortalecer su mentalidad de crecimiento.</string>
+
+    <!-- Objetivo -->
+    <string name="objetivo_modulo"> Objetivos:
+- Comprender la importancia de la adaptabilidad en la carrera profesional.
+- Aplicar estrategias para gestionar cambios y desafíos.
+- Potenciar el aprendizaje continuo para una evolución constante.
+- Construir un plan de desarrollo profesional a largo plazo.</string>
+
+    <!-- ¿Por qué es importante la Adaptabilidad? -->
+    <string name="importancia_adaptabilidad">La adaptabilidad es la capacidad de ajustar nuestras habilidades y mentalidad según las circunstancias.</string>
+
+    <!-- Ejemplo práctico: Juan -->
+    <string name="ejemplo_practico">Juan, un diseñador gráfico, perdió su empleo debido a la automatización en su industria. En lugar de rendirse, decidió aprender a crear diseños pensados para mejorar la experiencia de quienes usan apps y sitios web. Hoy trabaja en una startup tecnológica, aplicando lo que aprendió y aumentando su valor en el mercado laboral.</string>
+
+    <!-- Reflexión -->
+    <string name="reflexion_texto">Cuando una industria cambia, ¿qué nuevas competencias podrías aprender para seguir creciendo?</string>
+
+    <!-- Estrategias de Adaptabilidad -->
+    <string name="estrategias_adaptabilidad">Estrategias para responder eficazmente a los cambios en el entorno laboral.</string>
+
+    <!-- Relación entre Flexibilidad y Éxito Laboral -->
+    <string name="flexibilidad_exito">La flexibilidad en el ámbito profesional está estrechamente relacionada con el éxito. Las empresas valoran empleados que puedan:
+✔ Ajustarse a nuevas tecnologías sin temor al cambio.
+✔ Manejar múltiples roles dentro de la organización.
+✔ Resolver problemas de manera creativa y eficiente.</string>
+
+    <!-- Métodos para adaptarse -->
+    <string name="metodos_adapta">Cómo responder eficazmente a los cambios en el entorno laboral.</string>
+
+    <!-- Crecimiento Profesional Sostenible -->
+    <string name="crecimiento_profesional">Crecimiento Profesional Sostenible: Claves para un desarrollo a largo plazo.</string>
+
+
+    <!-- MODULE 3 -->
+
+    <!-- MODULE 4 -->
+
+    <!-- MODULE 5 -->
+
+    <!-- MODULE 6 -->
+
+    <!-- MODULE 7 -->
+
+</resources>

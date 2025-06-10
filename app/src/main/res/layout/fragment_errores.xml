@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ErroresFragment">
+
+    <!-- Contenedor superior: Botón de regreso y título -->
+    <LinearLayout
+        android:id="@+id/headerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/primary"
+        android:padding="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageButton
+            android:id="@+id/btn_Back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_back_arrow"
+            android:contentDescription="@string/back_button_desc"
+            android:background="?attr/selectableItemBackground"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"/>
+
+        <TextView
+            android:id="@+id/title_Errores"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/errores_label"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:paddingStart="16dp"/>
+    </LinearLayout>
+
+    <!-- Contenido deslizable -->
+    <ScrollView
+        android:id="@+id/scroll_Content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@id/headerContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Introducción -->
+            <TextView android:id="@+id/errores_Intro" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/TitleText" android:text="@string/errores_intro"/>
+            <TextView android:id="@+id/errores_Definition" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/errores_definition"/>
+
+            <!-- Importancia -->
+            <TextView android:id="@+id/errores_Importancia_Title" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/errores_importancia_title"/>
+            <TextView android:id="@+id/errores_Importancia_Description_1" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/errores_importancia_description_1"/>
+            <TextView android:id="@+id/errores_Importancia_Description_2" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/errores_importancia_description_2"/>
+            <TextView android:id="@+id/errores_Importancia_Description_3" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/errores_importancia_description_3"/>
+            <TextView android:id="@+id/errores_Importancia_Description_4" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/errores_importancia_description_4"/>
+            <TextView android:id="@+id/errores_Importancia_Description_5" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/errores_importancia_description_5"/>
+
+            <!-- Estrategias -->
+            <TextView android:id="@+id/errores_Mejorar_Title" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/errores_mejorar_title"/>
+
+            <TextView android:id="@+id/errores_Step_1" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SubtitleText" android:text="@string/errores_step_1"/>
+            <TextView android:id="@+id/errores_Step_1_Details_1" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/errores_step_1_details_1"/>
+            <TextView android:id="@+id/errores_Step_1_Details_2" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/errores_step_1_details_2"/>
+            <TextView android:id="@+id/errores_Step_1_Details_3" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/errores_step_1_details_3"/>
+
+            <TextView android:id="@+id/errores_Step_2" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SubtitleText" android:text="@string/errores_step_2"/>
+            <TextView android:id="@+id/errores_Step_2_Details_1" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/errores_step_2_details_1"/>
+            <TextView android:id="@+id/errores_Step_2_Details_2" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/errores_step_2_details_2"/>
+            <TextView android:id="@+id/errores_Step_2_Details_3" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/errores_step_2_details_3"/>
+
+            <TextView android:id="@+id/errores_Step_3" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SubtitleText" android:text="@string/errores_step_3"/>
+            <TextView android:id="@+id/errores_Step_3_Details_1" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/errores_step_3_details_1"/>
+            <TextView android:id="@+id/errores_Step_3_Details_2" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/errores_step_3_details_2"/>
+            <TextView android:id="@+id/errores_Step_3_Details_3" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/errores_step_3_details_3"/>
+
+            <TextView android:id="@+id/errores_Step_4" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SubtitleText" android:text="@string/errores_step_4"/>
+            <TextView android:id="@+id/errores_Step_4_Details_1" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/errores_step_4_details_1"/>
+            <TextView android:id="@+id/errores_Step_4_Details_2" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/errores_step_4_details_2"/>
+            <TextView android:id="@+id/errores_Step_4_Details_3" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/errores_step_4_details_3"/>
+
+            <TextView android:id="@+id/errores_Situaciones_Title" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/errores_situaciones_title"/>
+            <TextView android:id="@+id/errores_Situation_1" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/errores_situation_1"/>
+            <TextView android:id="@+id/errores_Situation_2" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/errores_situation_2"/>
+            <TextView android:id="@+id/errores_Situation_3" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/errores_situation_3"/>
+
+            <!-- PREVENCION -->
+            <TextView android:id="@+id/errores_prevenciones_title" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/errores_prevenciones_title"/>
+            <TextView android:id="@+id/errores_prevenciones_1" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/errores_prevenciones_1"/>
+            <TextView android:id="@+id/errores_prevenciones_2" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/errores_prevenciones_2"/>
+            <TextView android:id="@+id/errores_prevenciones_3" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/errores_prevenciones_3"/>
+            <TextView android:id="@+id/errores_prevenciones_4" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/errores_prevenciones_4"/>
+            <TextView android:id="@+id/errores_prevenciones_5" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/errores_prevenciones_5"/>
+
+            <TextView android:id="@+id/errores_Conclusion_Title" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/errores_conclusion_title"/>
+            <TextView android:id="@+id/errores_Conclusion_Text_1" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/errores_conclusion_text_1"/>
+            <TextView android:id="@+id/errores_Conclusion_Text_2" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/errores_conclusion_text_2"/>
+            <TextView android:id="@+id/errores_Conclusion_Text_3" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/errores_conclusion_text_3"/>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

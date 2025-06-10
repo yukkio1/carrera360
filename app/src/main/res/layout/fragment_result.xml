@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/tvResultTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/result_title"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:paddingBottom="16dp"/>
+
+    <!-- Interpretación del usuario -->
+    <TextView
+        android:id="@+id/tvFinalResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:padding="16dp"/>
+
+    <!-- Botón para regresar al módulo -->
+    <Button
+        android:id="@+id/btnReturnToModule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_return_to_module"
+        android:backgroundTint="@color/blue_500"
+        android:textColor="@android:color/white"
+        android:paddingTop="16dp"/>
+</LinearLayout>

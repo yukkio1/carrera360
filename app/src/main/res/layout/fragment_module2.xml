@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.Module2Fragment">
+
+    <!-- Contenedor superior: Botón de regreso y título -->
+    <LinearLayout
+        android:id="@+id/headerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/primary"
+        android:padding="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageButton
+            android:id="@+id/btn_Back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_back_arrow"
+            android:contentDescription="@string/back_button_desc2"
+            android:background="?attr/selectableItemBackground"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"/>
+
+        <TextView
+            android:id="@+id/title_Module2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/module_2_title"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:paddingStart="16dp"/>
+    </LinearLayout>
+
+    <!-- Contenido deslizable -->
+    <ScrollView
+        android:id="@+id/scroll_Content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@id/headerContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Introducción -->
+            <TextView
+                android:id="@+id/introduccion_modulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/introduccion_modulo"
+                android:textSize="18sp"
+                android:paddingBottom="16dp"/>
+
+            <!-- Imagen: Importancia de Adaptarse -->
+            <ImageView
+                android:id="@+id/importancia_adaptarse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/importanciaadaptarse"
+                android:adjustViewBounds="true"
+                android:paddingBottom="16dp"/>
+
+            <!-- Videos de Ejemplo Práctico con proporción adecuada -->
+            <com.google.android.exoplayer2.ui.PlayerView
+                android:id="@+id/exoplayer_Parte1"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintDimensionRatio="16:9"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <com.google.android.exoplayer2.ui.PlayerView
+                android:id="@+id/exoplayer_Parte2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintDimensionRatio="16:9"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <com.google.android.exoplayer2.ui.PlayerView
+                android:id="@+id/exoplayer_Parte3"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintDimensionRatio="16:9"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <!-- Reflexión -->
+            <TextView
+                android:id="@+id/reflexion_texto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/reflexion_texto"
+                android:textSize="18sp"
+                android:paddingBottom="16dp"/>
+
+            <ImageView
+                android:id="@+id/reflexion_imagen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/reflexion"
+                android:adjustViewBounds="true"
+                android:paddingBottom="16dp"/>
+
+            <!-- Estrategias de Adaptabilidad -->
+            <ImageView
+                android:id="@+id/estrategias_adaptabilidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/estrategiasadaptabilidad"
+                android:adjustViewBounds="true"
+                android:paddingBottom="16dp"/>
+
+            <!-- Relación entre Flexibilidad y Éxito Laboral -->
+            <ImageView
+                android:id="@+id/reflexionyexito"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/reflexionyexito"
+                android:adjustViewBounds="true"
+                android:paddingBottom="16dp"/>
+
+            <!-- Métodos de Adaptabilidad -->
+            <ImageView
+                android:id="@+id/habclave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/habclave"
+                android:adjustViewBounds="true"
+                android:paddingBottom="16dp"/>
+
+            <ImageView
+                android:id="@+id/metodos_adapta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/metodosadapta"
+                android:adjustViewBounds="true"
+                android:paddingBottom="16dp"/>
+
+            <!-- Crecimiento Profesional Sostenible -->
+            <ImageView
+                android:id="@+id/crecimiento_profesional"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/crecimientoprofesional"
+                android:adjustViewBounds="true"
+                android:paddingBottom="16dp"/>
+
+            <ImageView
+                android:id="@+id/crecimiento_profe_sostenible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/crecimientoprofesostenible"
+                android:adjustViewBounds="true"
+                android:paddingBottom="16dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

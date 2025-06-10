@@ -1,0 +1,90 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Imagen de fondo -->
+    <ImageView
+        android:id="@+id/loginBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/auth_background"
+        android:alpha="0.7"/>
+
+    <!-- Contenedor con los campos de inicio de sesión -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:padding="16dp"
+        android:gravity="center"
+        android:layout_centerInParent="true">
+
+        <!-- LOGO Carrera360 reemplazando el texto IN-LAB -->
+        <ImageView
+            android:id="@+id/appLogo"
+            android:layout_width="340dp"
+            android:layout_height="120dp"
+            android:src="@drawable/carrera360_logo"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:id="@+id/loginTitle"
+            android:layout_width="340dp"
+            android:layout_height="160dp"
+            android:src="@drawable/iniciar"
+            android:layout_gravity="center"/>
+
+        <EditText
+            android:id="@+id/usernameField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:hint="Correo electrónico o usuario"
+            android:inputType="textEmailAddress"/>
+
+        <EditText
+            android:id="@+id/passwordField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:hint="Contraseña"
+            android:inputType="textPassword"/>
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Iniciar sesión"/>
+
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Regístrate"/>
+
+        <Button
+            android:id="@+id/guestButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Continuar como invitado"/>
+
+        <TextView
+            android:id="@+id/forgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="¿Olvidaste tu contraseña?"
+            android:textColor="#FF0000"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/termsConditions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Al continuar, aceptas nuestros Términos y Condiciones"/>
+    </LinearLayout>
+
+</RelativeLayout>

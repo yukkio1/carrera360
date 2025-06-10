@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/HomeFragment">
+
+    <!-- Fragmento de Inicio -->
+    <fragment
+        android:id="@+id/HomeFragment"
+        android:name="com.example.inlab.fragments.HomeFragment"
+        android:label="@string/home_label" >
+        <action android:id="@+id/action_home_self" app:destination="@id/HomeFragment"  />
+        <action android:id="@+id/action_home_to_marketing" app:destination="@id/MarketingFragment"/>
+        <action android:id="@+id/action_home_to_habilidades" app:destination="@id/habilidadesFragment"  />
+        <action android:id="@+id/action_home_to_red_contactos" app:destination="@id/redContactosFragment" />
+        <action android:id="@+id/action_home_to_realidad" app:destination="@id/realidadFragment"/>
+        <action android:id="@+id/action_home_to_errores" app:destination="@id/erroresFragment" />
+        <action android:id="@+id/action_home_to_entrevistas" app:destination="@id/entrevistasFragment"  />
+        <action android:id="@+id/action_home_to_learn" app:destination="@id/learnFragment"/>
+        <action android:id="@+id/action_home_to_profile" app:destination="@id/profileFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/MarketingFragment"
+        android:name="com.example.inlab.fragments.MarketingFragment"
+        android:label="@string/marketing_label" >
+        <action
+            android:id="@+id/action_marketing_to_home"
+            app:destination="@id/HomeFragment"/>
+        <action
+            android:id="@+id/action_marketing_to_learn"
+            app:destination="@id/learnFragment"/>
+        <action
+            android:id="@+id/action_marketing_to_profile"
+            app:destination="@id/profileFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/habilidadesFragment"
+        android:name="com.example.inlab.fragments.HabilidadesFragment"
+        android:label="@string/habilidades_label" >
+        <action
+            android:id="@+id/action_habilidades_to_home"
+            app:destination="@id/HomeFragment"/>
+        <action
+            android:id="@+id/action_habilidades_to_learn"
+            app:destination="@id/learnFragment"/>
+        <action
+            android:id="@+id/action_habilidades_to_profile"
+            app:destination="@id/profileFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/redContactosFragment"
+        android:name="com.example.inlab.fragments.RedContactosFragment"
+        android:label="@string/contactos_label" >
+        <action
+            android:id="@+id/action_RedContactos_to_home"
+            app:destination="@id/HomeFragment"/>
+        <action
+            android:id="@+id/action_RedContactos_to_learn"
+            app:destination="@id/learnFragment"/>
+        <action
+            android:id="@+id/action_RedContactos_to_profile"
+            app:destination="@id/profileFragment"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/realidadFragment"
+        android:name="com.example.inlab.fragments.RealidadFragment"
+        android:label="@string/realidad_label" >
+        <action
+            android:id="@+id/action_Realidad_to_home"
+            app:destination="@id/HomeFragment"/>
+        <action
+            android:id="@+id/action_realidad_to_learn"
+            app:destination="@id/learnFragment"/>
+        <action
+            android:id="@+id/action_realidad_to_profile"
+            app:destination="@id/profileFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/erroresFragment"
+        android:name="com.example.inlab.fragments.ErroresFragment"
+        android:label="@string/errores_label" >
+        <action
+            android:id="@+id/action_Errores_to_home"
+            app:destination="@id/HomeFragment"/>
+        <action
+            android:id="@+id/action_errores_to_learn"
+            app:destination="@id/learnFragment"/>
+        <action
+            android:id="@+id/action_errores_to_profile"
+            app:destination="@id/profileFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/entrevistasFragment"
+        android:name="com.example.inlab.fragments.EntrevistasFragment"
+        android:label="@string/entrevistas_label" >
+        <action
+            android:id="@+id/action_Entrevistas_to_home"
+            app:destination="@id/HomeFragment"/>
+        <action
+            android:id="@+id/action_entrevistas_to_learn"
+            app:destination="@id/learnFragment"/>
+        <action
+            android:id="@+id/action_entrevistas_to_profile"
+            app:destination="@id/profileFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/learnFragment"
+        android:name="com.example.inlab.fragments.LearnFragment"
+        android:label="@string/learn_label" >
+        <action android:id="@+id/action_Learn_self" app:destination="@id/learnFragment" />
+        <action android:id="@+id/action_Learn_to_home" app:destination="@id/HomeFragment" />
+        <action android:id="@+id/action_Learn_to_profile" app:destination="@id/profileFragment" />
+        <action android:id="@+id/action_Learn_to_Module1" app:destination="@id/Module1Fragment" />
+        <action android:id="@+id/action_Learn_to_Module2" app:destination="@id/Module2Fragment" />
+        <action android:id="@+id/action_Learn_to_Module3" app:destination="@id/Module3Fragment"  />
+        <action android:id="@+id/action_Learn_to_Module4" app:destination="@id/Module4Fragment"  />
+        <action android:id="@+id/action_Learn_to_Module5" app:destination="@id/Module5Fragment"  />
+        <action android:id="@+id/action_Learn_to_Module6" app:destination="@id/Module6Fragment"  />
+        <action android:id="@+id/action_Learn_to_Module7" app:destination="@id/Module7Fragment"  />
+    </fragment>
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.inlab.fragments.ProfileFragment"
+        android:label="@string/profile_label" >
+        <action android:id="@+id/action_profile_self" app:destination="@id/profileFragment"  />
+        <action android:id="@+id/action_profile_to_home" app:destination="@id/HomeFragment" />
+        <action android:id="@+id/action_profile_to_learn" app:destination="@id/learnFragment" />
+    </fragment>
+
+
+
+    <!-- Módulos de aprendizaje -->
+
+    <fragment
+        android:id="@+id/FragmentEvaluation"
+        android:name="com.example.inlab.fragments.FragmentEvaluation"
+        android:label="Evaluation">
+        <action
+            android:id="@+id/action_evaluation_to_result"
+            app:destination="@id/FragmentResult">
+            <argument android:name="finalResult" app:argType="string" app:nullable="false"/>
+        </action>
+        <action
+            android:id="@+id/action_evaluation_to_home"
+            app:destination="@id/HomeFragment">
+        </action>
+        <action
+            android:id="@+id/action_evaluation_to_learn"
+            app:destination="@id/learnFragment">
+        </action>
+        <action
+            android:id="@+id/action_evaluation_to_profile"
+            app:destination="@id/profileFragment">
+        </action>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/FragmentResult"
+        android:name="com.example.inlab.fragments.FragmentResult"
+        android:label="Resultado">
+        <argument android:name="finalResult" app:argType="string" app:nullable="false"/>
+        <action
+            android:id="@+id/action_result_to_module1"
+            app:destination="@id/Module1Fragment">
+
+        </action>
+        <action
+            android:id="@+id/action_result_to_home"
+            app:destination="@id/HomeFragment">
+        </action>
+        <action
+            android:id="@+id/action_result_to_learn"
+            app:destination="@id/learnFragment">
+        </action>
+        <action
+            android:id="@+id/action_result_to_profile"
+            app:destination="@id/profileFragment">
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/Module1Fragment"
+        android:name="com.example.inlab.fragments.Module1Fragment"
+        android:label="@string/module_1_title" >
+
+        <!-- Acción para ir de Module1Fragment a LearnFragment -->
+        <action
+            android:id="@+id/action_module1_to_evaluation"
+            app:destination="@id/FragmentEvaluation">
+        <argument android:name="finalResult" app:argType="string" app:nullable="false"/>
+        </action>
+        <!-- Nueva acción para ir de Module1Fragment a FragmentEvaluation -->
+        <action
+            android:id="@+id/action_module1_to_learn"
+            app:destination="@id/learnFragment"/>
+        <action
+            android:id="@+id/action_module1_to_home"
+            app:destination="@id/learnFragment"/>
+        <action
+            android:id="@+id/action_module1_to_profile"
+            app:destination="@id/learnFragment"/>
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/Module2Fragment"
+        android:name="com.example.inlab.fragments.Module2Fragment"
+        android:label="@string/module_2_title" >
+        <action
+            android:id="@+id/action_module2_to_learn"
+            app:destination="@id/learnFragment"/>
+        <action
+            android:id="@+id/action_module2_to_home"
+            app:destination="@id/learnFragment"/>
+        <action
+            android:id="@+id/action_module2_to_profile"
+            app:destination="@id/learnFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/Module3Fragment"
+        android:name="com.example.inlab.fragments.Module3Fragment"
+        android:label="@string/module_3_title" >
+        <action android:id="@+id/action_module3_to_learn" app:destination="@id/learnFragment"  />
+    </fragment>
+
+    <fragment
+        android:id="@+id/Module4Fragment"
+        android:name="com.example.inlab.fragments.Module4Fragment"
+        android:label="@string/module_4_title" >
+        <action android:id="@+id/action_module4_to_learn" app:destination="@id/learnFragment"  />
+    </fragment>
+
+    <fragment
+        android:id="@+id/Module5Fragment"
+        android:name="com.example.inlab.fragments.Module5Fragment"
+        android:label="@string/module_5_title" >
+        <action android:id="@+id/action_module5_to_learn" app:destination="@id/learnFragment"  />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/Module6Fragment"
+        android:name="com.example.inlab.fragments.Module6Fragment"
+        android:label="@string/module_6_title" >
+        <action android:id="@+id/action_module6_to_learn" app:destination="@id/learnFragment"  />
+    </fragment>
+
+    <fragment
+        android:id="@+id/Module7Fragment"
+        android:name="com.example.inlab.fragments.Module7Fragment"
+        android:label="@string/module_7_title">
+        <action android:id="@+id/action_module7_to_learn" app:destination="@id/learnFragment"  />
+    </fragment>
+</navigation>

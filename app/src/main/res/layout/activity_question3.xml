@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Fondo fijo detrás -->
+    <ImageView
+        android:id="@+id/questionBackground3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:src="@drawable/cuestion_fondo"
+        android:alpha="0.7"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Barra de progreso -->
+        <ProgressBar
+            android:id="@+id/progressBar3"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:max="5"
+            android:progress="2"
+            android:indeterminate="false"
+            android:progressDrawable="@drawable/progress_style"/>
+
+        <TextView
+            android:id="@+id/questionText3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pregunta3"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:elevation="2dp"/>
+        <TextView
+            android:id="@+id/questionText3_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pregunta3_1"
+            android:textSize="12sp"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:elevation="2dp"/>
+
+        <!-- Sección de opciones con CheckBoxes -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="12dp"
+            android:elevation="2dp">
+
+            <CheckBox
+                android:id="@+id/option1_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_option"
+                android:padding="20dp"
+                android:text="@string/option1_3_text"
+                android:layout_marginBottom="16dp"/>
+
+            <CheckBox
+                android:id="@+id/option2_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_option"
+                android:padding="20dp"
+                android:text="@string/option2_3_text"
+                android:layout_marginBottom="16dp"/>
+
+            <CheckBox
+                android:id="@+id/option3_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_option"
+                android:padding="20dp"
+                android:text="@string/option3_3_text"
+                android:layout_marginBottom="16dp"/>
+
+            <CheckBox
+                android:id="@+id/option4_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_option"
+                android:padding="20dp"
+                android:text="@string/option4_3_text"
+                android:layout_marginBottom="16dp"/>
+
+            <CheckBox
+                android:id="@+id/option5_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_option"
+                android:padding="20dp"
+                android:text="@string/option5_3_text"
+                android:layout_marginBottom="16dp"/>
+
+            <CheckBox
+                android:id="@+id/option6_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_option"
+                android:padding="20dp"
+                android:text="@string/option6_3_text"
+                android:layout_marginBottom="16dp"/>
+        </LinearLayout>
+
+        <!-- Botón "Siguiente" -->
+        <Button
+            android:id="@+id/nextButton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/next_button_text"
+            android:background="@drawable/next_button"
+            android:textColor="@color/button_text_color"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:visibility="gone"/> <!-- Solo aparece al marcar una opción -->
+    </LinearLayout>
+</FrameLayout>

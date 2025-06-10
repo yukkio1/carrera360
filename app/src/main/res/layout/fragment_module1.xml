@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.Module1Fragment">
+        <!-- Contenedor superior: Botón de regreso y título -->
+        <LinearLayout
+        android:id="@+id/headerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/primary"
+        android:padding="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <!-- Título del módulo -->
+        <ImageButton
+            android:id="@+id/btn_Back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_back_arrow"
+            android:contentDescription="@string/back_button_desc2"
+            android:background="?attr/selectableItemBackground"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"/>
+
+        <TextView
+            android:id="@+id/tvModuleTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/module_title"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:paddingStart="16dp"/>
+        </LinearLayout>
+        <!-- Contenido deslizable -->
+        <ScrollView
+        android:id="@+id/scroll_Content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@id/headerContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+        <!-- Sección de Concepto Clave -->
+        <TextView
+            android:id="@+id/tvConceptTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/concept_title"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingTop="16dp"/>
+
+        <TextView
+            android:id="@+id/tvConceptDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/concept_description"
+            android:textSize="16sp"
+            android:paddingBottom="16dp"/>
+
+        <!-- Mapa Conceptual (Imagen) -->
+        <ImageView
+            android:id="@+id/ivConceptMap"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/mapa_conceptual"
+            android:scaleType="fitCenter"/>
+
+        <!-- Sección de Evaluación -->
+        <TextView
+            android:id="@+id/tvEvaluationTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/evaluation_title"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingTop="16dp"/>
+
+        <Button
+            android:id="@+id/btnRespondEvaluation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/respond_button"
+            android:backgroundTint="@color/purple_500"
+            android:textColor="@android:color/white"/>
+
+        <!-- Sección de Recomendaciones -->
+        <TextView
+            android:id="@+id/tvRecommendationsTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/recommendations_title"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingTop="16dp"/>
+
+        <TextView
+            android:id="@+id/tvRecommendations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/recommendations_text"
+            android:textSize="16sp"
+            android:paddingBottom="16dp"/>
+
+        <!-- Botones de información adicional -->
+        <Button
+            android:id="@+id/btnDefineObjectives"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_define_objectives"
+            android:backgroundTint="@color/blue_500"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/btnStrengthenSkills"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_strengthen_skills"
+            android:backgroundTint="@color/blue_500"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

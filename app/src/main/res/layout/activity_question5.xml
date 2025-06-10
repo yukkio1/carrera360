@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Fondo fijo detrás -->
+    <ImageView
+        android:id="@+id/questionBackground5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:src="@drawable/cuestion_fondo"
+        android:alpha="0.7"
+        android:contentDescription="@string/question_background_desc"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Barra de progreso -->
+        <ProgressBar
+            android:id="@+id/progressBar5"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:max="5"
+            android:progress="4"
+            android:indeterminate="false"
+            android:progressDrawable="@drawable/progress_style"/>
+
+        <TextView
+            android:id="@+id/questionText5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pregunta5"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:elevation="2dp"/>
+
+        <TextView
+            android:id="@+id/questionText5_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pregunta5_1"
+            android:textSize="12sp"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:elevation="2dp"/>
+
+        <!-- Opciones de prioridad con CheckBox -->
+        <CheckBox
+            android:id="@+id/option1_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/option1_5"/>
+
+        <CheckBox
+            android:id="@+id/option2_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/option2_5"/>
+
+        <CheckBox
+            android:id="@+id/option3_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/option3_5"/>
+
+        <CheckBox
+            android:id="@+id/option4_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/option4_5"/>
+
+        <CheckBox
+            android:id="@+id/option5_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/option5_5"/>
+
+        <!-- Botón "Finalizar" -->
+        <Button
+            android:id="@+id/finishButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/finish_button_text"
+            android:background="@drawable/next_button"
+            android:textColor="@color/button_text_color"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:visibility="gone"/>
+    </LinearLayout>
+</FrameLayout>

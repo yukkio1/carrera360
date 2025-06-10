@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Título -->
+        <TextView
+            android:id="@+id/tvEvaluationTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/evaluation_contenido"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+
+        <!-- Pregunta 1 -->
+        <TextView
+            android:id="@+id/tvQuestion1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/question1"
+            android:textSize="18sp"
+            android:paddingTop="16dp"/>
+
+        <RadioGroup
+            android:id="@+id/rgOptions1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton android:id="@+id/rbOptionA1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/optionA1"/>
+            <RadioButton android:id="@+id/rbOptionB1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/optionB1"/>
+            <RadioButton android:id="@+id/rbOptionC1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/optionC1"/>
+            <RadioButton android:id="@+id/rbOptionD1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/optionD1"/>
+        </RadioGroup>
+
+        <!-- Pregunta 2 -->
+        <TextView
+            android:id="@+id/tvQuestion2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/question2"
+            android:textSize="18sp"
+            android:paddingTop="16dp"/>
+
+        <RadioGroup
+            android:id="@+id/rgOptions2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton android:id="@+id/rbOptionA2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/optionA2"/>
+            <RadioButton android:id="@+id/rbOptionB2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/optionB2"/>
+            <RadioButton android:id="@+id/rbOptionC2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/optionC2"/>
+            <RadioButton android:id="@+id/rbOptionD2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/optionD2"/>
+        </RadioGroup>
+        <!-- Pregunta 3 -->
+        <TextView
+            android:id="@+id/tvQuestion3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/question3"
+            android:textSize="18sp"
+            android:paddingTop="16dp"/>
+
+        <RadioGroup
+            android:id="@+id/rgOptions3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton android:id="@+id/rbOptionA3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/optionA3"/>
+            <RadioButton android:id="@+id/rbOptionB3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/optionB3"/>
+            <RadioButton android:id="@+id/rbOptionC3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/optionC3"/>
+            <RadioButton android:id="@+id/rbOptionD3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/optionD3"/>
+        </RadioGroup>
+
+        <!-- Botón para procesar respuesta -->
+        <Button
+            android:id="@+id/btnSubmitEvaluation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/submit_button"
+            android:backgroundTint="@color/blue_500"
+            android:textColor="@android:color/white"
+            android:paddingTop="16dp"/>
+
+        <!-- Sección de interpretación -->
+        <TextView
+            android:id="@+id/tvInterpretation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="16sp"
+            android:textStyle="italic"
+            android:visibility="gone"
+            android:paddingTop="16dp"/>
+    </LinearLayout>
+</ScrollView>
