@@ -64,51 +64,40 @@
 
             <!-- Importancia -->
             <TextView android:id="@+id/habilidades_Importancia_Title" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/habilidades_importancia_title"/>
-            <TextView android:id="@+id/habilidades_Importancia_Description_1" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/habilidades_importancia_description_1"/>
-            <TextView android:id="@+id/habilidades_Importancia_Description_2" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/habilidades_importancia_description_2"/>
-            <TextView android:id="@+id/habilidades_Importancia_Description_3" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/habilidades_importancia_description_3"/>
-            <TextView android:id="@+id/habilidades_Importancia_Description_4" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/habilidades_importancia_description_4"/>
-            <TextView android:id="@+id/habilidades_Importancia_Description_5" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/habilidades_importancia_description_5"/>
-
+            <com.google.android.exoplayer2.ui.PlayerView
+                android:id="@+id/importantehab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/video2descripcion"
+                app:layout_constraintDimensionRatio="9:16"/>
             <!-- Estrategias -->
-            <TextView android:id="@+id/habilidades_Mejorar_Title" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/habilidades_mejorar_title"/>
 
-            <TextView android:id="@+id/habilidades_Step_1" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SubtitleText" android:text="@string/habilidades_step_1"/>
-            <TextView android:id="@+id/habilidades_Step_1_Details_1" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/habilidades_step_1_details_1"/>
-            <TextView android:id="@+id/habilidades_Step_1_Details_2" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/habilidades_step_1_details_2"/>
-            <TextView android:id="@+id/habilidades_Step_1_Details_3" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/habilidades_step_1_details_3"/>
-            <TextView android:id="@+id/habilidades_Step_1_Details_4" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/habilidades_step_1_details_4"/>
+            <ImageView
+                android:id="@+id/desarrollohabclave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/desarrollohabclave"
+                android:contentDescription="@string/importancia_adaptabilidad"
+                android:adjustViewBounds="true"
+                android:paddingBottom="16dp"/>
 
-            <TextView android:id="@+id/habilidades_Step_2" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SubtitleText" android:text="@string/habilidades_step_2"/>
-            <TextView android:id="@+id/habilidades_Step_2_Details_1" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/habilidades_step_2_details_1"/>
-            <TextView android:id="@+id/habilidades_Step_2_Details_2" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/habilidades_step_2_details_2"/>
-            <TextView android:id="@+id/habilidades_Step_2_Details_3" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/habilidades_step_2_details_3"/>
-            <TextView android:id="@+id/habilidades_Step_2_Details_4" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/habilidades_step_2_details_4"/>
-
-            <TextView android:id="@+id/habilidades_Step_3" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SubtitleText" android:text="@string/habilidades_step_3"/>
-            <TextView android:id="@+id/habilidades_Step_3_Details_1" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/habilidades_step_3_details_1"/>
-            <TextView android:id="@+id/habilidades_Step_3_Details_2" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/habilidades_step_3_details_2"/>
-            <TextView android:id="@+id/habilidades_Step_3_Details_3" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/habilidades_step_3_details_3"/>
-            <TextView android:id="@+id/habilidades_Step_3_Details_4" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/habilidades_step_3_details_4"/>
-
-            <TextView android:id="@+id/habilidades_Step_4" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SubtitleText" android:text="@string/habilidades_step_4"/>
-            <TextView android:id="@+id/habilidades_Step_4_Details_1" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/habilidades_step_4_details_1"/>
-            <TextView android:id="@+id/habilidades_Step_4_Details_2" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/habilidades_step_4_details_2"/>
-            <TextView android:id="@+id/habilidades_Step_4_Details_3" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/habilidades_step_4_details_3"/>
-            <TextView android:id="@+id/habilidades_Step_4_Details_4" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/habilidades_step_4_details_4"/>
             <!-- Casos y conclusión -->
             <TextView android:id="@+id/habilidades_Situaciones_Title" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/habilidades_situaciones_title"/>
-            <TextView android:id="@+id/habilidades_Situation_1" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/habilidades_situation_1"/>
-            <TextView android:id="@+id/habilidades_Situation_2" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/habilidades_situation_2"/>
-            <TextView android:id="@+id/habilidades_Situation_3" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/habilidades_situation_3"/>
+            <com.google.android.exoplayer2.ui.PlayerView
+                android:id="@+id/desarrollohab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/video2descripcion"
+                app:layout_constraintDimensionRatio="16:9"/>
             <!-- PREVENCION -->
             <TextView android:id="@+id/habilidades_prevenciones_title" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/habilidades_prevenciones_title"/>
-            <TextView android:id="@+id/habilidades_prevenciones_1" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/habilidades_prevenciones_1"/>
-            <TextView android:id="@+id/habilidades_prevenciones_2" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/habilidades_prevenciones_2"/>
-            <TextView android:id="@+id/habilidades_prevenciones_3" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/habilidades_prevenciones_3"/>
-            <TextView android:id="@+id/habilidades_prevenciones_4" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/habilidades_prevenciones_4"/>
-            <TextView android:id="@+id/habilidades_prevenciones_5" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/habilidades_prevenciones_5"/>
 
+            <com.google.android.exoplayer2.ui.PlayerView
+                android:id="@+id/errorhab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/video2descripcion"
+                app:layout_constraintDimensionRatio="9:16"/>
             <TextView android:id="@+id/habilidades_Conclusion_Title" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/habilidades_conclusion_title"/>
             <TextView android:id="@+id/habilidades_Conclusion_Text_1" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/habilidades_conclusion_text_1"/>
             <TextView android:id="@+id/habilidades_Conclusion_Text_2" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/habilidades_conclusion_text_2"/>

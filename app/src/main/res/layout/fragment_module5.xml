@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".fragments.Module5Fragment">
 
-    <!-- Contenedor superior: Botón de regreso y título -->
+    <!-- Barra de Navegación Superior -->
     <LinearLayout
         android:id="@+id/headerContainer"
         android:layout_width="match_parent"
@@ -24,7 +24,7 @@
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:src="@drawable/ic_back_arrow"
-            android:contentDescription="@string/back_button_desc2"
+            android:contentDescription="@string/back_button_desc5"
             android:background="?attr/selectableItemBackground"
             android:scaleType="fitCenter"
             android:adjustViewBounds="true"/>
@@ -41,7 +41,7 @@
             android:paddingStart="16dp"/>
     </LinearLayout>
 
-    <!-- Contenido deslizable -->
+    <!-- Contenido Principal -->
     <ScrollView
         android:id="@+id/scroll_Content"
         android:layout_width="match_parent"
@@ -59,7 +59,100 @@
             android:padding="16dp">
 
             <!-- Introducción -->
-            <TextView android:id="@+id/module5_Intro" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/TitleText" android:text="@string/module_5_title"/>
+            <TextView
+                android:id="@+id/introduction_module5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/introduction_module5"
+                android:textSize="18sp"
+                android:paddingBottom="16dp"/>
+
+            <!-- Tipos de Transiciones Laborales -->
+            <TextView
+                android:id="@+id/transitions_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/transitions_title"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:paddingBottom="16dp"/>
+
+            <ImageView
+                android:id="@+id/transitions_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/transitions_types"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/transitions_image_desc"
+                android:paddingBottom="16dp"/>
+
+            <!-- Etapas de la Evolución Profesional -->
+            <TextView
+                android:id="@+id/stages_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/stages_title"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:paddingBottom="16dp"/>
+
+            <ImageView
+                android:id="@+id/stages_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/stages_professional"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/stages_image_desc"
+                android:paddingBottom="16dp"/>
+
+            <!-- Señales de Cambio -->
+            <TextView
+                android:id="@+id/signals_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/signals_title"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:paddingBottom="16dp"/>
+
+            <TextView
+                android:id="@+id/signals_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/signals_text"
+                android:textSize="18sp"
+                android:paddingBottom="16dp"/>
+
+            <!-- Herramientas para la Transición -->
+            <TextView
+                android:id="@+id/tools_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tools_title"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:paddingBottom="16dp"/>
+
+            <ImageView
+                android:id="@+id/tools_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/tools_transition"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/tools_image_desc"
+                android:paddingBottom="16dp"/>
+
+            <!-- Botón de Evaluación -->
+            <Button
+                android:id="@+id/btn_Responder_Module5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_responder_module5"
+                android:textSize="18sp"
+                android:background="@color/primary"
+                android:textColor="@color/white"
+                android:padding="10dp"
+                android:layout_marginTop="16dp"/>
         </LinearLayout>
     </ScrollView>
 

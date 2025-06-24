@@ -13,6 +13,21 @@
     <string name="salary_title">Negocia tu salario como un profesional</string>
     <string name="salary_description">Descubre estrategias para defender tu posición laboral y lograr acuerdos exitosos.</string>
     <string name="salary_button">Ver detalles</string>
+    <string name="error_crear_invitado">Error al crear invitado ❌</string>
+    <string name="error_conexion">Error de conexión ❌</string>
+    <string name="profile_avatar_desc">avatar</string>
+    <string name="achievements_label">Logros</string>
+    <string name="no_modules_remaining">Ya aprendiste todos los módulos que tenías que aprender</string>
+    <string name="modules_to_complete_label">Módulos que faltan aprender</string>
+    <string name="completed_evaluations_label">Evaluaciones completadas</string>
+    <string name="days_since_started_label">Días desde que comenzó</string>
+    <string name="default_username">Traer el nombre usuario</string>
+    <string name="edit_profile_button">Editar perfil</string>
+    <string name="logout_button">Cerrar sesion</string>
+    <string name="completed_modules_label">Módulos Completados</string>
+    <string name="active_goals_label">Logros Completados</string>
+    <string name="career_progress_label">Progreso</string>
+
 
     <!-- Mensajes generales -->
     <string name="next_button_text">Siguiente</string>
@@ -20,22 +35,22 @@
     <string name="option1_text">No estoy seguro</string>
     <string name="option2_text">Estoy explorando mis opciones</string>
     <string name="option3_text">Tengo una carrera especifica en mente</string>
-    <string name="pregunta1">¿Cuál es tu principal interés?</string>
+    <string name="pregunta1">¿Ya cuentas con una carrera en especifico?</string>
     <string name="question_background_text">Fondo de pregunta</string>
     <!-- CUESTIONARIO 2 -->
-    <string name="pregunta2">¿Tienes experiencia en atención al cliente?</string>
+    <string name="pregunta2">¿Tienes experiencia en el mundo laboral?</string>
     <string name="option1_2_text">No tengo experiencia</string>
     <string name="option2_2_text">Menos de un año</string>
     <string name="option3_2_text">Más de un año</string>
     <!-- CUESTIONARIO 3 -->
     <string name="pregunta3">¿Cuál es su preferencia en cuanto a tipos de trabajo?</string>
     <string name="pregunta3_1">Selecciona las opciones que más te interesen</string>
-    <string name="option1_3_text">Energía y servicios públicos</string>
+    <string name="option1_3_text">Servicios públicos</string>
     <string name="option2_3_text">Software y tecnología</string>
     <string name="option3_3_text">Servicios financieros</string>
     <string name="option4_3_text">Educación</string>
-    <string name="option5_3_text">Gobierno y ONG</string>
-    <string name="option6_3_text">Cuidado de la salud</string>
+    <string name="option5_3_text">Comercio y ventas</string>
+    <string name="option6_3_text">Industria creativa y medios</string>
     <!-- CUESTIONARIO 4 -->
     <string name="pregunta4">¿Cuál de estas habilidades consideras más importante?</string>
     <!-- Opción 1 -->
@@ -505,7 +520,9 @@
     <string name="importancia_adaptabilidad">La adaptabilidad es la capacidad de ajustar nuestras habilidades y mentalidad según las circunstancias.</string>
 
     <!-- Ejemplo práctico: Juan -->
-    <string name="ejemplo_practico">Juan, un diseñador gráfico, perdió su empleo debido a la automatización en su industria. En lugar de rendirse, decidió aprender a crear diseños pensados para mejorar la experiencia de quienes usan apps y sitios web. Hoy trabaja en una startup tecnológica, aplicando lo que aprendió y aumentando su valor en el mercado laboral.</string>
+    <string name="ejemplo_practico">Juan, un diseñador gráfico, perdió su empleo debido a la automatización en su industria.</string>
+    <string name="ejemplo_practico2">En lugar de rendirse, decidió aprender a crear diseños pensados para mejorar la experiencia de quienes usan apps y sitios web. </string>
+    <string name="ejemplo_practico3">Hoy trabaja en una startup tecnológica, aplicando lo que aprendió y aumentando su valor en el mercado laboral.</string>
 
     <!-- Reflexión -->
     <string name="reflexion_texto">Cuando una industria cambia, ¿qué nuevas competencias podrías aprender para seguir creciendo?</string>
@@ -514,10 +531,10 @@
     <string name="estrategias_adaptabilidad">Estrategias para responder eficazmente a los cambios en el entorno laboral.</string>
 
     <!-- Relación entre Flexibilidad y Éxito Laboral -->
-    <string name="flexibilidad_exito">La flexibilidad en el ámbito profesional está estrechamente relacionada con el éxito. Las empresas valoran empleados que puedan:
-✔ Ajustarse a nuevas tecnologías sin temor al cambio.
-✔ Manejar múltiples roles dentro de la organización.
-✔ Resolver problemas de manera creativa y eficiente.</string>
+    <string name="flexibilidad_exito">La flexibilidad en el ámbito profesional está estrechamente relacionada con el éxito. Las empresas valoran empleados que puedan:</string>
+    <string name="flexibilidad_exito2">✔ Ajustarse a nuevas tecnologías sin temor al cambio.</string>
+    <string name="flexibilidad_exito3">✔ Manejar múltiples roles dentro de la organización.</string>
+    <string name="flexibilidad_exito4">✔ Resolver problemas de manera creativa y eficiente.</string>
 
     <!-- Métodos para adaptarse -->
     <string name="metodos_adapta">Cómo responder eficazmente a los cambios en el entorno laboral.</string>
@@ -528,12 +545,331 @@
 
     <!-- MODULE 3 -->
 
+    <!-- Títulos y Encabezados -->
+
+    <string name="back_button_desc3">Botón para regresar al módulo anterior</string>
+
+    <!-- Introducción -->
+    <string name="introduccion_modulo3">Las oportunidades laborales están por todas partes, pero no todas son iguales. Aprender a distinguir cuáles te ayudan a crecer es clave para tu éxito profesional.</string>
+
+    <!-- Evaluación de Oportunidades -->
+    <string name="evaluacion_titulo">¿Cómo evaluar una oportunidad?</string>
+    <string name="evaluacion_imagen_desc">Imagen ilustrativa sobre evaluación de oportunidades laborales.</string>
+
+    <string name="paso_1">1. Define tus objetivos personales.</string>
+    <string name="paso_2">2. Evalúa la propuesta y sus beneficios.</string>
+    <string name="paso_3">3. Analiza los riesgos y posibles inconvenientes.</string>
+    <string name="paso_4">4. Consulta con mentores y expertos en el área.</string>
+    <string name="paso_5">5. Toma una decisión basada en datos y visión de futuro.</string>
+
+    <!-- Reflexión - Caso Práctico -->
+    <string name="reflexion_titulo3">Reflexiona: El caso de Ana</string>
+    <string name="reflexion_texto3">Ana trabaja como analista de operaciones. Tiene dos ofertas:\n- Supervisora en su empresa actual: Más responsabilidad, pero sin aumento significativo.\n- Jefa de proyecto en una startup nueva: Menos estabilidad, pero mayor autonomía y salario.\n\n¿Qué harías tú si fueras Ana? ¿Qué factores serían clave en tu decisión?</string>
+    <string name="reflexion_imagen_desc">Imagen ilustrativa sobre el caso práctico de Ana.</string>
+
+    <!-- Herramientas Clave -->
+    <string name="herramientas_titulo">Herramientas que te ayudan</string>
+    <string name="herramientas_imagen_desc">Imagen conceptual sobre herramientas de autoevaluación laboral.</string>
+
+    <string name="herramienta_1">Modelo de los 9 Cuadrados del Cambio de Carrera</string>
+    <string name="herramienta_2">Autoevaluación personal</string>
+    <string name="herramienta_3">Análisis DAFO (Debilidades, Amenazas, Fortalezas, Oportunidades)</string>
+
+    <!-- Recomendaciones Finales -->
+    <string name="recomendaciones_titulo">Recomendaciones Finales</string>
+    <string name="recomendacion_1">✅ Sé proactivo(a): busca opciones antes de necesitarlas.</string>
+    <string name="recomendacion_2">✅ Invierte en ti mismo(a): cursos, certificaciones, mentorías.</string>
+    <string name="recomendacion_3">✅ Aprende a decir NO a lo que no te suma.</string>
+    <string name="video2descripcion"> Aprende a decir NO a lo que no te suma.</string>
+
+    <!-- Botón de Evaluación -->
+    <string name="btn_responder">Responder evaluación</string>
+    <!-- Títulos y Encabezados -->
+    <string name="evaluation3_title">Evaluación de Oportunidades</string>
+    <string name="back_button_desc_evaluation3">Botón para regresar al módulo 3</string>
+
+    <!-- Introducción -->
+    <string name="introduction_evaluation3">Responde esta breve evaluación para analizar cómo identificas oportunidades y tomas decisiones estratégicas en tu carrera profesional.</string>
+
+    <!-- Pregunta de evaluación -->
+    <string name="question_evaluation3">Imagina que recibes dos ofertas laborales: una con estabilidad pero sin crecimiento, otra con más autonomía y aprendizaje pero mayor riesgo. ¿Qué opción elegirías?</string>
+
+    <!-- Opciones de respuesta -->
+    <string name="option1_evaluation3">✅ Tomar la opción estable para evitar riesgos.</string>
+    <string name="option2_evaluation3">✅ Elegir la opción con mayor crecimiento, aunque implique desafíos.</string>
+    <string name="option3_evaluation3">✅ Evaluar más factores antes de decidir.</string>
+
+    <!-- Botón para enviar respuesta -->
+    <string name="btn_submit_evaluation3">Enviar respuesta</string>
+    <!-- Títulos y Encabezados -->
+    <string name="result3_title">Resultado de la Evaluación</string>
+    <string name="back_button_desc_result3">Botón para regresar al módulo 3</string>
+
+    <!-- Mensaje de resultado dinámico -->
+    <string name="result_text3">Tu elección: %1$s\n\nReflexiona si esta opción te acerca a tus objetivos profesionales.</string>
+
+    <!-- Reflexión sobre la decisión -->
+    <string name="reflection_text3">Cada oportunidad laboral conlleva decisiones clave. Es importante evaluar los riesgos y beneficios antes de comprometerse con un camino específico.</string>
+
+    <!-- Botón para regresar al módulo 3 -->
+    <string name="btn_back_to_module3">Volver al Módulo 3</string>
+
     <!-- MODULE 4 -->
+    <!-- Títulos y Encabezados -->
+    <string name="back_button_desc4">Botón para regresar al módulo anterior</string>
+
+    <!-- Introducción -->
+    <string name="introduccion_modulo4">Identificar y gestionar riesgos es clave para evitar obstáculos en tu crecimiento profesional. Aprende estrategias efectivas para minimizar el impacto de los riesgos laborales.</string>
+
+    <!-- Tipos de Riesgos -->
+    <string name="riesgos_titulo">Tipos de Riesgos Profesionales</string>
+    <string name="riesgos_imagen_desc">Imagen representativa de los diferentes riesgos laborales.</string>
+
+    <string name="riesgo_1">Personales: Falta de habilidades, baja motivación.</string>
+    <string name="riesgo_2">Profesionales: Despidos, estancamiento laboral.</string>
+    <string name="riesgo_3">Económicos: Crisis económicas, inestabilidad salarial.</string>
+    <string name="riesgo_4">Tecnológicos: Automatización, obsolescencia de habilidades.</string>
+    <string name="riesgo_5">Ambientales: Cambios en el sector, nuevas leyes.</string>
+
+    <!-- Estrategias de Mitigación -->
+    <string name="estrategias_titulo">Estrategias de Prevención y Mitigación</string>
+    <string name="estrategias_imagen_desc">Imagen conceptual sobre la gestión de riesgos en la carrera profesional.</string>
+
+    <string name="prevencion_1">✔️ Capacitación continua y actualización de habilidades.</string>
+    <string name="prevencion_2">✔️ Diversificación de fuentes de ingresos.</string>
+    <string name="prevencion_3">✔️ Networking activo.</string>
+    <string name="prevencion_4">✔️ Planificación financiera personal.</string>
+
+    <string name="mitigacion_1">🆘 Tener un fondo de emergencia.</string>
+    <string name="mitigacion_2">🆘 Mantener actualizado el CV y perfil profesional.</string>
+    <string name="mitigacion_3">🆘 Explorar oportunidades laborales antes de una crisis.</string>
+
+    <!-- Reflexión -->
+    <string name="reflexion_titulo4">Reflexiona sobre tu carrera</string>
+    <string name="reflexion_texto4">Piensa en los riesgos que podrían afectar tu carrera. ¿Tienes un plan para enfrentarlos? ¿Cómo puedes prepararte mejor para los cambios futuros?</string>
+    <!-- Títulos y Encabezados -->
+    <string name="evaluation4_title">Evaluación de Riesgos Profesionales</string>
+
+
+    <!-- Introducción -->
+    <string name="introduction_evaluation4">Responde esta breve evaluación para analizar cómo identificas riesgos y tomas decisiones estratégicas en tu carrera profesional.</string>
+
+    <!-- Pregunta de evaluación -->
+    <string name="question_evaluation4">Imagina que te enfrentas a una situación de inestabilidad laboral debido a la automatización en tu industria. ¿Cómo actuarías?</string>
+
+    <!-- Opciones de respuesta -->
+    <string name="option1_evaluation4">✅ Buscar capacitación en nuevas tecnologías y adaptarme al cambio.</string>
+    <string name="option2_evaluation4">✅ Permanecer en mi puesto actual y esperar estabilidad.</string>
+    <string name="option3_evaluation4">✅ Diversificar mis opciones laborales mientras evalúo el impacto.</string>
+
+    <!-- Botón para enviar respuesta -->
+    <string name="btn_submit_evaluation4">Enviar respuesta</string>
+    <!-- Títulos y Encabezados -->
+    <string name="result4_title">Resultado de la Evaluación</string>
+    <string name="back_button_desc_result4">Botón para regresar al módulo 4</string>
+
+    <!-- Mensaje de resultado dinámico -->
+    <string name="result_text4">Tu elección: %1$s\n\nAnaliza si esta estrategia te permite gestionar eficazmente los riesgos profesionales.</string>
+
+    <!-- Reflexión sobre la decisión -->
+    <string name="reflection_text4">La gestión de riesgos requiere anticipación y acción. Adaptarse a los cambios, diversificar oportunidades y aprender nuevas habilidades son clave para mantener estabilidad laboral.</string>
+
+    <!-- Botón para regresar al módulo 4 -->
+    <string name="btn_back_to_module4">Volver al Módulo 4</string>
+
+
 
     <!-- MODULE 5 -->
+    <!-- Títulos y Encabezados -->
 
+    <string name="back_button_desc5">Botón para regresar al módulo anterior</string>
+
+    <!-- Introducción -->
+    <string name="introduction_module5">Las transiciones laborales son clave en el crecimiento profesional. Aprende a planificar cambios estratégicos para avanzar con confianza.</string>
+
+    <!-- Tipos de Transiciones Laborales -->
+    <string name="transitions_title">Tipos de Transiciones Laborales</string>
+    <string name="transitions_image_desc">Imagen ilustrativa de los diferentes tipos de cambios profesionales.</string>
+
+    <string name="transition_1">Cambio de posición dentro de la misma empresa.</string>
+    <string name="transition_2">Cambio de empresa o sector laboral.</string>
+    <string name="transition_3">Salto al emprendimiento.</string>
+    <string name="transition_4">Reincorporación tras una pausa laboral.</string>
+    <string name="transition_5">Jubilación y reinvención profesional.</string>
+
+    <!-- Etapas de la Evolución Profesional -->
+    <string name="stages_title">Etapas de la Evolución Profesional</string>
+    <string name="stages_image_desc">Gráfico de las distintas fases del crecimiento profesional.</string>
+
+    <string name="stage_1">Entrada: Adaptación inicial y aprendizaje.</string>
+    <string name="stage_2">Consolidación: Desarrollo de habilidades y mayor responsabilidad.</string>
+    <string name="stage_3">Expansión: Mayor autonomía y liderazgo.</string>
+    <string name="stage_4">Transformación: Cambio de industria o especialización.</string>
+    <string name="stage_5">Salida: Dejar un impacto y legado profesional.</string>
+
+    <!-- Señales para realizar un cambio laboral -->
+    <string name="signals_title">¿Cuándo es momento de un cambio?</string>
+    <string name="signals_text">Si sientes desmotivación, falta de crecimiento o deseas explorar nuevos desafíos, es posible que un cambio laboral sea necesario.</string>
+
+    <!-- Herramientas para facilitar la transición -->
+    <string name="tools_title">Herramientas para la Transición Profesional</string>
+    <string name="tools_image_desc">Recursos esenciales para gestionar el cambio en la carrera.</string>
+
+    <string name="tool_1">✔️ CV actualizado y adaptado a objetivos.</string>
+    <string name="tool_2">✔️ Perfil de LinkedIn activo.</string>
+    <string name="tool_3">✔️ Simulación de entrevistas.</string>
+    <string name="tool_4">✔️ Networking constante.</string>
+    <string name="tool_5">✔️ Cursos de actualización de habilidades.</string>
+    <string name="tool_6">✔️ Portafolio digital o físico profesional.</string>
+
+    <!-- Botón para acceder a la evaluación -->
+    <string name="btn_responder_module5">Responder Evaluación</string>
+    <!-- Títulos y Encabezados -->
+    <string name="evaluation5_title">Evaluación: Transiciones Laborales</string>
+
+
+    <!-- Introducción -->
+    <string name="introduction_evaluation5">Responde esta breve evaluación para analizar tu preparación ante posibles cambios en tu carrera profesional.</string>
+
+    <!-- Pregunta 1 -->
+    <string name="question_evaluation5">Te ofrecen un puesto en otra empresa con nuevas responsabilidades, pero implica salir de tu zona de confort. ¿Qué harías?</string>
+
+    <!-- Opciones de respuesta para la primera pregunta -->
+    <string name="option1_evaluation5">✅ Aceptar el reto y adaptarme con aprendizaje constante.</string>
+    <string name="option2_evaluation5">✅ Evaluar los riesgos y decidir con cautela.</string>
+    <string name="option3_evaluation5">✅ Mantener mi puesto actual y evitar cambios innecesarios.</string>
+
+    <!-- Pregunta 2 -->
+    <string name="question2_evaluation5">Has estado en el mismo puesto durante varios años sin crecimiento profesional. ¿Cuál sería tu siguiente paso?</string>
+
+    <!-- Opciones de respuesta para la segunda pregunta -->
+    <string name="option1_question2">✅ Explorar oportunidades dentro de mi empresa para nuevos roles.</string>
+    <string name="option2_question2">✅ Invertir en formación y nuevas habilidades para mejorar mi perfil.</string>
+    <string name="option3_question2">✅ Mantenerme en mi puesto actual y esperar oportunidades futuras.</string>
+    <string name="option4_question2">✅ Consultar con un experto laboral sobre estrategias de crecimiento.</string>
+
+    <!-- Pregunta 3 -->
+    <string name="question3_evaluation5">Te enfrentas a un cambio inesperado en tu industria debido a la automatización. ¿Cómo reaccionarías?</string>
+
+    <!-- Opciones de respuesta para la tercera pregunta -->
+    <string name="option1_question3">✅ Adaptarme aprendiendo nuevas tecnologías y procesos.</string>
+    <string name="option2_question3">✅ Evaluar el impacto y decidir si cambiar de industria.</string>
+    <string name="option3_question3">✅ Diversificar mis opciones laborales mientras investigo tendencias.</string>
+    <string name="option4_question3">✅ No hacer cambios y esperar que el mercado se estabilice.</string>
+
+    <!-- Botón para enviar respuesta -->
+    <string name="btn_submit_evaluation5">Enviar respuesta</string>
+    <!-- Títulos y Encabezados -->
+    <string name="result5_title">Resultado de la Evaluación</string>
+    <string name="back_button_desc_result5">Botón para regresar al módulo 5</string>
+
+    <!-- Mensaje de resultado dinámico -->
+    <string name="result_text5">Tu elección: %1$s\n\nAnaliza si esta estrategia te permite gestionar eficazmente los cambios laborales.</string>
+
+    <!-- Reflexión sobre la decisión -->
+    <string name="reflection_text5">Las transiciones profesionales requieren análisis y acción. Elegir oportunidades estratégicas y planificar el crecimiento garantiza estabilidad y éxito en tu carrera.</string>
+
+    <!-- Botón para regresar al módulo 5 -->
+    <string name="btn_back_to_module5">Volver al Módulo 5</string>
+    <!-- Reflexiones para pregunta 1 -->
+    <string name="reflection_risk_taking">Has elegido asumir el desafío. La adaptabilidad es clave, pero una planificación sólida aumentará tus posibilidades de éxito.</string>
+    <string name="reflection_cautious_decision">Elegiste evaluar los riesgos antes de actuar. Un enfoque prudente puede ser útil, pero también es importante saber cuándo dar el paso.</string>
+
+    <!-- Reflexiones para pregunta 2 -->
+    <string name="reflection_internal_growth">Has optado por buscar crecimiento dentro de tu empresa. Explorar oportunidades internas es una estrategia valiosa para fortalecer tu carrera.</string>
+    <string name="reflection_learning_growth">Invertir en formación es una excelente decisión. La mejora de habilidades es clave para evolucionar profesionalmente.</string>
+
+    <!-- Reflexiones para pregunta 3 -->
+    <string name="reflection_adaptability">Elegiste adaptarte a los cambios tecnológicos. Mantenerse actualizado en nuevas tendencias te permitirá navegar mejor la transformación del mercado.</string>
+    <string name="reflection_market_analysis">Decidiste analizar el impacto de los cambios en la industria. Comprender las dinámicas del mercado te ayudará a tomar decisiones informadas.</string>
+
+    <!-- Reflexión genérica -->
+    <string name="reflection_general">Las decisiones profesionales requieren análisis y acción. Reflexiona sobre tu situación y define los pasos estratégicos para avanzar.</string> <!-- MODULE 6 -->
     <!-- MODULE 6 -->
 
+    <!-- Títulos y Encabezados -->
+
+    <string name="module6_objective">🎯 Estrategias prácticas y herramientas para una búsqueda de empleo efectiva.</string>
+    <string name="module6_intro">🔎 Buscar empleo no es solo enviar currículums, es un proceso estratégico que requiere planificación.</string>
+
+    <!-- Sección: Preparación -->
+    <string name="title_preparation">✅ Preparación antes de buscar empleo</string>
+    <string name="preparation_steps">1️⃣ Define qué buscas: Industria, tipo de puesto, modalidad de trabajo, expectativas.\n2️⃣ Actualiza tu currículum: Destaca logros, usa un diseño limpio.\n3️⃣ Optimiza tu perfil en redes: LinkedIn, portafolio digital.\n4️⃣ Investiga el mercado laboral: Empresas, tendencias y oportunidades.</string>
+
+    <!-- Sección: Proceso de Postulación -->
+    <string name="title_application_process">📌 Proceso de Postulación</string>
+    <string name="ic_target_text">tarjeta</string>
+    <string name="job_search_intro_text">tarjeta</string>
+    <string name="ic_strategy_text">tarjeta</string>
+    <string name="preparation_steps_text">tarjeta</string>
+    <string name="application_process_text">tarjeta</string>
+    <string name="application_steps">📄 Adapta tu currículum a cada oferta.\n📩 Redacta correos de presentación efectivos.\n🎙️ Prepárate para entrevistas: respuestas y lenguaje corporal.\n📊 Evalúa la oferta antes de aceptar.</string>
     <!-- MODULE 7 -->
 
+    <!-- Títulos y Encabezados -->
+    <string name="module7_title">Actualización de Habilidades</string>
+    <string name="module7_objective">🎯 Aprende estrategias para mantener tus habilidades relevantes en el mercado laboral.</string>
+    <string name="module7_intro">🔎 La actualización constante de habilidades es clave para el éxito profesional.</string>
+
+    <!-- Sección: Estrategias -->
+    <string name="title_strategies">📌 Estrategias para actualizar habilidades</string>
+    <string name="strategies_text">✅ Aprende con cursos online.\n✅ Participa en comunidades profesionales.\n✅ Desarrolla proyectos personales.\n✅ Busca mentoría y coaching.\n✅ Practica constantemente.</string>
+
+    <!-- Botón para evaluación -->
+    <string name="btn_start_evaluation7">Iniciar Evaluación</string>
+
+    <string name="title_evaluation7">Evaluación: Actualización de Habilidades</string>
+    <string name="btn_submit_evaluation7">Enviar Respuestas</string>
+
+    <!-- Pregunta 1 -->
+    <string name="question_1">¿Cuál es la mejor manera de mantenerte actualizado en tu campo?</string>
+    <string name="answer_1A">Tomar cursos en línea</string>
+    <string name="answer_1B">Leer artículos y blogs especializados</string>
+    <string name="answer_1C">Esperar a aprender en el trabajo</string>
+    <string name="response_1A">¡Genial! Los cursos en línea te permiten aprender de expertos en la industria.</string>
+    <string name="response_1B">¡Buena elección! Leer contenido especializado es una forma efectiva de mantenerse informado.</string>
+    <string name="response_1C">Considera alternativas activas: esperar puede retrasar tu crecimiento profesional.</string>
+
+    <!-- Pregunta 2 -->
+    <string name="question_2">¿Qué método prefieres para mejorar tus habilidades?</string>
+    <string name="answer_2A">Proyectos prácticos</string>
+    <string name="answer_2B">Clases teóricas</string>
+    <string name="answer_2C">Aprender solo sin orientación</string>
+    <string name="response_2A">¡Excelente! Los proyectos permiten aplicar conocimientos en situaciones reales.</string>
+    <string name="response_2B">La teoría es clave, pero combínala con práctica para mejores resultados.</string>
+    <string name="response_2C">Aprender solo es valioso, pero la mentoría puede acelerar tu crecimiento.</string>
+    <!-- Pregunta 3 -->
+    <string name="question_3">¿Cómo evalúas tu progreso en nuevas habilidades?</string>
+    <string name="answer_3A">A través de proyectos prácticos</string>
+    <string name="answer_3B">Con pruebas y cuestionarios</string>
+    <string name="answer_3C">Esperando la retroalimentación espontánea</string>
+    <string name="response_3A">¡Excelente! Aplicar conocimientos en proyectos reales refuerza el aprendizaje.</string>
+    <string name="response_3B">Las pruebas ayudan a medir tu nivel, pero complementa con práctica.</string>
+    <string name="response_3C">Espera menos y busca retroalimentación proactiva para mejorar rápidamente.</string>
+
+    <!-- Pregunta 4 -->
+    <string name="question_4">¿Cuál es tu enfoque para mantenerte actualizado?</string>
+    <string name="answer_4A">Seguir tendencias del sector</string>
+    <string name="answer_4B">Investigar nuevas tecnologías</string>
+    <string name="answer_4C">Aplicar siempre los mismos métodos</string>
+    <string name="response_4A">¡Bien pensado! Estar al tanto de tendencias te ayuda a adaptarte a cambios.</string>
+    <string name="response_4B">Investigar nuevas tecnologías te prepara para futuras oportunidades.</string>
+    <string name="response_4C">Actualizar estrategias es clave, prueba nuevos métodos para mejorar.</string>
+
+    <!-- Pregunta 5 -->
+    <string name="question_5">¿Cómo fortaleces tu aprendizaje continuo?</string>
+    <string name="answer_5A">Practicando constantemente</string>
+    <string name="answer_5B">Participando en comunidades</string>
+    <string name="answer_5C">Evitando cambios en tu rutina</string>
+    <string name="response_5A">¡Gran elección! La práctica constante es la clave para el desarrollo.</string>
+    <string name="response_5B">Las comunidades ofrecen conocimientos y networking valioso.</string>
+    <string name="response_5C">Incorporar cambios estratégicos puede impulsar tu crecimiento.</string>
+
+        <string name="title_result7">Resultados de la Evaluación</string>
+        <string name="btn_back_to_module7">Volver al Módulo 7</string>
+        <string name="results_summary">Tus respuestas:\n%s</string>
+        <string name="result_message">Has completado la evaluación sobre actualización de habilidades.</string>
+        <string name="result_feedback">Analiza tus respuestas y ajusta tu aprendizaje para mejorar.</string>
+    <string name="achievement_1">Logro por completar el aprendizaje de la inserción laboral</string>
+    <string name="achievement_2">Logro por completar el aprendizaje de la administración de carrera</string>
 </resources>

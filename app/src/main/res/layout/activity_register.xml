@@ -1,37 +1,126 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/registerTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Regístrate"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:textAlignment="center"/>
+    <!-- Imagen de fondo -->
+    <ImageView
+        android:id="@+id/loginBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/auth_background"
+        android:alpha="0.7"/>
 
-    <EditText
-        android:id="@+id/emailField"
+    <ImageButton
+        android:id="@+id/btn_Back"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_back_arrow"
+        android:contentDescription="@string/back_button_desc2"
+        android:background="?attr/selectableItemBackground"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:layout_margin="16dp"/>
+
+    <!-- Contenedor con los campos de inicio de sesión -->
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Correo electrónico"
-        android:inputType="textEmailAddress"/>
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:padding="16dp"
+        android:gravity="center"
+        android:layout_centerInParent="true">
 
-    <EditText
-        android:id="@+id/passwordField"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Contraseña"
-        android:inputType="textPassword"/>
+        <!-- LOGO Carrera360 -->
+        <ImageView
+            android:id="@+id/appLogo"
+            android:layout_width="340dp"
+            android:layout_height="120dp"
+            android:src="@drawable/carrera360_logo"
+            android:layout_gravity="center"/>
 
-    <Button
-        android:id="@+id/registerButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Registrarse"/>
-</LinearLayout>
+        <ImageView
+            android:id="@+id/loginTitle"
+            android:layout_width="340dp"
+            android:layout_height="150dp"
+            android:src="@drawable/registrousuario"
+            android:layout_gravity="center"/>
+
+        <EditText
+            android:id="@+id/correoelec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:hint="Correo electrónico"
+            android:inputType="textEmailAddress"/>
+        <EditText
+            android:id="@+id/usuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:hint="Usuario"
+            android:inputType="text"/>
+        <EditText
+            android:id="@+id/passwordField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:hint="Contraseña"
+            android:inputType="textPassword"/>
+        <EditText
+            android:id="@+id/nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:hint="Nombres"
+            android:inputType="text"/>
+        <EditText
+            android:id="@+id/apellido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:hint="Apellidos"
+            android:inputType="text"/>
+        <EditText
+            android:id="@+id/edad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:hint="Edad"
+            android:inputType="number"/>
+
+        <!-- Indicador de carga -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_gravity="center"/>
+
+        <!-- Mensaje de error -->
+        <TextView
+            android:id="@+id/errorTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:gravity="center_horizontal"/>
+
+        <Button
+            android:id="@+id/registrarseButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registrarse"/>
+
+        <TextView
+            android:id="@+id/termsConditions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Al continuar, aceptas nuestros Términos y Condiciones"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -84,7 +84,26 @@
             android:id="@+id/termsConditions"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textStyle="bold"
             android:text="Al continuar, aceptas nuestros Términos y Condiciones"/>
+        <!-- Indicador de carga -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_gravity="center"/>
+
+        <!-- Mensaje de error -->
+        <TextView
+            android:id="@+id/errorTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FF0000"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:visibility="gone"/>
+
     </LinearLayout>
 
 </RelativeLayout>

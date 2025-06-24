@@ -118,21 +118,22 @@
             android:paddingBottom="16dp"/>
 
         <!-- Botones de información adicional -->
-        <Button
-            android:id="@+id/btnDefineObjectives"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/button_define_objectives"
-            android:backgroundTint="@color/blue_500"
-            android:textColor="@android:color/white"/>
-
-        <Button
-            android:id="@+id/btnStrengthenSkills"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/button_strengthen_skills"
-            android:backgroundTint="@color/blue_500"
-            android:textColor="@android:color/white"/>
+        <com.google.android.exoplayer2.ui.PlayerView
+            android:id="@+id/definirobjetivo"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:contentDescription="@string/button_define_objectives"
+            app:layout_constraintDimensionRatio="9:16"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+        <com.google.android.exoplayer2.ui.PlayerView
+            android:id="@+id/planificavideo"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:contentDescription="@string/button_strengthen_skills"
+            app:layout_constraintDimensionRatio="9:16"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
 
     </LinearLayout>
 </ScrollView>

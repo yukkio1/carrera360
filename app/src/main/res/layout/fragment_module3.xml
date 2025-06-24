@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".fragments.Module3Fragment">
 
-    <!-- Contenedor superior: Botón de regreso y título -->
+    <!-- Barra de Navegación Superior -->
     <LinearLayout
         android:id="@+id/headerContainer"
         android:layout_width="match_parent"
@@ -24,7 +24,7 @@
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:src="@drawable/ic_back_arrow"
-            android:contentDescription="@string/back_button_desc2"
+            android:contentDescription="@string/back_button_desc3"
             android:background="?attr/selectableItemBackground"
             android:scaleType="fitCenter"
             android:adjustViewBounds="true"/>
@@ -59,7 +59,100 @@
             android:padding="16dp">
 
             <!-- Introducción -->
-            <TextView android:id="@+id/module3_Intro" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/TitleText" android:text="@string/module_3_title"/>
+            <TextView
+                android:id="@+id/introduccion_modulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/introduccion_modulo3"
+                android:textSize="18sp"
+                android:paddingBottom="16dp"/>
+
+            <!-- Evaluación de oportunidades -->
+            <TextView
+                android:id="@+id/evaluacion_titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/evaluacion_titulo"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:paddingBottom="16dp"/>
+
+            <ImageView
+                android:id="@+id/oportunidades5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/oportunidades5"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/evaluacion_imagen_desc"
+                android:paddingBottom="16dp"/>
+
+
+
+            <!-- Reflexión - Caso práctico -->
+            <TextView
+                android:id="@+id/reflexion_titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/reflexion_titulo3"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:paddingBottom="16dp"/>
+            <!-- Videos sobre evaluación de oportunidades -->
+
+            <com.google.android.exoplayer2.ui.PlayerView
+                android:id="@+id/exoplayer_Parte2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/video2descripcion"
+                app:layout_constraintDimensionRatio="16:9"/>
+
+            <TextView
+                android:id="@+id/reflexion_texto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/reflexion_texto3"
+                android:textSize="18sp"
+                android:paddingBottom="16dp"/>
+
+            <ImageView
+                android:id="@+id/reflexion_imagen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/reflexion_caso"
+                android:adjustViewBounds="true"
+
+                android:paddingBottom="16dp"/>
+
+            <!-- Herramientas Clave -->
+            <TextView
+                android:id="@+id/herramientas_titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/herramientas_titulo"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:paddingBottom="16dp"/>
+
+            <ImageView
+                android:id="@+id/herramientas_imagen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/herramientas_clave"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/herramientas_imagen_desc"
+                android:paddingBottom="16dp"/>
+
+            <!-- Botón de evaluación de usuario -->
+            <Button
+                android:id="@+id/btn_Responder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_responder"
+                android:textSize="18sp"
+                android:background="@color/primary"
+                android:textColor="@color/white"
+                android:padding="10dp"
+                android:layout_marginTop="16dp"/>
         </LinearLayout>
     </ScrollView>
 

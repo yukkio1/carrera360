@@ -9,7 +9,7 @@ import com.example.inlab.R
 import com.example.inlab.adapters.ConsejoAdapter
 import com.example.inlab.databinding.FragmentHomeBinding
 import com.example.inlab.modelo.Consejo
-
+import com.example.inlab.viewmodel.UsuarioViewModel
 class HomeFragment : Fragment(R.layout.fragment_home) {
     private var _binding: FragmentHomeBinding? = null
     private val binding get() = _binding!!

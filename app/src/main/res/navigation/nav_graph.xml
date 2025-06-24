@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     app:startDestination="@id/HomeFragment">
 
     <!-- Fragmento de Inicio -->
@@ -226,39 +227,266 @@
             app:destination="@id/learnFragment"/>
     </fragment>
 
+
     <fragment
         android:id="@+id/Module3Fragment"
         android:name="com.example.inlab.fragments.Module3Fragment"
-        android:label="@string/module_3_title" >
-        <action android:id="@+id/action_module3_to_learn" app:destination="@id/learnFragment"  />
+        android:label="Módulo 3"
+        tools:layout="@layout/fragment_module3">
+        <action
+            android:id="@+id/action_module3_to_evaluation3"
+            app:destination="@id/evaluation3Fragment" />
+        <action
+            android:id="@+id/action_module3_to_home"
+            app:destination="@id/HomeFragment" />
+        <action
+            android:id="@+id/action_module3_to_learn"
+            app:destination="@id/learnFragment" />
+        <action
+            android:id="@+id/action_module3_to_profile"
+            app:destination="@id/profileFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/evaluation3Fragment"
+        android:name="com.example.inlab.fragments.Evaluation3Fragment"
+        android:label="Evaluación Módulo 3"
+        tools:layout="@layout/fragment_evaluation3">
+        <action
+            android:id="@+id/action_evaluation3_to_result3"
+            app:destination="@id/result3Fragment">
+            <argument
+                android:name="selectedOption"
+                app:argType="string" />
+        </action>
+        <action
+            android:id="@+id/action_evaluation3_to_module3"
+            app:destination="@id/Module3Fragment" />
+        <action
+            android:id="@+id/action_evaluation3_to_home"
+            app:destination="@id/HomeFragment" />
+        <action
+            android:id="@+id/action_evaluation3_to_learn"
+            app:destination="@id/learnFragment" />
+        <action
+            android:id="@+id/action_evaluation3_to_profile"
+            app:destination="@id/profileFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/result3Fragment"
+        android:name="com.example.inlab.fragments.FragmentResult3"
+        android:label="Resultado Evaluación 3"
+        tools:layout="@layout/fragment_result3">
+        <argument
+            android:name="selectedOption"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_result3_to_module3"
+            app:destination="@id/Module3Fragment" />
+        <action
+            android:id="@+id/action_result3_to_home"
+            app:destination="@id/HomeFragment" />
+        <action
+            android:id="@+id/action_result3_to_learn"
+            app:destination="@id/learnFragment" />
+        <action
+            android:id="@+id/action_result3_to_profile"
+            app:destination="@id/profileFragment" />
     </fragment>
 
     <fragment
         android:id="@+id/Module4Fragment"
         android:name="com.example.inlab.fragments.Module4Fragment"
-        android:label="@string/module_4_title" >
-        <action android:id="@+id/action_module4_to_learn" app:destination="@id/learnFragment"  />
+        android:label="Módulo 4"
+        tools:layout="@layout/fragment_module4">
+        <action
+            android:id="@+id/action_module4_to_evaluation4"
+            app:destination="@id/evaluation4Fragment" />
+        <action
+            android:id="@+id/action_module4_to_home"
+            app:destination="@id/HomeFragment" />
+        <action
+            android:id="@+id/action_module4_to_learn"
+            app:destination="@id/learnFragment" />
+        <action
+            android:id="@+id/action_module4_to_profile"
+            app:destination="@id/profileFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/evaluation4Fragment"
+        android:name="com.example.inlab.fragments.Evaluation4Fragment"
+        android:label="Evaluación Módulo 4"
+        tools:layout="@layout/fragment_evaluation4">
+        <action
+            android:id="@+id/action_evaluation4_to_result4"
+            app:destination="@id/result4Fragment">
+            <argument
+                android:name="selectedOption"
+                app:argType="string" />
+        </action>
+        <action
+            android:id="@+id/action_evaluation4_to_module4"
+            app:destination="@id/Module4Fragment" />
+        <action
+            android:id="@+id/action_evaluation4_to_home"
+            app:destination="@id/HomeFragment" />
+        <action
+            android:id="@+id/action_evaluation4_to_learn"
+            app:destination="@id/learnFragment" />
+        <action
+            android:id="@+id/action_evaluation4_to_profile"
+            app:destination="@id/profileFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/result4Fragment"
+        android:name="com.example.inlab.fragments.FragmentResult4"
+        android:label="Resultado Evaluación 4"
+        tools:layout="@layout/fragment_result4">
+        <argument
+            android:name="selectedOption"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_result4_to_module4"
+            app:destination="@id/Module4Fragment" />
+        <action
+            android:id="@+id/action_result4_to_home"
+            app:destination="@id/HomeFragment" />
+        <action
+            android:id="@+id/action_result4_to_learn"
+            app:destination="@id/learnFragment" />
+        <action
+            android:id="@+id/action_result4_to_profile"
+            app:destination="@id/profileFragment" />
     </fragment>
 
     <fragment
         android:id="@+id/Module5Fragment"
         android:name="com.example.inlab.fragments.Module5Fragment"
-        android:label="@string/module_5_title" >
-        <action android:id="@+id/action_module5_to_learn" app:destination="@id/learnFragment"  />
+        android:label="Módulo 5"
+        tools:layout="@layout/fragment_module5">
+        <action
+            android:id="@+id/action_module5_to_evaluation5"
+            app:destination="@id/evaluation5Fragment" />
+        <action
+            android:id="@+id/action_module5_to_home"
+            app:destination="@id/HomeFragment" />
+        <action
+            android:id="@+id/action_module5_to_learn"
+            app:destination="@id/learnFragment" />
+        <action
+            android:id="@+id/action_module5_to_profile"
+            app:destination="@id/profileFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/evaluation5Fragment"
+        android:name="com.example.inlab.fragments.Evaluation5Fragment"
+        android:label="Evaluación Módulo 5"
+        tools:layout="@layout/fragment_evaluation5">
+        <action
+            android:id="@+id/action_evaluation5_to_result5"
+            app:destination="@id/result5Fragment">
+            <argument
+                android:name="selectedOptions"
+                app:argType="string[]" />
+        </action>
+        <action
+            android:id="@+id/action_evaluation5_to_module5"
+            app:destination="@id/Module5Fragment" />
+        <action
+            android:id="@+id/action_evaluation5_to_home"
+            app:destination="@id/HomeFragment" />
+        <action
+            android:id="@+id/action_evaluation5_to_learn"
+            app:destination="@id/learnFragment" />
+        <action
+            android:id="@+id/action_evaluation5_to_profile"
+            app:destination="@id/profileFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/result5Fragment"
+        android:name="com.example.inlab.fragments.FragmentResult5"
+        android:label="Resultado Evaluación 5"
+        tools:layout="@layout/fragment_result5">
+        <argument
+            android:name="selectedOptions"
+            app:argType="string[]" />
+        <action
+            android:id="@+id/action_result5_to_module5"
+            app:destination="@id/Module5Fragment" />
+        <action
+            android:id="@+id/action_result5_to_home"
+            app:destination="@id/HomeFragment" />
+        <action
+            android:id="@+id/action_result5_to_learn"
+            app:destination="@id/learnFragment" />
+        <action
+            android:id="@+id/action_result5_to_profile"
+            app:destination="@id/profileFragment" />
     </fragment>
 
 
     <fragment
         android:id="@+id/Module6Fragment"
         android:name="com.example.inlab.fragments.Module6Fragment"
-        android:label="@string/module_6_title" >
-        <action android:id="@+id/action_module6_to_learn" app:destination="@id/learnFragment"  />
+        android:label="Módulo 6"
+        tools:layout="@layout/fragment_module6">
+
+        <action
+            android:id="@+id/action_module6_to_home"
+            app:destination="@id/HomeFragment" />
+        <action
+            android:id="@+id/action_module6_to_learn"
+            app:destination="@id/learnFragment" />
+        <action
+            android:id="@+id/action_module6_to_profile"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_module6_to_module5"
+            app:destination="@id/Module5Fragment" />
     </fragment>
 
     <fragment
         android:id="@+id/Module7Fragment"
         android:name="com.example.inlab.fragments.Module7Fragment"
-        android:label="@string/module_7_title">
-        <action android:id="@+id/action_module7_to_learn" app:destination="@id/learnFragment"  />
+        android:label="Módulo 7"
+        tools:layout="@layout/fragment_module7">
+        <action android:id="@+id/action_module7_to_evaluation7" app:destination="@id/fragmentEvaluation7"/>
+        <action android:id="@+id/action_module7_to_home" app:destination="@id/HomeFragment"/>
+        <action android:id="@+id/action_module7_to_learn" app:destination="@id/learnFragment"/>
+        <action android:id="@+id/action_module7_to_profile" app:destination="@id/profileFragment"/>
+        <action android:id="@+id/action_module7_to_module7" app:destination="@id/Module7Fragment"/>
     </fragment>
+
+    <fragment
+        android:id="@+id/fragmentEvaluation7"
+        android:name="com.example.inlab.fragments.FragmentEvaluation7"
+        android:label="Evaluación Módulo 7"
+        tools:layout="@layout/fragment_evaluation7">
+        <action android:id="@+id/action_evaluation7_to_result7" app:destination="@id/fragmentResult7">
+            <argument android:name="selectedOptions" app:argType="string[]"/>
+        </action>
+        <action android:id="@+id/action_evaluation7_to_home" app:destination="@id/HomeFragment"/>
+        <action android:id="@+id/action_evaluation7_to_learn" app:destination="@id/learnFragment"/>
+        <action android:id="@+id/action_evaluation7_to_profile" app:destination="@id/profileFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentResult7"
+        android:name="com.example.inlab.fragments.FragmentResult7"
+        android:label="Resultados Módulo 7"
+        tools:layout="@layout/fragment_result7">
+        <argument android:name="selectedOptions" app:argType="string[]"/>
+        <action android:id="@+id/action_result7_to_module7" app:destination="@id/Module7Fragment"/>
+        <action android:id="@+id/action_result7_to_home" app:destination="@id/HomeFragment"/>
+        <action android:id="@+id/action_result7_to_learn" app:destination="@id/learnFragment"/>
+        <action android:id="@+id/action_result7_to_profile" app:destination="@id/profileFragment"/>
+    </fragment>
+
+
+
 </navigation>

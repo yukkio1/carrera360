@@ -6,8 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragments.Module7Fragment">
-
-    <!-- Contenedor superior: Botón de regreso y título -->
     <LinearLayout
         android:id="@+id/headerContainer"
         android:layout_width="match_parent"
@@ -18,30 +16,30 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
-
+    <!-- Título del módulo -->
         <ImageButton
             android:id="@+id/btn_Back"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:src="@drawable/ic_back_arrow"
-            android:contentDescription="@string/back_button_desc2"
+            android:contentDescription="@string/back_button_desc3"
             android:background="?attr/selectableItemBackground"
             android:scaleType="fitCenter"
             android:adjustViewBounds="true"/>
-
-        <TextView
-            android:id="@+id/title_Module7"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/module_7_title"
-            android:textSize="22sp"
-            android:textStyle="bold"
-            android:textColor="@color/white"
-            android:gravity="center"
-            android:paddingStart="16dp"/>
+    <TextView
+        android:id="@+id/title_module7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/module7_title"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="@color/primary"
+        android:textColor="@color/white"/>
     </LinearLayout>
 
-    <!-- Contenido deslizable -->
+    <!-- Contenedor Scroll -->
     <ScrollView
         android:id="@+id/scroll_Content"
         android:layout_width="match_parent"
@@ -58,8 +56,96 @@
             android:orientation="vertical"
             android:padding="16dp">
 
-            <!-- Introducción -->
-            <TextView android:id="@+id/module7_Intro" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/TitleText" android:text="@string/module_7_title"/>
+            <!-- Objetivo del módulo con icono -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_target"/>
+
+                <TextView
+                    android:id="@+id/module7_objective"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/module7_objective"
+                    android:textSize="18sp"
+                    android:paddingStart="8dp"/>
+            </LinearLayout>
+
+            <!-- Imagen representativa -->
+
+            <!-- Introducción con icono -->
+            <ImageView
+                android:id="@+id/image_intro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/skills_update_intro" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_learning"/>
+
+                <TextView
+                    android:id="@+id/module7_intro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/module7_intro"
+                    android:textSize="18sp"
+                    android:paddingStart="8dp"/>
+            </LinearLayout>
+
+            <!-- Sección: Estrategias -->
+            <TextView
+                android:id="@+id/title_strategies"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/title_strategies"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"/>
+
+            <ImageView
+                android:id="@+id/image_strategies"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/strategies_skills_update"
+
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:id="@+id/strategies_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/strategies_text"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Botón para iniciar evaluación -->
+            <Button
+                android:id="@+id/btn_start_evaluation7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_start_evaluation7"
+                android:textSize="18sp"
+                android:background="@color/primary"
+                android:textColor="@color/white"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"/>
         </LinearLayout>
     </ScrollView>
 

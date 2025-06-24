@@ -30,6 +30,11 @@ android {
             )
         }
     }
+
+    packaging {
+        resources.excludes.add("META-INF/DEPENDENCIES")
+    }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
@@ -40,8 +45,10 @@ android {
     buildFeatures {
         compose = true
         viewBinding = true
+        dataBinding = true
     }
 }
+
 
 dependencies {
 
@@ -75,11 +82,16 @@ dependencies {
     // Testing Navigation
     androidTestImplementation ("androidx.navigation:navigation-testing:2.9.0")
 
-
     // Jetpack Compose Integration
     implementation ("androidx.navigation:navigation-compose:2.9.0")
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0")
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.7.0")
     implementation ("com.google.android.exoplayer:exoplayer:2.18.5")
-
+    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation ("com.android.volley:volley:1.2.1")
+    implementation ("androidx.core:core-ktx:1.9.0")
+    implementation ("org.apache.httpcomponents.client5:httpclient5:5.2")
+    implementation ("com.squareup.okhttp3:logging-interceptor:4.9.3")
+    implementation ("androidx.recyclerview:recyclerview:1.2.1")
 }

@@ -73,31 +73,54 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:src="@drawable/importanciaadaptarse"
+                android:contentDescription="@string/importancia_adaptabilidad"
                 android:adjustViewBounds="true"
                 android:paddingBottom="16dp"/>
 
             <!-- Videos de Ejemplo Práctico con proporción adecuada -->
+            <TextView
+                android:id="@+id/introduccion_video1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ejemplo_practico"
+                android:textSize="18sp"
+                android:paddingBottom="16dp"/>
             <com.google.android.exoplayer2.ui.PlayerView
                 android:id="@+id/exoplayer_Parte1"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 app:layout_constraintDimensionRatio="16:9"
+                android:contentDescription="@string/ejemplo_practico"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"/>
-
+            <TextView
+                android:id="@+id/introduccion_video2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ejemplo_practico2"
+                android:textSize="18sp"
+                android:paddingBottom="16dp"/>
             <com.google.android.exoplayer2.ui.PlayerView
                 android:id="@+id/exoplayer_Parte2"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
+                android:contentDescription="@string/ejemplo_practico2"
                 app:layout_constraintDimensionRatio="16:9"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"/>
-
+            <TextView
+                android:id="@+id/introduccion_video3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ejemplo_practico3"
+                android:textSize="18sp"
+                android:paddingBottom="16dp"/>
             <com.google.android.exoplayer2.ui.PlayerView
                 android:id="@+id/exoplayer_Parte3"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 app:layout_constraintDimensionRatio="16:9"
+                android:contentDescription="@string/ejemplo_practico3"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"/>
 
@@ -144,7 +167,48 @@
                 android:src="@drawable/habclave"
                 android:adjustViewBounds="true"
                 android:paddingBottom="16dp"/>
-
+            <TextView
+                android:id="@+id/final2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/estrategias_adaptabilidad"
+                android:textSize="18sp"
+                android:paddingBottom="16dp"/>
+            <TextView
+                android:id="@+id/final3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/flexibilidad_exito"
+                android:textSize="18sp"
+                android:paddingBottom="16dp"/>
+            <TextView
+                android:id="@+id/final6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/flexibilidad_exito2"
+                android:textSize="18sp"
+                android:paddingBottom="16dp"/>
+            <TextView
+                android:id="@+id/final7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/flexibilidad_exito3"
+                android:textSize="18sp"
+                android:paddingBottom="16dp"/>
+            <TextView
+                android:id="@+id/final8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/flexibilidad_exito4"
+                android:textSize="18sp"
+                android:paddingBottom="16dp"/>
+            <TextView
+                android:id="@+id/final4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/metodos_adapta"
+                android:textSize="18sp"
+                android:paddingBottom="16dp"/>
             <ImageView
                 android:id="@+id/metodos_adapta"
                 android:layout_width="match_parent"
@@ -162,6 +226,13 @@
                 android:adjustViewBounds="true"
                 android:paddingBottom="16dp"/>
 
+            <TextView
+                android:id="@+id/final5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/crecimiento_profesional"
+                android:textSize="18sp"
+                android:paddingBottom="16dp"/>
             <ImageView
                 android:id="@+id/crecimiento_profe_sostenible"
                 android:layout_width="match_parent"

@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".fragments.Module4Fragment">
 
-    <!-- Contenedor superior: Botón de regreso y título -->
+    <!-- Barra de Navegación Superior -->
     <LinearLayout
         android:id="@+id/headerContainer"
         android:layout_width="match_parent"
@@ -24,7 +24,7 @@
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:src="@drawable/ic_back_arrow"
-            android:contentDescription="@string/back_button_desc2"
+            android:contentDescription="@string/back_button_desc4"
             android:background="?attr/selectableItemBackground"
             android:scaleType="fitCenter"
             android:adjustViewBounds="true"/>
@@ -59,7 +59,81 @@
             android:padding="16dp">
 
             <!-- Introducción -->
-            <TextView android:id="@+id/module4_Intro" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/TitleText" android:text="@string/module_4_title"/>
+            <TextView
+                android:id="@+id/introduccion_modulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/introduccion_modulo4"
+                android:textSize="18sp"
+                android:paddingBottom="16dp"/>
+
+            <!-- Tipos de Riesgos -->
+            <TextView
+                android:id="@+id/riesgos_titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/riesgos_titulo"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:paddingBottom="16dp"/>
+
+            <ImageView
+                android:id="@+id/riesgos_imagen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/riesgos_tipos"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/riesgos_imagen_desc"
+                android:paddingBottom="16dp"/>
+
+            <!-- Estrategias de Mitigación -->
+            <TextView
+                android:id="@+id/estrategias_titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/estrategias_titulo"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:paddingBottom="16dp"/>
+
+            <ImageView
+                android:id="@+id/estrategias_imagen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/estrategias_prevencion"
+                android:contentDescription="@string/estrategias_imagen_desc"
+                android:paddingBottom="16dp"/>
+
+            <!-- Reflexión -->
+            <TextView
+                android:id="@+id/reflexion_titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/reflexion_titulo4"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:paddingBottom="16dp"/>
+
+            <TextView
+                android:id="@+id/reflexion_texto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/reflexion_texto4"
+                android:textSize="18sp"
+                android:paddingBottom="16dp"/>
+
+            <!-- Botón de evaluación -->
+            <Button
+                android:id="@+id/btn_Responder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_responder"
+                android:textSize="18sp"
+                android:background="@color/primary"
+                android:textColor="@color/white"
+                android:padding="10dp"
+                android:layout_marginTop="16dp"/>
         </LinearLayout>
     </ScrollView>
 

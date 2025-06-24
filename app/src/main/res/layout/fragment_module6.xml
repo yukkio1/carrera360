@@ -6,8 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragments.Module6Fragment">
-
-    <!-- Contenedor superior: Botón de regreso y título -->
     <LinearLayout
         android:id="@+id/headerContainer"
         android:layout_width="match_parent"
@@ -18,30 +16,29 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
-
+    <!-- Título del módulo -->
         <ImageButton
             android:id="@+id/btn_Back"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:src="@drawable/ic_back_arrow"
-            android:contentDescription="@string/back_button_desc2"
+            android:contentDescription="@string/back_button_desc5"
             android:background="?attr/selectableItemBackground"
             android:scaleType="fitCenter"
             android:adjustViewBounds="true"/>
-
-        <TextView
-            android:id="@+id/title_Module6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/module_6_title"
-            android:textSize="22sp"
-            android:textStyle="bold"
-            android:textColor="@color/white"
-            android:gravity="center"
-            android:paddingStart="16dp"/>
+    <TextView
+        android:id="@+id/title_module_6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/module_6_title"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:paddingStart="16dp"/>
     </LinearLayout>
 
-    <!-- Contenido deslizable -->
+    <!-- Contenedor Scroll -->
     <ScrollView
         android:id="@+id/scroll_Content"
         android:layout_width="match_parent"
@@ -58,8 +55,113 @@
             android:orientation="vertical"
             android:padding="16dp">
 
-            <!-- Introducción -->
-            <TextView android:id="@+id/module6_Intro" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/TitleText" android:text="@string/module_6_title"/>
+            <!-- Objetivo del módulo con icono -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:contentDescription="@string/ic_target_text"
+                    android:src="@drawable/ic_target"/>
+
+                <TextView
+                    android:id="@+id/module6_objective"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/module6_objective"
+                    android:textSize="18sp"
+                    android:paddingStart="8dp"/>
+            </LinearLayout>
+
+            <!-- Imagen representativa -->
+            <ImageView
+                android:id="@+id/image_intro"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/job_search_intro"
+                android:contentDescription="@string/job_search_intro_text"
+                android:layout_marginTop="16dp"
+                android:scaleType="fitCenter"/>
+
+            <!-- Introducción con icono -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:contentDescription="@string/ic_strategy_text"
+                    android:src="@drawable/ic_strategy"/>
+
+                <TextView
+                    android:id="@+id/module6_intro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/module6_intro"
+                    android:textSize="18sp"
+                    android:paddingStart="8dp"/>
+            </LinearLayout>
+
+            <!-- Sección: Preparación -->
+            <TextView
+                android:id="@+id/title_preparation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/title_preparation"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"/>
+
+            <ImageView
+                android:id="@+id/image_preparation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/preparation_steps_text"
+                android:src="@drawable/preparation_steps"
+                android:adjustViewBounds="true"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:id="@+id/preparation_steps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/preparation_steps"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Sección: Proceso de Postulación -->
+            <TextView
+                android:id="@+id/title_application_process"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/title_application_process"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"/>
+
+            <ImageView
+                android:id="@+id/image_application"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/application_process_text"
+                android:src="@drawable/application_process"
+                android:adjustViewBounds="true"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:id="@+id/application_steps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/application_steps"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"/>
+
         </LinearLayout>
     </ScrollView>
 

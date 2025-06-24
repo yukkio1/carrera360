@@ -6,13 +6,19 @@ import android.util.Log
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.example.inlab.R
+import com.example.inlab.apiregistroModulo.RetrofitClient
 import com.example.inlab.databinding.FragmentModule2Binding
 import com.google.android.exoplayer2.ExoPlayer
 import com.google.android.exoplayer2.MediaItem
 import com.google.android.exoplayer2.ui.PlayerView
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import com.example.inlab.viewmodel.UsuarioViewModel
 
 class Module2Fragment : Fragment(R.layout.fragment_module2) {
     private var _binding: FragmentModule2Binding? = null
@@ -26,6 +32,26 @@ class Module2Fragment : Fragment(R.layout.fragment_module2) {
         _binding = FragmentModule2Binding.bind(view)
 
         Log.d("ExoPlayer", "Fragmento Module2Fragment iniciado correctamente.")
+
+        // 👇 Llamada a la API: Registro del módulo 2
+        val usuarioViewModel = ViewModelProvider(requireActivity()).get(UsuarioViewModel::class.java)
+        val idUsuario = usuarioViewModel.idUsuario.value ?: 0
+        val idModulo = 8 // Módulo correspondiente a habilidades
+
+        CoroutineScope(Dispatchers.IO).launch {
+            try {
+                val response = RetrofitClient.registroModuloApi.registrarModulo(idUsuario, idModulo)
+
+                if (response.isSuccessful && response.body() != null) {
+                    val resultado = response.body()
+                    println("Registro Módulo $idModulo: ${resultado?.mensaje}")
+                } else {
+                    println("Error en registro de módulo $idModulo: ${response.errorBody()?.string()}")
+                }
+            } catch (e: Exception) {
+                println("Error de red o servidor: ${e.message}")
+            }
+        }
 
         setupButtons()
         setupBottomNavigation()

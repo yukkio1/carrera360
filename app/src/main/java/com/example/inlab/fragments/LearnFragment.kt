@@ -10,7 +10,7 @@ import com.example.inlab.adapters.CarreraAdapter
 import com.example.inlab.databinding.FragmentLearnBinding
 import com.example.inlab.modelo.Carrera
 import com.google.android.material.bottomnavigation.BottomNavigationView
-
+import com.example.inlab.viewmodel.UsuarioViewModel
 class LearnFragment : Fragment(R.layout.fragment_learn) {
     private var _binding: FragmentLearnBinding? = null
     private val binding get() = _binding!!
