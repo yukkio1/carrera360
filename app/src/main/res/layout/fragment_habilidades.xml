@@ -8,6 +8,7 @@
     tools:context=".fragments.HabilidadesFragment">
 
     <!-- Contenedor superior: Botón de regreso y título -->
+
     <LinearLayout
         android:id="@+id/headerContainer"
         android:layout_width="match_parent"
@@ -18,7 +19,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
-
         <ImageButton
             android:id="@+id/btn_Back"
             android:layout_width="48dp"
@@ -30,15 +30,24 @@
             android:adjustViewBounds="true"/>
 
         <TextView
-            android:id="@+id/title_Habilidades"
-            android:layout_width="match_parent"
+            android:id="@+id/title_Result4"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="@string/habilidades_label"
             android:textSize="22sp"
             android:textStyle="bold"
             android:textColor="@color/white"
             android:gravity="center"
             android:paddingStart="16dp"/>
+
+        <ImageView
+            android:id="@+id/ivConceptMap6"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:src="@drawable/icono"
+            android:adjustViewBounds="true"/>
+
     </LinearLayout>
 
     <!-- Contenido deslizable -->
@@ -70,6 +79,7 @@
                 android:layout_height="wrap_content"
                 android:contentDescription="@string/video2descripcion"
                 app:layout_constraintDimensionRatio="9:16"/>
+            <TextView android:id="@+id/videos" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/video" android:textSize="30px"/>
             <!-- Estrategias -->
 
             <ImageView
@@ -80,7 +90,8 @@
                 android:contentDescription="@string/importancia_adaptabilidad"
                 android:adjustViewBounds="true"
                 android:paddingBottom="16dp"/>
-
+            <TextView android:id="@+id/imagen2" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/imagen" android:textSize="30px"/>
+            <TextView android:id="@+id/imagen3" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/habilidades_step_1" android:textSize="30px"/>
             <!-- Casos y conclusión -->
             <TextView android:id="@+id/habilidades_Situaciones_Title" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/habilidades_situaciones_title"/>
             <com.google.android.exoplayer2.ui.PlayerView
@@ -89,6 +100,7 @@
                 android:layout_height="wrap_content"
                 android:contentDescription="@string/video2descripcion"
                 app:layout_constraintDimensionRatio="16:9"/>
+            <TextView android:id="@+id/videos2" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/video" android:textSize="30px"/>
             <!-- PREVENCION -->
             <TextView android:id="@+id/habilidades_prevenciones_title" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/habilidades_prevenciones_title"/>
 
@@ -98,6 +110,8 @@
                 android:layout_height="wrap_content"
                 android:contentDescription="@string/video2descripcion"
                 app:layout_constraintDimensionRatio="9:16"/>
+            <TextView android:id="@+id/videos3" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/video" android:textSize="30px"/>
+
             <TextView android:id="@+id/habilidades_Conclusion_Title" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/habilidades_conclusion_title"/>
             <TextView android:id="@+id/habilidades_Conclusion_Text_1" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/habilidades_conclusion_text_1"/>
             <TextView android:id="@+id/habilidades_Conclusion_Text_2" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/habilidades_conclusion_text_2"/>

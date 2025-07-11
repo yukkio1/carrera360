@@ -45,7 +45,7 @@ android {
     buildFeatures {
         compose = true
         viewBinding = true
-        dataBinding = true
+        dataBinding=true
     }
 }
 
@@ -94,4 +94,6 @@ dependencies {
     implementation ("org.apache.httpcomponents.client5:httpclient5:5.2")
     implementation ("com.squareup.okhttp3:logging-interceptor:4.9.3")
     implementation ("androidx.recyclerview:recyclerview:1.2.1")
+    implementation ("androidx.constraintlayout:constraintlayout:2.1.4")
+
 }

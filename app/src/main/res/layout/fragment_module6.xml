@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragments.Module6Fragment">
+
     <LinearLayout
         android:id="@+id/headerContainer"
         android:layout_width="match_parent"
@@ -16,26 +17,35 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
-    <!-- Título del módulo -->
         <ImageButton
             android:id="@+id/btn_Back"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:src="@drawable/ic_back_arrow"
-            android:contentDescription="@string/back_button_desc5"
+            android:contentDescription="@string/back_button_desc"
             android:background="?attr/selectableItemBackground"
             android:scaleType="fitCenter"
             android:adjustViewBounds="true"/>
-    <TextView
-        android:id="@+id/title_module_6"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/module_6_title"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        android:textColor="@color/white"
-        android:gravity="center"
-        android:paddingStart="16dp"/>
+
+        <TextView
+            android:id="@+id/title_Result4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/module_6_title"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:paddingStart="16dp"/>
+
+        <ImageView
+            android:id="@+id/ivConceptMap6"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:src="@drawable/icono"
+            android:adjustViewBounds="true"/>
+
     </LinearLayout>
 
     <!-- Contenedor Scroll -->
@@ -77,14 +87,34 @@
             </LinearLayout>
 
             <!-- Imagen representativa -->
+            <com.google.android.exoplayer2.ui.PlayerView
+                android:id="@+id/gato"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintDimensionRatio="16:9"
+                android:contentDescription="@string/ejemplo_practico"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+            <TextView android:id="@+id/videos1" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/video" android:textSize="30px"/>
+            <com.google.android.exoplayer2.ui.PlayerView
+                android:id="@+id/perro"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintDimensionRatio="16:9"
+                android:contentDescription="@string/ejemplo_practico"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+            <TextView android:id="@+id/videos2" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/video" android:textSize="30px"/>
             <ImageView
-                android:id="@+id/image_intro"
+                android:id="@+id/cisne"
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:src="@drawable/job_search_intro"
-                android:contentDescription="@string/job_search_intro_text"
-                android:layout_marginTop="16dp"
-                android:scaleType="fitCenter"/>
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/preparation_steps_text"
+                android:src="@drawable/cisne"
+                android:adjustViewBounds="true"
+                android:layout_marginBottom="16dp"/>
+            <TextView android:id="@+id/imagen4" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/imagen" android:textSize="30px"/>
+            <TextView android:id="@+id/imagen5" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/imagen2" android:textSize="30px"/>
 
             <!-- Introducción con icono -->
             <LinearLayout
@@ -126,6 +156,7 @@
                 android:src="@drawable/preparation_steps"
                 android:adjustViewBounds="true"
                 android:layout_marginBottom="16dp"/>
+            <TextView android:id="@+id/imagen2" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/imagen" android:textSize="30px"/>
 
             <TextView
                 android:id="@+id/preparation_steps"
@@ -153,14 +184,19 @@
                 android:src="@drawable/application_process"
                 android:adjustViewBounds="true"
                 android:layout_marginBottom="16dp"/>
+            <TextView android:id="@+id/imagen3" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/imagen" android:textSize="30px"/>
 
-            <TextView
-                android:id="@+id/application_steps"
-                android:layout_width="match_parent"
+            <!-- Botón para ir a la evaluación -->
+            <Button
+                android:id="@+id/btn_Responder"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/application_steps"
-                android:textSize="16sp"
-                android:layout_marginBottom="16dp"/>
+                android:text="@string/btn_responder"
+                android:textSize="18sp"
+                android:background="@color/primary"
+                android:textColor="@color/white"
+                android:padding="10dp"
+                android:layout_marginTop="16dp"/>
 
         </LinearLayout>
     </ScrollView>

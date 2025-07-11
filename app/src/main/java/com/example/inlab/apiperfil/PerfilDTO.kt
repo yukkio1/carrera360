@@ -1,5 +1,7 @@
 package com.example.inlab.apiperfil
 
+
+
 data class PerfilDTO(
     val respuestasIniciales: List<String>,
     val cantidadEvaluacionesCompletadas: Int,

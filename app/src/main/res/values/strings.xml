@@ -17,7 +17,7 @@
     <string name="error_conexion">Error de conexión ❌</string>
     <string name="profile_avatar_desc">avatar</string>
     <string name="achievements_label">Logros</string>
-    <string name="no_modules_remaining">Ya aprendiste todos los módulos que tenías que aprender</string>
+    <string name="no_modules_remaining">Ya aprendiste todos los módulos, felicidades</string>
     <string name="modules_to_complete_label">Módulos que faltan aprender</string>
     <string name="completed_evaluations_label">Evaluaciones completadas</string>
     <string name="days_since_started_label">Días desde que comenzó</string>
@@ -98,30 +98,15 @@
     <string name="marketing_definition">El marketing personal gestiona tu imagen y posicionamiento en la industria.</string>
 
     <string name="marketing_importancia_title">📌 ¿Por qué es importante el marketing personal?</string>
-    <string name="marketing_importancia_description_1">🔹 Te hace visible ante nuevas oportunidades.</string>
-    <string name="marketing_importancia_description_2">🔹 Genera confianza y credibilidad profesional.</string>
-    <string name="marketing_importancia_description_3">🔹 Te diferencia de la competencia y fortalece tu posicionamiento.</string>
+
+    <string name="marketing_importancia_description_3">🔹Referencia del libro - Administracion de carrera: El unico trabajo que nunca acaba Pg. 112</string>
     <string name="marketing_importancia_description_4">✅ Si trabajas en tu marca personal, las oportunidades llegan a ti.</string>
     <string name="marketing_importancia_description_5">✅ Si no lo haces, dependerás de la suerte para avanzar.</string>
 
     <string name="marketing_mejorar_title">📌 Estrategias para mejorar tu visibilidad profesional</string>
 
-    <string name="marketing_step_1">1️⃣ Define tu propuesta de valor 🎯</string>
-    <string name="marketing_step_1_details_1">✔️ Destaca tus fortalezas y crea un mensaje claro sobre tu aporte.</string>
-    <string name="marketing_step_1_details_2">💡 Pregunta a colegas y clientes qué valoran de tu trabajo.</string>
 
-    <string name="marketing_step_2">2️⃣ Construye una presencia digital sólida 🌍</string>
-    <string name="marketing_step_2_details_1">✔️ Optimiza tu perfil en LinkedIn y otras redes profesionales.</string>
-    <string name="marketing_step_2_details_2">✔️ Comparte contenido relevante sobre tu especialidad.</string>
-    <string name="marketing_step_2_details_3">💡 Andrea publicó análisis digitales y fue invitada a conferencias.</string>
-
-    <string name="marketing_step_3">3️⃣ Genera contenido de valor 📢</string>
-    <string name="marketing_step_3_details_1">✔️ Escribe artículos, comparte experiencias y publica contenido.</string>
-    <string name="marketing_step_3_details_2">💡 Si no te gusta escribir, prueba videos o podcasts.</string>
-
-    <string name="marketing_step_4">4️⃣ Expande tu red de contactos 🤝</string>
-    <string name="marketing_step_4_details_1">✔️ Conéctate con expertos, participa en eventos y busca colaboraciones.</string>
-    <string name="marketing_step_4_details_2">💡 Javier interactuó con líderes en IA y consiguió oportunidades laborales.</string>
+    <string name="marketing_step_4_details_2">🔹Referencia del libro - Administracion de carrera: El unico trabajo que nunca acaba Pg. 152</string>
 
     <string name="marketing_situaciones_title">🎯 Casos donde el marketing personal hizo la diferencia</string>
     <string name="marketing_situation_1">✨ Caso 1: Un diseñador optimiza su perfil y recibe propuestas de trabajo.</string>
@@ -157,29 +142,8 @@
 
     <string name="habilidades_mejorar_title">📌 Estrategias para desarrollar habilidades clave</string>
 
-    <string name="habilidades_step_1">1️⃣ Identifica las habilidades esenciales para tu campo 🎯</string>
-    <string name="habilidades_step_1_details_1">✔️ Analiza las competencias clave que requiere tu industria.</string>
-    <string name="habilidades_step_1_details_2">✔️ Observa qué habilidades tienen los profesionales exitosos.</string>
-    <string name="habilidades_step_1_details_3">✔️ Define tres habilidades clave para fortalecer tu perfil.</string>
-    <string name="habilidades_step_1_details_4">💡 Revisa perfiles de empleo y analiza competencias más solicitadas.</string>
+    <string name="habilidades_step_1">🔹Referencia del libro - Administracion de carrera: El unico trabajo que nunca acaba Pg. 52</string>
 
-    <string name="habilidades_step_2">2️⃣ Capacitación y aprendizaje continuo 📚</string>
-    <string name="habilidades_step_2_details_1">✔️ Inscríbete en cursos y certificaciones relevantes.</string>
-    <string name="habilidades_step_2_details_2">✔️ Aplica lo aprendido en proyectos y actividades laborales.</string>
-    <string name="habilidades_step_2_details_3">✔️ Busca mentores o expertos que te ayuden a perfeccionar tus habilidades.</string>
-    <string name="habilidades_step_2_details_4">💡 Ricardo tomó un curso de UX/UI y logró liderar un equipo de diseño.</string>
-
-    <string name="habilidades_step_3">3️⃣ Mejora tu comunicación y trabajo en equipo 🤝</string>
-    <string name="habilidades_step_3_details_1">✔️ Desarrolla tu capacidad de presentar ideas con claridad.</string>
-    <string name="habilidades_step_3_details_2">✔️ Aprende estrategias de negociación y manejo de conflictos.</string>
-    <string name="habilidades_step_3_details_3">✔️ Practica la inteligencia emocional para mejorar la colaboración.</string>
-    <string name="habilidades_step_3_details_4">💡 Usa storytelling para hacer tus ideas más impactantes.</string>
-
-    <string name="habilidades_step_4">4️⃣ Cultiva la adaptabilidad y pensamiento estratégico 🔄</string>
-    <string name="habilidades_step_4_details_1">✔️ Aprende a manejar cambios y resolver problemas con confianza.</string>
-    <string name="habilidades_step_4_details_2">✔️ Mantente actualizado con las últimas tendencias de tu industria.</string>
-    <string name="habilidades_step_4_details_3">✔️ Optimiza tu capacidad para tomar decisiones basadas en datos.</string>
-    <string name="habilidades_step_4_details_4">💡 Sofía mejoró su adaptabilidad y logró liderar proyectos dinámicos.</string>
 
     <string name="habilidades_situaciones_title">🎯 Casos donde el desarrollo de habilidades marcó la diferencia</string>
     <string name="habilidades_situation_1">✨ Un programador mejora su comunicación y empieza a liderar proyectos.</string>
@@ -206,16 +170,11 @@
     <string name="realidad_intro">El mundo laboral evoluciona constantemente. Adaptarse es clave para crecer profesionalmente. 🚀</string>
     <string name="realidad_definition">Las industrias cambian, las reglas evolucionan y las habilidades requeridas se transforman. La adaptación es esencial.</string>
 
-    <string name="realidad_importancia_title">📌 ¿Cómo ha cambiado la realidad laboral?</string>
-    <string name="realidad_importancia_description_1">🔹 Transformación digital y automatización.</string>
-    <string name="realidad_importancia_description_2">🔹 Crecimiento del trabajo híbrido y remoto.</string>
-    <string name="realidad_importancia_description_3">🔹 Nuevas habilidades demandadas en todas las industrias.</string>
-    <string name="realidad_importancia_description_4">✅ Si te mantienes actualizado, las oportunidades seguirán llegando.</string>
-    <string name="realidad_importancia_description_5">✅ Si te resistes al cambio, tu crecimiento profesional se verá afectado.</string>
 
-    <string name="realidad_mejorar_title">📌 Estrategias para Adaptarse a la Nueva Realidad Laboral</string>
 
-    <string name="realidad_step_1">1️⃣ Mantente en aprendizaje constante 📚</string>
+    <string name="realidad_mejorar_title">🔹Referencia del libro - Administracion de carrera: El unico trabajo que nunca acaba Pg. 20</string>
+
+    <string name="realidad_step_1">🔹Referencia del libro - Administracion de carrera: El unico trabajo que nunca acaba Pg. 18</string>
     <string name="realidad_step_1_details_1">✔️ Actualiza tus conocimientos, investiga tendencias y fortalece habilidades digitales.</string>
     <string name="realidad_step_1_details_2">💡 No esperes a que tu empresa te capacite, aprende por tu cuenta.</string>
 
@@ -239,12 +198,7 @@
     <string name="realidad_situation_2">✨ Un ingeniero se capacita en IA y expande sus oportunidades.</string>
     <string name="realidad_situation_3">✨ Un especialista en marketing digital se adapta y aumenta su impacto.</string>
 
-    <string name="realidad_prevenciones_title">🚨 Errores que pueden frenar la adaptación laboral</string>
-    <string name="realidad_prevenciones_1">🚫 Resistirse al cambio y no aceptar nuevas oportunidades.</string>
-    <string name="realidad_prevenciones_2">🚫 No actualizar habilidades según las demandas del mercado.</string>
-    <string name="realidad_prevenciones_3">🚫 No construir una red de contactos que facilite el crecimiento.</string>
-    <string name="realidad_prevenciones_4">🚫 Esperar estabilidad en un entorno laboral dinámico.</string>
-    <string name="realidad_prevenciones_5">💡 Evalúa tu perfil profesional cada seis meses y ajusta tu estrategia.</string>
+
 
     <string name="realidad_conclusion_title">📌 Conclusión</string>
     <string name="realidad_conclusion_text_1">🌟 La adaptación laboral es clave para mantenerse vigente y competitivo.</string>
@@ -258,37 +212,12 @@
     <string name="contactos_definition">Una red sólida te brinda acceso a oportunidades, conocimientos y posicionamiento en tu industria.</string>
 
     <string name="contactos_importancia_title">📌 ¿Por qué es importante construir una red de confianza?</string>
-    <string name="contactos_importancia_description_1">🔹 Acceso a oportunidades laborales que no siempre se publican.</string>
-    <string name="contactos_importancia_description_2">🔹 Intercambio de conocimientos con expertos en diferentes áreas.</string>
-    <string name="contactos_importancia_description_3">🔹 Posicionamiento en la industria y fortalecimiento de credibilidad.</string>
-    <string name="contactos_importancia_description_4">✅ Si cultivas relaciones genuinas, tu carrera crecerá rápidamente.</string>
-    <string name="contactos_importancia_description_5">✅ Si descuidas el networking, dependerás solo de la competencia.</string>
+    <string name="contactos_importancia_description_1">🔹Referencia del libro - Administracion de carrera: El unico trabajo que nunca acaba Pg. 146</string>
+
 
     <string name="contactos_mejorar_title">📌 Estrategias para Construir una Red de Confianza</string>
 
-    <string name="contactos_step_1">1️⃣ Genera conexiones auténticas 🤝</string>
-    <string name="contactos_step_1_details_1">✔️ Acércate a personas con intereses alineados con los tuyos.</string>
-    <string name="contactos_step_1_details_2">✔️ Interactúa en espacios digitales y presenciales relevantes.</string>
-    <string name="contactos_step_1_details_3">✔️ Sé genuino y muestra interés por el crecimiento de los demás.</string>
-    <string name="contactos_step_1_details_4">💡 El networking no es solo pedir ayuda, primero aporta valor.</string>
-
-    <string name="contactos_step_2">2️⃣ Fortalece la confianza profesional 🔒</string>
-    <string name="contactos_step_2_details_1">✔️ Sé transparente y confiable en tus interacciones.</string>
-    <string name="contactos_step_2_details_2">✔️ Cumple tus compromisos y demuestra ética profesional.</string>
-    <string name="contactos_step_2_details_3">✔️ Comparte tu conocimiento y experiencia para generar credibilidad.</string>
-    <string name="contactos_step_2_details_4">💡 Carla ganó reconocimiento al compartir estudios en redes.</string>
-
-    <string name="contactos_step_3">3️⃣ Participa en eventos y comunidades 📅</string>
-    <string name="contactos_step_3_details_1">✔️ Asiste a reuniones, conferencias y foros de tu sector.</string>
-    <string name="contactos_step_3_details_2">✔️ Únete a grupos profesionales donde puedas aportar y aprender.</string>
-    <string name="contactos_step_3_details_3">✔️ Conéctate con expertos y líderes de tu industria.</string>
-    <string name="contactos_step_3_details_4">💡 Participar en hackathons y meetups abre oportunidades únicas.</string>
-
-    <string name="contactos_step_4">4️⃣ Construye relaciones a largo plazo 🌱</string>
-    <string name="contactos_step_4_details_1">✔️ Mantén contacto frecuente con tus conexiones clave.</string>
-    <string name="contactos_step_4_details_2">✔️ Comparte contenido útil y recursos valiosos con tu red.</string>
-    <string name="contactos_step_4_details_3">✔️ Sé un puente entre profesionales con intereses complementarios.</string>
-    <string name="contactos_step_4_details_4">💡 Luis expandió su negocio al colaborar con contactos clave.</string>
+    <string name="contactos_step_4_details_4">🔹Referencia del libro - Administracion de carrera: El unico trabajo que nunca acaba Pg. 126</string>
 
     <string name="contactos_situaciones_title">🎯 Casos donde el networking y la confianza marcaron la diferencia</string>
     <string name="contactos_situation_1">✨ Un diseñador fortalece su red y recibe proyectos sin buscarlos.</string>
@@ -314,34 +243,13 @@
     <string name="errores_intro">Evitar errores en la inserción laboral es clave para asegurar oportunidades y crecimiento profesional. 🚀</string>
     <string name="errores_definition">Muchos profesionales cometen errores que afectan su empleabilidad. Identificarlos y corregirlos es esencial.</string>
 
-    <string name="errores_importancia_title">📌 ¿Por qué es clave evitar estos errores?</string>
-    <string name="errores_importancia_description_1">🔹 Un perfil poco definido puede hacerte invisible en el mercado laboral.</string>
-    <string name="errores_importancia_description_2">🔹 No actualizar habilidades limita tu crecimiento en una industria cambiante.</string>
-    <string name="errores_importancia_description_3">🔹 Una mala estrategia de networking reduce tus posibilidades laborales.</string>
-    <string name="errores_importancia_description_4">✅ Si mejoras estos aspectos, tu empleabilidad aumentará significativamente.</string>
-    <string name="errores_importancia_description_5">✅ La adaptación y actualización constante son claves en el mundo profesional.</string>
+    <string name="errores_importancia_title">🔹Referencia del libro - Administracion de carrera: El unico trabajo que nunca acaba Pg. 19</string>
+
 
     <string name="errores_mejorar_title">📌 Estrategias para superar obstáculos laborales</string>
 
-    <string name="errores_step_1">1️⃣ Define tu perfil profesional con claridad 🎯</string>
-    <string name="errores_step_1_details_1">✔️ Destaca tus habilidades y fortalezas en tu sector.</string>
-    <string name="errores_step_1_details_2">✔️ Ajusta tu CV y redes para reflejar tu especialización.</string>
-    <string name="errores_step_1_details_3">💡 Analiza el mercado y adapta tu perfil a sus demandas.</string>
 
-    <string name="errores_step_2">2️⃣ Mantente actualizado y aprende constantemente 📚</string>
-    <string name="errores_step_2_details_1">✔️ Capacítate en nuevas tecnologías y metodologías.</string>
-    <string name="errores_step_2_details_2">✔️ Identifica tendencias y ajústate a ellas.</string>
-    <string name="errores_step_2_details_3">💡 Revisa plataformas de cursos y mejora tus habilidades.</string>
-
-    <string name="errores_step_3">3️⃣ Optimiza tu presentación en CV y entrevistas 📝</string>
-    <string name="errores_step_3_details_1">✔️ Usa un CV bien estructurado y sin errores.</string>
-    <string name="errores_step_3_details_2">✔️ Practica respuestas y mejora tu lenguaje corporal.</string>
-    <string name="errores_step_3_details_3">💡 Destaca logros concretos y resultados medibles.</string>
-
-    <string name="errores_step_4">4️⃣ Construye una red de contactos estratégicos 🤝</string>
-    <string name="errores_step_4_details_1">✔️ Conéctate con expertos y profesionales de tu área.</string>
-    <string name="errores_step_4_details_2">✔️ Participa en eventos y grupos de tu industria.</string>
-    <string name="errores_step_4_details_3">💡 Usa LinkedIn para fortalecer tu red de oportunidades.</string>
+    <string name="errores_step_4_details_3">🔹Referencia del libro - Administracion de carrera: El unico trabajo que nunca acaba Pg. 155</string>
 
     <string name="errores_situaciones_title">🎯 Casos donde corregir errores marcó la diferencia</string>
     <string name="errores_situation_1">✨ Caso: Un diseñador optimiza su CV y recibe más entrevistas.</string>
@@ -440,7 +348,7 @@
         <string name="button_refresh">Actualizar recursos</string>
 
     <!-- MODULE 1 -->
-
+        <string name="module_title2">CREDITOS</string>
         <string name="module_title">Diseño y Planificación de Carrera</string>
         <string name="concept_title">Concepto Clave</string>
         <string name="concept_description">La planificación estratégica permite definir objetivos profesionales alineados con valores, necesidades y habilidades.</string>
@@ -520,7 +428,7 @@
     <string name="importancia_adaptabilidad">La adaptabilidad es la capacidad de ajustar nuestras habilidades y mentalidad según las circunstancias.</string>
 
     <!-- Ejemplo práctico: Juan -->
-    <string name="ejemplo_practico">Juan, un diseñador gráfico, perdió su empleo debido a la automatización en su industria.</string>
+    <string name="ejemplo_practico">Ejemplo practico sobre la importancia de la adaptabilidad</string>
     <string name="ejemplo_practico2">En lugar de rendirse, decidió aprender a crear diseños pensados para mejorar la experiencia de quienes usan apps y sitios web. </string>
     <string name="ejemplo_practico3">Hoy trabaja en una startup tecnológica, aplicando lo que aprendió y aumentando su valor en el mercado laboral.</string>
 
@@ -623,6 +531,7 @@
 
     <!-- Tipos de Riesgos -->
     <string name="riesgos_titulo">Tipos de Riesgos Profesionales</string>
+    <string name="riesgos_titulo2">¿Que es un ancla de carrera?</string>
     <string name="riesgos_imagen_desc">Imagen representativa de los diferentes riesgos laborales.</string>
 
     <string name="riesgo_1">Personales: Falta de habilidades, baja motivación.</string>
@@ -803,13 +712,13 @@
     <string name="ic_strategy_text">tarjeta</string>
     <string name="preparation_steps_text">tarjeta</string>
     <string name="application_process_text">tarjeta</string>
-    <string name="application_steps">📄 Adapta tu currículum a cada oferta.\n📩 Redacta correos de presentación efectivos.\n🎙️ Prepárate para entrevistas: respuestas y lenguaje corporal.\n📊 Evalúa la oferta antes de aceptar.</string>
     <!-- MODULE 7 -->
 
     <!-- Títulos y Encabezados -->
     <string name="module7_title">Actualización de Habilidades</string>
     <string name="module7_objective">🎯 Aprende estrategias para mantener tus habilidades relevantes en el mercado laboral.</string>
     <string name="module7_intro">🔎 La actualización constante de habilidades es clave para el éxito profesional.</string>
+    <string name="module7_ajo">🔹Referencia del libro - Administracion de carrera: El unico trabajo que nunca acaba Pg. 106</string>
 
     <!-- Sección: Estrategias -->
     <string name="title_strategies">📌 Estrategias para actualizar habilidades</string>
@@ -872,4 +781,138 @@
         <string name="result_feedback">Analiza tus respuestas y ajusta tu aprendizaje para mejorar.</string>
     <string name="achievement_1">Logro por completar el aprendizaje de la inserción laboral</string>
     <string name="achievement_2">Logro por completar el aprendizaje de la administración de carrera</string>
+
+
+    <string name="evaluation2_title">Evaluación Módulo 2</string>
+    <string name="introduction_evaluation2">En esta evaluación reflexionaremos sobre las habilidades clave que estás desarrollando.</string>
+
+    <!-- Preguntas -->
+    <string name="question1_evaluation2">¿Cuál de estas habilidades consideras más importante?</string>
+    <string name="question2_evaluation2">¿Cómo evalúas tu nivel actual en colaboración en equipo?</string>
+    <string name="question3_evaluation2">¿Prefieres aprender nuevas habilidades mediante?</string>
+
+    <!-- Opciones -->
+    <string name="option1_evaluation2">Comunicación efectiva</string>
+    <string name="option2_evaluation2">Pensamiento crítico</string>
+    <string name="option3_evaluation2">Trabajo en equipo</string>
+    <string name="option4_evaluation2">Alto nivel</string>
+    <string name="option5_evaluation2">Nivel intermedio</string>
+    <string name="option6_evaluation2">Necesito mejorar</string>
+    <string name="option7_evaluation2">Proyectos prácticos</string>
+    <string name="option8_evaluation2">Clases teóricas</string>
+    <string name="option9_evaluation2">Aprender solo sin orientación</string>
+
+    <!-- Mensajes -->
+    <string name="btn_submit_evaluation">Enviar Respuesta</string>
+    <string name="default_result_message">Aquí se mostrarán los resultados...</string>
+    <string name="reflection_text2">Reflexiona cómo tus respuestas impactan en tu desarrollo profesional.</string>
+    <string name="back_button_desc_evaluation2">Botón de retroceso para evaluación</string>
+    <string name="user_not_found">Usuario no encontrado</string>
+    <string name="communication_high_level_practical_projects">Tu elección indica que valoras la comunicación efectiva y aprendes mejor mediante proyectos prácticos. Este enfoque te permitirá desarrollar habilidades colaborativas y aplicar conocimientos de manera práctica.</string>
+    <string name="critical_thinking_intermediate_theoretical_classes">Tu elección muestra que priorizas el pensamiento crítico y aprendes mejor mediante clases teóricas. Esto te ayudará a expresarte claramente y construir un sólido fundamento teórico antes de aplicarlo en situaciones reales.</string>
+    <string name="teamwork_improve_self_learning">Tu elección sugiere que necesitas mejorar en trabajo en equipo y prefieres aprender de manera autodidacta. Este enfoque puede fomentar la independencia, pero considera buscar mentorías o feedback externo para acelerar tu crecimiento.</string>
+    <string name="default_reflection_message">Reflexiona cómo tus respuestas impactan en tu desarrollo profesional.</string>
+    <string name="reflection_communication_high_level_practical_projects">Tu elección indica que valoras la comunicación efectiva y aprendes mejor mediante proyectos prácticos. Este enfoque te permitirá desarrollar habilidades colaborativas y aplicar conocimientos de manera práctica.</string>
+    <string name="reflection_critical_thinking_intermediate_theoretical_classes">Tu elección muestra que priorizas el pensamiento crítico y aprendes mejor mediante clases teóricas. Esto te ayudará a expresarte claramente y construir un sólido fundamento teórico antes de aplicarlo en situaciones reales.</string>
+    <string name="reflection_teamwork_improve_self_learning">Tu elección sugiere que necesitas mejorar en trabajo en equipo y prefieres aprender de manera autodidacta. Este enfoque puede fomentar la independencia, pero considera buscar mentorías o feedback externo para acelerar tu crecimiento.</string>
+
+    <!-- Evaluación Módulo 6 -->
+    <string name="evaluation6_title">Evaluación Módulo 6</string>
+    <string name="introduction_evaluation6">En esta evaluación reflexionaremos sobre tus habilidades para dominar entrevistas de trabajo.</string>
+
+    <!-- Pregunta 1 -->
+    <string name="question1_evaluation6">¿Cómo te preparas normalmente para una entrevista de trabajo?</string>
+    <string name="option1_question1_module6">A) Investigando sobre la empresa y practicando respuestas comunes.</string>
+    <string name="option2_question1_module6">B) Revisando mi currículum y esperando preguntas técnicas.</string>
+    <string name="option3_question1_module6">C) Voy con lo básico y confío en improvisar.</string>
+
+    <!-- Pregunta 2 -->
+    <string name="question2_evaluation6">¿Qué tan cómodo te sientes hablando de tus logros y habilidades?</string>
+    <string name="option1_question2_module6">A) Totalmente cómodo, sé comunicar mis fortalezas.</string>
+    <string name="option2_question2_module6">B) Moderadamente cómodo, pero necesito mejorar en detalles.</string>
+    <string name="option3_question2_module6">C) Me cuesta hablar de mí sin sentirme inseguro.</string>
+
+    <!-- Pregunta 3 -->
+    <string name="question3_evaluation6">¿Prefieres que la entrevista sea más:</string>
+    <string name="option1_question3_module6">A) Estructurada y formal, con preguntas predecibles.</string>
+    <string name="option2_question3_module6">B) Conversacional y dinámica, con espacio para preguntar también.</string>
+    <string name="option3_question3_module6">C) Abierta y flexible, dependiendo de cómo fluya la conversación.</string>
+
+    <!-- Retroalimentación -->
+    <!-- Retroalimentación única por combinación de respuestas -->
+    <string name="reflection_option1_1_1">Tu elección muestra que tienes una preparación sólida para entrevistas. Esta actitud proactiva te ayudará a destacar y generar confianza desde el primer contacto.</string>
+    <string name="reflection_option1_2_3">Tu enfoque es estructurado, pero abierto a nuevas dinámicas. Esto es una combinación efectiva para mostrar profesionalismo y flexibilidad durante la entrevista.</string>
+    <string name="reflection_option3_3_3">Prefieres improvisar y tener una postura más flexible. Aunque puede funcionar en ciertos entornos, trabajar un poco más en preparación puede darte mayor seguridad y claridad durante la entrevista.</string>
+    <!-- Botones -->
+    <string name="btn_submit_evaluation6">Enviar Respuesta</string>
+    <!-- Reflexión basada en elección -->
+    <string name="reflection_text6">Aquí se mostrará la retroalimentación personalizada según tus respuestas.</string>
+    <string name="btn_return_to_module">Volver al Módulo</string>
+    <string name="btn_go_to_learn">Ir a Aprender</string>
+    <string name="btn_go_to_profile">Ir al Perfil</string>
+    <!-- Reflexiones específicas por combinación de respuestas -->
+    <string name="reflection_option_B_B_B">Tu elección indica que prefieres prepararte mínimamente y confiar en tus habilidades básicas. Esto puede ser efectivo en algunas situaciones, pero considera mejorar tu preparación para entrevistas más estructuradas.</string>
+    <string name="reflection_option_B_B_C">Tu enfoque combina moderación y flexibilidad. Aunque es bueno estar abierto a nuevas dinámicas, trabajar en detalles puede aumentar tu seguridad durante la entrevista.</string>
+    <string name="reflection_option_B_C_B">Prefieres una entrevista más estructurada, pero abierta a preguntas. Esta combinación te permite mantener control mientras aprendes sobre la empresa.</string>
+    <string name="reflection_option_B_C_C">Tu preferencia por la improvisación y la flexibilidad puede ser útil, pero trabajar en preparación técnica puede darte mayor confianza.</string>
+    <!-- Acciones de navegación -->
+    <string name="back_button_desc_marketing">Botón de retroceso en MarketingFragment</string>
+    <string name="marketing_title">Marketing Personal</string>
+    <string name="video">Video generado por IA</string>
+    <string name="imagen">Imagen generado por IA</string>
+    <string name="imagen2">🔹Referencia del libro - Administracion de carrera: El unico trabajo que nunca acaba Pg. 131</string>
+    <!-- Evaluación Módulo 1 -->
+    <string name="evaluation1_title">Evaluación</string>
+    <string name="introduction_evaluation1">En esta evaluación reflexionaremos sobre tus habilidades de marketing personal.</string>
+
+    <!-- Preguntas -->
+    <string name="question1_evaluation1">¿Cuál es tu principal herramienta de visibilidad profesional?</string>
+    <string name="question2_evaluation1">¿Cómo describirías tu presencia digital actual?</string>
+    <string name="question3_evaluation1">¿Prefieres construir tu marca personal mediante?</string>
+
+    <!-- Opciones Pregunta 1 -->
+    <string name="option1_question1_module1">A) Currículum y LinkedIn</string>
+    <string name="option2_question1_module1">B) Redes sociales profesionales</string>
+    <string name="option3_question1_module1">C) Publicaciones y proyectos personales</string>
+
+    <!-- Opciones Pregunta 2 -->
+    <string name="option1_question2_module1">A) Completa y profesional</string>
+    <string name="option2_question2_module1">B) Básica y en desarrollo</string>
+    <string name="option3_question2_module1">C) Sin presencia activa</string>
+
+    <!-- Opciones Pregunta 3 -->
+    <string name="option1_question3_module1">A) Estrategia planificada</string>
+    <string name="option2_question3_module1">B) Contactos y relaciones</string>
+    <string name="option3_question3_module1">C) Proyectos personales y visibilidad</string>
+
+    <!-- Reflexiones -->
+    <string name="reflection_option_A_A_A_module1">Tu elección muestra que tienes una base sólida y estratégica. Esta actitud proactiva te ayudará a generar confianza y oportunidades reales.</string>
+
+    <string name="reflection_option_B_B_B_module1">Tu elección indica que prefieres usar redes sociales profesionales y mejorar gradualmente tus habilidades. Esta estrategia puede ser efectiva, pero considera acelerar tu desarrollo profesional.</string>
+
+    <string name="reflection_option_C_C_C_module1">Tu preferencia por la improvisación y la flexibilidad puede ser útil, pero trabajar en preparación técnica puede darte mayor confianza y seguridad.</string>
+
+    <string name="default_reflection_message_module1">Reflexiona cómo tus respuestas impactan en tu desarrollo profesional.</string>
+
+    <!-- creditos -->
+    <string name="credits_title">Créditos</string>
+
+    <string name="developer_info">Desarrolladores</string>
+    <string name="developer_name">Nombre del desarrollador: \n TARQUI PERCA DICK BRAYAN \n FELIX CHAQQUERE ALBER ALONZO UBER HANS</string>
+    <string name="developer_career">Carrera: \n INGENIERIA DE SISTEMAS</string>
+    <string name="developer_institution">Institución: \n UNIVERSIDAD CESAR VALLEJO</string>
+    <string name="mentor_info">Docente y Asesor: \n Dr. ALFARO PAREDES EMIGDIO ANTONIO </string>
+    <string name="mentor_course">Materia:\n DESARROLLO DE PROYECTO DE TESIS</string>
+    <string name="tools_resources">Herramientas y Recursos</string>
+    <string name="tools_list">Las herramientas utilizadas en este proyecto incluyen:\n
+        - Android Studio 2024.3.1 Patch 1 \n
+        - Kotlin \n
+        - Mysql 8.0 \n
+        - Spring Boot v3.5.3 \n
+        - Libro Administracion de carrera : El unico trabajo que nunca acaba (Edgardo Loret de Mola)\n
+        - Libro Usted S.A. (Inés Temple)\n
+- Otros recursos adicionales</string>
+    <string name="thanks_message">Agradezco a todas las personas que contribuyeron al desarrollo de este aplicativo, especialmente nuestras familias y amigos por su apoyo constante.</string>
+
+
 </resources>

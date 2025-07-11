@@ -16,18 +16,24 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
-    <!-- Título -->
-    <TextView
-        android:id="@+id/title_result7"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/title_result7"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:padding="16dp"
-        android:background="@color/primary"
-        android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/title_Result4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/result_title"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:paddingStart="16dp"/>
+        <ImageView
+            android:id="@+id/ivConceptMap"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:src="@drawable/icono"
+            android:adjustViewBounds="true"/>
     </LinearLayout>
     <!-- Contenedor de resultados -->
     <ScrollView

@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".fragments.FragmentEvaluation7">
     <!-- Barra de Navegación Superior -->
+
     <LinearLayout
         android:id="@+id/headerContainer"
         android:layout_width="match_parent"
@@ -17,27 +18,35 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
-    <!-- Título -->
         <ImageButton
             android:id="@+id/btn_Back"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:src="@drawable/ic_back_arrow"
-            android:contentDescription="@string/back_button_desc3"
+            android:contentDescription="@string/back_button_desc"
             android:background="?attr/selectableItemBackground"
             android:scaleType="fitCenter"
             android:adjustViewBounds="true"/>
-    <TextView
-        android:id="@+id/title_evaluation7"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/title_evaluation7"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:padding="16dp"
-        android:background="@color/primary"
-        android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/title_Result4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/title_evaluation7"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:paddingStart="16dp"/>
+
+        <ImageView
+            android:id="@+id/ivConceptMap6"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:src="@drawable/icono"
+            android:adjustViewBounds="true"/>
+
     </LinearLayout>
     <!-- Contenedor de preguntas -->
     <ScrollView

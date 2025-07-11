@@ -64,48 +64,83 @@
 
             <!-- Importancia -->
             <TextView android:id="@+id/marketing_Importancia_Title" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/marketing_importancia_title"/>
-            <TextView android:id="@+id/marketing_Importancia_Description_1" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/marketing_importancia_description_1"/>
-            <TextView android:id="@+id/marketing_Importancia_Description_2" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/marketing_importancia_description_2"/>
-            <TextView android:id="@+id/marketing_Importancia_Description_3" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/marketing_importancia_description_3"/>
+
+            <ImageView
+                android:id="@+id/crecimiento_profe_sostenible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:paddingBottom="16dp"
+                android:src="@drawable/marke" />
+
+            <TextView android:id="@+id/imagen4" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/imagen" android:textSize="30px"/>
+
+            <TextView android:id="@+id/marketing_Importancia_Description_3" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:textSize="30px" android:text="@string/marketing_importancia_description_3"/>
             <TextView android:id="@+id/marketing_Importancia_Description_4" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/marketing_importancia_description_4"/>
             <TextView android:id="@+id/marketing_Importancia_Description_5" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/marketing_importancia_description_5"/>
 
             <!-- Estrategias -->
             <TextView android:id="@+id/marketing_Mejorar_Title" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/marketing_mejorar_title"/>
 
-            <TextView android:id="@+id/marketing_Step_1" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SubtitleText" android:text="@string/marketing_step_1"/>
-            <TextView android:id="@+id/marketing_Step_1_Details_1" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/marketing_step_1_details_1"/>
-            <TextView android:id="@+id/marketing_Step_1_Details_2" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/marketing_step_1_details_2"/>
+            <ImageView
+                android:id="@+id/crecimiento_profe_sostenible2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:paddingBottom="16dp"
+                android:src="@drawable/eso" />
+            <TextView android:id="@+id/imagen6" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/imagen" android:textSize="30px"/>
+            <TextView android:id="@+id/imagen5" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/marketing_step_4_details_2" android:textSize="30px"/>
 
-            <TextView android:id="@+id/marketing_Step_2" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SubtitleText" android:text="@string/marketing_step_2"/>
-            <TextView android:id="@+id/marketing_Step_2_Details_1" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/marketing_step_2_details_1"/>
-            <TextView android:id="@+id/marketing_Step_2_Details_2" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/marketing_step_2_details_2"/>
-
-            <TextView android:id="@+id/marketing_Step_3" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SubtitleText" android:text="@string/marketing_step_3"/>
-            <TextView android:id="@+id/marketing_Step_3_Details_1" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/marketing_step_3_details_1"/>
-            <TextView android:id="@+id/marketing_Step_3_Details_2" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/marketing_step_3_details_2"/>
-
-            <TextView android:id="@+id/marketing_Step_4" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SubtitleText" android:text="@string/marketing_step_4"/>
-            <TextView android:id="@+id/marketing_Step_4_Details_1" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/marketing_step_4_details_1"/>
-            <TextView android:id="@+id/marketing_Step_4_Details_2" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/marketing_step_4_details_2"/>
+            <com.google.android.exoplayer2.ui.PlayerView
+                android:id="@+id/exoplayer_Parte1"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:contentDescription="@string/ejemplo_practico2"
+                app:layout_constraintDimensionRatio="16:9"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+            <TextView android:id="@+id/videos" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/video" android:textSize="30px"/>
 
             <!-- Casos y conclusión -->
             <TextView android:id="@+id/marketing_Situaciones_Title" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/marketing_situaciones_title"/>
-            <TextView android:id="@+id/marketing_Situation_1" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/marketing_situation_1"/>
-            <TextView android:id="@+id/marketing_Situation_2" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/marketing_situation_2"/>
-            <TextView android:id="@+id/marketing_Situation_3" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/marketing_situation_3"/>
+            <com.google.android.exoplayer2.ui.PlayerView
+                android:id="@+id/exoplayer_Parte3"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:contentDescription="@string/ejemplo_practico2"
+                app:layout_constraintDimensionRatio="9:16"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+            <TextView android:id="@+id/videos3" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/video" android:textSize="30px"/>
+
             <!-- PREVENCION -->
-            <TextView android:id="@+id/marketing_prevenciones_title" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/marketing_prevenciones_title"/>
-            <TextView android:id="@+id/marketing_prevenciones_1" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/marketing_prevenciones_1"/>
-            <TextView android:id="@+id/marketing_prevenciones_2" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/marketing_prevenciones_2"/>
-            <TextView android:id="@+id/marketing_prevenciones_3" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/marketing_prevenciones_3"/>
-            <TextView android:id="@+id/marketing_prevenciones_4" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/marketing_prevenciones_4"/>
-            <TextView android:id="@+id/marketing_prevenciones_5" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/marketing_prevenciones_5"/>
+            <com.google.android.exoplayer2.ui.PlayerView
+                android:id="@+id/exoplayer_Parte2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:contentDescription="@string/ejemplo_practico2"
+                app:layout_constraintDimensionRatio="9:16"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+            <TextView android:id="@+id/videos1" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/video" android:textSize="30px"/>
+
 
             <TextView android:id="@+id/marketing_Conclusion_Title" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/marketing_conclusion_title"/>
             <TextView android:id="@+id/marketing_Conclusion_Text_1" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/marketing_conclusion_text_1"/>
             <TextView android:id="@+id/marketing_Conclusion_Text_2" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/marketing_conclusion_text_2"/>
             <TextView android:id="@+id/marketing_Conclusion_Text_3" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/marketing_conclusion_text_3"/>
+            <!-- Botón para ir a Evaluación -->
+            <Button
+                android:id="@+id/btn_ir_evaluacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_responder"
+                android:textSize="18sp"
+                android:background="@color/primary"
+                android:textColor="@color/white"
+                android:padding="10dp"
+                android:layout_marginTop="16dp"/>
         </LinearLayout>
     </ScrollView>
 

@@ -8,6 +8,7 @@
     tools:context=".fragments.Module4Fragment">
 
     <!-- Barra de Navegación Superior -->
+
     <LinearLayout
         android:id="@+id/headerContainer"
         android:layout_width="match_parent"
@@ -18,28 +19,37 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
-
         <ImageButton
             android:id="@+id/btn_Back"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:src="@drawable/ic_back_arrow"
-            android:contentDescription="@string/back_button_desc4"
+            android:contentDescription="@string/back_button_desc"
             android:background="?attr/selectableItemBackground"
             android:scaleType="fitCenter"
             android:adjustViewBounds="true"/>
 
         <TextView
-            android:id="@+id/title_Module4"
-            android:layout_width="match_parent"
+            android:id="@+id/title_Result4"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="@string/module_4_title"
             android:textSize="22sp"
             android:textStyle="bold"
             android:textColor="@color/white"
             android:gravity="center"
             android:paddingStart="16dp"/>
+
+        <ImageView
+            android:id="@+id/ivConceptMap6"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:src="@drawable/icono"
+            android:adjustViewBounds="true"/>
+
     </LinearLayout>
+
 
     <!-- Contenido deslizable -->
     <ScrollView
@@ -85,6 +95,24 @@
                 android:adjustViewBounds="true"
                 android:contentDescription="@string/riesgos_imagen_desc"
                 android:paddingBottom="16dp"/>
+            <TextView android:id="@+id/imagen" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/imagen" android:textSize="30px"/>
+            <TextView
+                android:id="@+id/riesgos_titulo2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/riesgos_titulo2"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:paddingBottom="16dp"/>
+            <com.google.android.exoplayer2.ui.PlayerView
+                android:id="@+id/definirobjetivo"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:contentDescription="@string/button_define_objectives"
+                app:layout_constraintDimensionRatio="9:16"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+            <TextView android:id="@+id/videos" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/video" android:textSize="30px"/>
 
             <!-- Estrategias de Mitigación -->
             <TextView
@@ -104,6 +132,7 @@
                 android:src="@drawable/estrategias_prevencion"
                 android:contentDescription="@string/estrategias_imagen_desc"
                 android:paddingBottom="16dp"/>
+            <TextView android:id="@+id/imagen2" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/imagen" android:textSize="30px"/>
 
             <!-- Reflexión -->
             <TextView

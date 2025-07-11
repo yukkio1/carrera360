@@ -8,6 +8,7 @@
     tools:context=".fragments.ErroresFragment">
 
     <!-- Contenedor superior: Botón de regreso y título -->
+
     <LinearLayout
         android:id="@+id/headerContainer"
         android:layout_width="match_parent"
@@ -18,7 +19,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
-
         <ImageButton
             android:id="@+id/btn_Back"
             android:layout_width="48dp"
@@ -30,15 +30,24 @@
             android:adjustViewBounds="true"/>
 
         <TextView
-            android:id="@+id/title_Errores"
-            android:layout_width="match_parent"
+            android:id="@+id/title_Result4"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="@string/errores_label"
             android:textSize="22sp"
             android:textStyle="bold"
             android:textColor="@color/white"
             android:gravity="center"
             android:paddingStart="16dp"/>
+
+        <ImageView
+            android:id="@+id/ivConceptMap6"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:src="@drawable/icono"
+            android:adjustViewBounds="true"/>
+
     </LinearLayout>
 
     <!-- Contenido deslizable -->
@@ -63,40 +72,50 @@
             <TextView android:id="@+id/errores_Definition" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/errores_definition"/>
 
             <!-- Importancia -->
-            <TextView android:id="@+id/errores_Importancia_Title" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/errores_importancia_title"/>
-            <TextView android:id="@+id/errores_Importancia_Description_1" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/errores_importancia_description_1"/>
-            <TextView android:id="@+id/errores_Importancia_Description_2" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/errores_importancia_description_2"/>
-            <TextView android:id="@+id/errores_Importancia_Description_3" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/errores_importancia_description_3"/>
-            <TextView android:id="@+id/errores_Importancia_Description_4" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/errores_importancia_description_4"/>
-            <TextView android:id="@+id/errores_Importancia_Description_5" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/errores_importancia_description_5"/>
+
+            <ImageView
+                android:id="@+id/metodssostar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pp"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/evaluacion_imagen_desc"
+                android:paddingBottom="16dp"/><!-- 7. Casos de Éxito, Tips y Recomendaciones Finales -->
+            <TextView android:id="@+id/imagen" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/imagen" android:textSize="30px"/>
+            <TextView android:id="@+id/imagen2" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/errores_importancia_title" android:textSize="30px"/>
+            <com.google.android.exoplayer2.ui.PlayerView
+                android:id="@+id/ajo"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintDimensionRatio="16:9"
+                android:contentDescription="@string/ejemplo_practico"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+            <TextView android:id="@+id/videos1" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/video" android:textSize="30px"/>
+
 
             <!-- Estrategias -->
-            <TextView android:id="@+id/errores_Mejorar_Title" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/errores_mejorar_title"/>
+            <ImageView
+                android:id="@+id/metodssostar2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ww"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/evaluacion_imagen_desc"
+                android:paddingBottom="16dp"/><!-- 7. Casos de Éxito, Tips y Recomendaciones Finales -->
+            <TextView android:id="@+id/imagen3" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/imagen" android:textSize="30px"/>
+            <TextView android:id="@+id/imagen4" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/errores_step_4_details_3" android:textSize="30px"/>
 
-            <TextView android:id="@+id/errores_Step_1" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SubtitleText" android:text="@string/errores_step_1"/>
-            <TextView android:id="@+id/errores_Step_1_Details_1" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/errores_step_1_details_1"/>
-            <TextView android:id="@+id/errores_Step_1_Details_2" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/errores_step_1_details_2"/>
-            <TextView android:id="@+id/errores_Step_1_Details_3" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/errores_step_1_details_3"/>
+            <com.google.android.exoplayer2.ui.PlayerView
+                android:id="@+id/exoplayer_Parte1"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:contentDescription="@string/button_define_objectives"
+                app:layout_constraintDimensionRatio="9:16"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+            <TextView android:id="@+id/videos" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/video" android:textSize="30px"/>
 
-            <TextView android:id="@+id/errores_Step_2" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SubtitleText" android:text="@string/errores_step_2"/>
-            <TextView android:id="@+id/errores_Step_2_Details_1" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/errores_step_2_details_1"/>
-            <TextView android:id="@+id/errores_Step_2_Details_2" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/errores_step_2_details_2"/>
-            <TextView android:id="@+id/errores_Step_2_Details_3" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/errores_step_2_details_3"/>
-
-            <TextView android:id="@+id/errores_Step_3" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SubtitleText" android:text="@string/errores_step_3"/>
-            <TextView android:id="@+id/errores_Step_3_Details_1" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/errores_step_3_details_1"/>
-            <TextView android:id="@+id/errores_Step_3_Details_2" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/errores_step_3_details_2"/>
-            <TextView android:id="@+id/errores_Step_3_Details_3" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/errores_step_3_details_3"/>
-
-            <TextView android:id="@+id/errores_Step_4" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SubtitleText" android:text="@string/errores_step_4"/>
-            <TextView android:id="@+id/errores_Step_4_Details_1" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/errores_step_4_details_1"/>
-            <TextView android:id="@+id/errores_Step_4_Details_2" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/errores_step_4_details_2"/>
-            <TextView android:id="@+id/errores_Step_4_Details_3" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/errores_step_4_details_3"/>
-
-            <TextView android:id="@+id/errores_Situaciones_Title" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/errores_situaciones_title"/>
-            <TextView android:id="@+id/errores_Situation_1" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/errores_situation_1"/>
-            <TextView android:id="@+id/errores_Situation_2" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/errores_situation_2"/>
-            <TextView android:id="@+id/errores_Situation_3" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/errores_situation_3"/>
 
             <!-- PREVENCION -->
             <TextView android:id="@+id/errores_prevenciones_title" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/errores_prevenciones_title"/>

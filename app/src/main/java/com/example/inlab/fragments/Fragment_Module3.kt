@@ -79,7 +79,7 @@ class Module3Fragment : Fragment(R.layout.fragment_module3) {
 
     private fun setupButtons() {
         binding.btnBack.setOnClickListener {
-            findNavController().navigate(Module3FragmentDirections.actionModule3ToHome())
+            findNavController().navigate(Module3FragmentDirections.actionModule3ToLearn())
         }
         binding.btnResponder.setOnClickListener {
             findNavController().navigate(Module3FragmentDirections.actionModule3ToEvaluation3())

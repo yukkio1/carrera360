@@ -15,7 +15,7 @@
 
         <!-- Color primario para la barra superior -->
         <color name="primary">#6200EE</color>
-
+        <color name="salir">#9D8C5B</color>
         <!-- Otros colores opcionales -->
         <color name="secondary">#03DAC5</color>
         <color name="cardBackgroundColor">#9E8D5C</color>
@@ -25,5 +25,9 @@
         <color name="purple_500">#673AB7</color>
         <color name="blue_500">#0F2183</color>
         <color name="background_color">#F5F5F5</color>
+
+    <color name="background_light">#FFFFFF</color> <!-- Fondo claro -->
+
+    <color name="divider_color">#CCCCCC</color> <!-- Color del separador -->
 </resources>
 

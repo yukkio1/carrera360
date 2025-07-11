@@ -24,6 +24,8 @@ import com.example.inlab.apiresiduo.adapters.ResiduoAdapter
 import com.example.inlab.apiresiduo.model.ResiduoResponse
 import com.example.inlab.apiresiduo.api.RetrofitClient3
 import com.example.inlab.apiresiduo.api.ResiduoApi
+import com.example.inlab.apiresiduo.model.ResiduoDTO
+
 class ProfileFragment : Fragment(R.layout.fragment_profile) {
 
     private var _binding: FragmentProfileBinding? = null
@@ -37,8 +39,10 @@ class ProfileFragment : Fragment(R.layout.fragment_profile) {
         val usuarioViewModel = ViewModelProvider(requireActivity()).get(UsuarioViewModel::class.java)
         val idUsuario = usuarioViewModel.idUsuario.value ?: return
         binding.usernameTextView.text = usuarioViewModel.nombre.value ?: "Nombre del usuario"
-        fetchAndDisplayPerfil(idUsuario)
 
+        // Cargar perfil y residuos
+        fetchAndDisplayPerfil(idUsuario)
+        fetchAndDisplayResiduo(idUsuario)
         // Calcular días transcurridos
         val fechaCreacion = usuarioViewModel.fechaCreacion.value
         if (!fechaCreacion.isNullOrEmpty()) {
@@ -56,9 +60,16 @@ class ProfileFragment : Fragment(R.layout.fragment_profile) {
         fetchAndDisplayModulosFaltantes()
         // Configurar RecyclerView
         setupRecyclerView()
+        setupButtons()
 
-        // Llamar a la API residuo
-        fetchAndDisplayResiduo(idUsuario)
+
+    }
+    private fun setupButtons() {
+
+        binding.logoutButton2.setOnClickListener {
+            val action = ProfileFragmentDirections.actionProfileToCreditos()
+            findNavController().navigate(action)
+        }
     }
     private fun calcularDiasDesdeCreacion(fechaCreacionStr: String): Long {
         val formatter = DateTimeFormatter.ISO_OFFSET_DATE_TIME // Formato ISO 8601 con zona horaria
@@ -131,13 +142,17 @@ class ProfileFragment : Fragment(R.layout.fragment_profile) {
             .enqueue(object : Callback<PerfilDTO> {
                 override fun onResponse(call: Call<PerfilDTO>, response: Response<PerfilDTO>) {
                     if (response.isSuccessful && response.body() != null) {
-                        perfil = response.body()!! // GUARDAMOS 'perfil' GLOBALMENTE
+                        perfil = response.body()!!
 
                         activity?.runOnUiThread {
                             with(binding) {
-                                completedEvaluationsTextView.text = "${perfil.cantidadEvaluacionesCompletadas}/${perfil.cantidadEvaluaciones}"
-                                cantidadmodulosleidos.text = "${perfil.cantidadModulosLeidos}/${perfil.cantidadModulos}"
+                                completedEvaluationsTextView.text =
+                                    "${perfil.cantidadEvaluacionesCompletadas}/${perfil.cantidadEvaluaciones}"
+                                cantidadmodulosleidos.text =
+                                    "${perfil.cantidadModulosLeidos}/${perfil.cantidadModulos}"
 
+                                // Llamar a fetchAndDisplayResiduo después de que 'perfil' esté listo
+                                fetchAndDisplayResiduo(idUsuario)
                             }
                         }
                     } else {
@@ -151,20 +166,21 @@ class ProfileFragment : Fragment(R.layout.fragment_profile) {
             })
     }
 
-
     private fun fetchAndDisplayResiduo(idUsuario: Int) {
         RetrofitClient3.residuoApi.getResiduos(idUsuario).enqueue(object : Callback<ResiduoResponse> {
-            override fun onResponse(call: Call<ResiduoResponse>, response: Response<ResiduoResponse>) {
+            override fun onResponse(
+                call: Call<ResiduoResponse>,
+                response: Response<ResiduoResponse>
+            ) {
                 if (response.isSuccessful && response.body() != null) {
                     val residuoResponse = response.body()!!
                     val adapter = binding.recyclerViewResiduos.adapter as ResiduoAdapter
                     adapter.updateData(residuoResponse)
 
-                    // Solo usa 'perfil' si ya fue inicializado
+                    // Mostrar cantidad de logros
                     if (::perfil.isInitialized) {
                         binding.achievementsTextView.text = "${residuoResponse.cantidadHecho}/${perfil.cantidadLogros}"
                     } else {
-                        // Opcional: mostrar un valor temporal o esperar a que se cargue
                         binding.achievementsTextView.text = "${residuoResponse.cantidadHecho}/?"
                     }
                 } else {

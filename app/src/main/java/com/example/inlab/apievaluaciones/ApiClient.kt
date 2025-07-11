@@ -4,7 +4,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 object ApiClient {
-    private const val BASE_URL = "http://10.0.2.2:8080/" // Reemplaza con la IP de tu backend
+    private const val BASE_URL = "http://test.sacooliveros.edu.pe:8081/" // Reemplaza con la IP de tu backend
 
     val apiService: ApiEvaluacion by lazy {
         Retrofit.Builder()

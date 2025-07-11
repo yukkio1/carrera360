@@ -8,6 +8,7 @@
     tools:context=".fragments.ErroresFragment">
 
     <!-- Contenedor superior: Botón de regreso y título -->
+
     <LinearLayout
         android:id="@+id/headerContainer"
         android:layout_width="match_parent"
@@ -18,7 +19,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
-
         <ImageButton
             android:id="@+id/btn_Back"
             android:layout_width="48dp"
@@ -30,15 +30,24 @@
             android:adjustViewBounds="true"/>
 
         <TextView
-            android:id="@+id/entrevistas_label"
-            android:layout_width="match_parent"
+            android:id="@+id/title_Result4"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="@string/entrevistas_label"
             android:textSize="22sp"
             android:textStyle="bold"
             android:textColor="@color/white"
             android:gravity="center"
             android:paddingStart="16dp"/>
+
+        <ImageView
+            android:id="@+id/ivConceptMap6"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:src="@drawable/icono"
+            android:adjustViewBounds="true"/>
+
     </LinearLayout>
 
     <!-- Contenido deslizable -->
@@ -63,47 +72,80 @@
             <TextView android:id="@+id/inter_overview" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/inter_overview"/>
 
             <!-- 1. La Entrevista como Oportunidad -->
-            <TextView android:id="@+id/inter_section1_title" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/inter_section1_title"/>
-            <TextView android:id="@+id/inter_section1_desc" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/inter_section1_desc"/>
-            <!-- 2. La Red de Contactos -->
-            <TextView android:id="@+id/inter_section2_title" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/inter_section2_title"/>
-            <TextView android:id="@+id/inter_section2_desc" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/inter_section2_desc"/>
-            <TextView android:id="@+id/inter_section2_example" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/inter_section2_example"/>
-            <TextView android:id="@+id/inter_section2_rec" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/inter_section2_rec"/>
-            <TextView android:id="@+id/inter_section2_err" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/inter_section2_err"/>
+            <ImageView
+                android:id="@+id/importancia_adaptarse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dominarfoto"
+                android:contentDescription="@string/importancia_adaptabilidad"
+                android:adjustViewBounds="true"
+                android:paddingBottom="16dp"/>
+            <TextView android:id="@+id/imagen4" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/imagen" android:textSize="30px"/>
+            <com.google.android.exoplayer2.ui.PlayerView
+                android:id="@+id/exoplayer_Parte2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintDimensionRatio="16:9"
+                android:contentDescription="@string/ejemplo_practico"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+            <TextView android:id="@+id/videos1" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/video" android:textSize="30px"/>
 
-            <!-- 3. La Preparación de la Entrevista -->
-            <TextView android:id="@+id/inter_section3_title" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/inter_section3_title"/>
-            <TextView android:id="@+id/inter_section3_desc" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SubtitleText" android:text="@string/inter_section3_desc"/>
-            <TextView android:id="@+id/inter_section3_points" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/inter_section3_points"/>
-            <TextView android:id="@+id/inter_section3_example" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/inter_section3_example"/>
-            <TextView android:id="@+id/inter_section3_rec" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/inter_section3_rec"/>
-            <!-- 4. La Primera Impresión: Imagen y Comunicación No Verbal -->
-            <TextView android:id="@+id/inter_section4_title" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SubtitleText" android:text="@string/inter_section4_title"/>
-            <TextView android:id="@+id/inter_section4_desc" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/inter_section4_desc"/>
-            <TextView android:id="@+id/inter_section4_appearance" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/inter_section4_appearance"/>
-            <TextView android:id="@+id/inter_section4_bodylang" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/inter_section4_bodylang"/>
-            <TextView android:id="@+id/inter_section4_example" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/inter_section4_example"/>
-            <TextView android:id="@+id/inter_section4_err" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/inter_section4_err"/>
 
-            <!-- 5. El Arte de Responder Preguntas Difíciles -->
-            <TextView android:id="@+id/inter_section5_title" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SubtitleText" android:text="@string/inter_section5_title"/>
-            <TextView android:id="@+id/inter_section5_desc" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/inter_section5_desc"/>
+            <ImageView
+                android:id="@+id/ganaste"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/parte45"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/evaluacion_imagen_desc"
+                android:paddingBottom="16dp"/>
+
+            <ImageView
+                android:id="@+id/ganaste1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/errorescomunesga"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/evaluacion_imagen_desc"
+                android:paddingBottom="16dp"/>
+            <TextView android:id="@+id/imagen" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/imagen" android:textSize="30px"/>
+
             <TextView android:id="@+id/inter_section5_star" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/inter_section5_star"/>
-            <TextView android:id="@+id/inter_section5_examples" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/inter_section5_examples"/>
+            <ImageView
+                android:id="@+id/metodostar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/motodoo"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/evaluacion_imagen_desc"
+                android:paddingBottom="16dp"/>
             <TextView android:id="@+id/inter_section5_rec" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/inter_section5_rec"/>
 
 
-            <!-- 6. Errores Comunes y Prevenciones -->
-            <TextView android:id="@+id/inter_section6_title" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SubtitleText" android:text="@string/inter_section6_title"/>
-            <TextView android:id="@+id/inter_section6_desc" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/inter_section6_desc"/>
-            <TextView android:id="@+id/inter_section6_errpoints" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/inter_section6_errpoints"/>
-            <TextView android:id="@+id/inter_section6_prev" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/inter_section6_prev"/>
-            <!-- 7. Casos de Éxito, Tips y Recomendaciones Finales -->
+            <ImageView
+                android:id="@+id/metodssostar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/izi"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/evaluacion_imagen_desc"
+                android:paddingBottom="16dp"/><!-- 7. Casos de Éxito, Tips y Recomendaciones Finales -->
+            <TextView android:id="@+id/imagen2" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/imagen" android:textSize="30px"/>
+
             <TextView android:id="@+id/inter_section7_title" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/inter_section7_title"/>
             <TextView android:id="@+id/inter_section7_desc" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/inter_section7_desc"/>
             <TextView android:id="@+id/inter_section7_examples" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/inter_section7_examples"/>
             <TextView android:id="@+id/inter_section7_rec" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/inter_section7_rec"/>
+            <com.google.android.exoplayer2.ui.PlayerView
+                android:id="@+id/exoplayer_Parte1"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:contentDescription="@string/ejemplo_practico2"
+                app:layout_constraintDimensionRatio="16:9"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+            <TextView android:id="@+id/videos" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/video" android:textSize="30px"/>
 
             <!-- Conclusión -->
             <TextView android:id="@+id/inter_conclusion_title" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/inter_conclusion_title"/>

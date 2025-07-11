@@ -8,6 +8,7 @@
     tools:context=".fragments.FragmentResult5">
 
     <!-- Barra de Navegación Superior -->
+
     <LinearLayout
         android:id="@+id/headerContainer"
         android:layout_width="match_parent"
@@ -20,15 +21,22 @@
         app:layout_constraintEnd_toEndOf="parent">
 
         <TextView
-            android:id="@+id/title_Result5"
-            android:layout_width="match_parent"
+            android:id="@+id/title_Result4"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="@string/result5_title"
             android:textSize="22sp"
             android:textStyle="bold"
             android:textColor="@color/white"
             android:gravity="center"
             android:paddingStart="16dp"/>
+        <ImageView
+            android:id="@+id/ivConceptMap"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:src="@drawable/icono"
+            android:adjustViewBounds="true"/>
     </LinearLayout>
 
     <!-- Contenido Principal -->

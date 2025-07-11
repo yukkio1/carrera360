@@ -8,6 +8,7 @@
     tools:context=".fragments.RealidadFragment">
 
     <!-- Contenedor superior: Botón de regreso y título -->
+
     <LinearLayout
         android:id="@+id/headerContainer"
         android:layout_width="match_parent"
@@ -18,7 +19,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
-
         <ImageButton
             android:id="@+id/btn_Back"
             android:layout_width="48dp"
@@ -30,15 +30,24 @@
             android:adjustViewBounds="true"/>
 
         <TextView
-            android:id="@+id/title_Realidad"
-            android:layout_width="match_parent"
+            android:id="@+id/title_Result4"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="@string/realidad_label"
             android:textSize="22sp"
             android:textStyle="bold"
             android:textColor="@color/white"
             android:gravity="center"
             android:paddingStart="16dp"/>
+
+        <ImageView
+            android:id="@+id/ivConceptMap6"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:src="@drawable/icono"
+            android:adjustViewBounds="true"/>
+
     </LinearLayout>
 
     <!-- Contenido deslizable -->
@@ -63,47 +72,52 @@
             <TextView android:id="@+id/realidad_Definition" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/realidad_definition"/>
 
             <!-- Importancia -->
-            <TextView android:id="@+id/realidad_Importancia_Title" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/realidad_importancia_title"/>
-            <TextView android:id="@+id/realidad_Importancia_Description_1" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/realidad_importancia_description_1"/>
-            <TextView android:id="@+id/realidad_Importancia_Description_2" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/realidad_importancia_description_2"/>
-            <TextView android:id="@+id/realidad_Importancia_Description_3" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/realidad_importancia_description_3"/>
-            <TextView android:id="@+id/realidad_Importancia_Description_4" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/realidad_importancia_description_4"/>
-            <TextView android:id="@+id/realidad_Importancia_Description_5" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/realidad_importancia_description_5"/>
+            <ImageView
+                android:id="@+id/ivConceptMap"
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/er" />
+
+            <TextView android:id="@+id/imagen" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/imagen" android:textSize="30px"/>
+            <ImageView
+                android:id="@+id/ivConceptMap3"
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/qq" />
+            <TextView android:id="@+id/imagen2" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/realidad_step_1" android:textSize="30px"/>
+
+
 
             <!-- Estrategias -->
-            <TextView android:id="@+id/realidad_Mejorar_Title" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/realidad_mejorar_title"/>
 
-            <TextView android:id="@+id/realidad_Step_1" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SubtitleText" android:text="@string/realidad_step_1"/>
-            <TextView android:id="@+id/realidad_Step_1_Details_1" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/realidad_step_1_details_1"/>
-            <TextView android:id="@+id/realidad_Step_1_Details_2" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/realidad_step_1_details_2"/>
 
-            <TextView android:id="@+id/realidad_Step_2" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SubtitleText" android:text="@string/realidad_step_2"/>
-            <TextView android:id="@+id/realidad_Step_2_Details_1" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/realidad_step_2_details_1"/>
-            <TextView android:id="@+id/realidad_Step_2_Details_2" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/realidad_step_2_details_2"/>
-            <TextView android:id="@+id/realidad_Step_2_Details_3" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/realidad_step_2_details_3"/>
 
-            <TextView android:id="@+id/realidad_Step_3" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SubtitleText" android:text="@string/realidad_step_3"/>
-            <TextView android:id="@+id/realidad_Step_3_Details_1" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/realidad_step_3_details_1"/>
-            <TextView android:id="@+id/realidad_Step_3_Details_2" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/realidad_step_3_details_2"/>
-            <TextView android:id="@+id/realidad_Step_3_Details_3" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/realidad_step_3_details_3"/>
-
-            <TextView android:id="@+id/realidad_Step_4" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SubtitleText" android:text="@string/realidad_step_4"/>
-            <TextView android:id="@+id/realidad_Step_4_Details_1" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/realidad_step_4_details_1"/>
-            <TextView android:id="@+id/realidad_Step_4_Details_2" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/realidad_step_4_details_2"/>
-            <TextView android:id="@+id/realidad_Step_4_Details_3" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/realidad_step_4_details_3"/>
 
             <TextView android:id="@+id/realidad_Situaciones_Title" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/realidad_situaciones_title"/>
-            <TextView android:id="@+id/realidad_Situation_1" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/realidad_situation_1"/>
-            <TextView android:id="@+id/realidad_Situation_2" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/realidad_situation_2"/>
-            <TextView android:id="@+id/realidad_Situation_3" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/realidad_situation_3"/>
+            <com.google.android.exoplayer2.ui.PlayerView
+                android:id="@+id/exoplayer_Parte1"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintDimensionRatio="16:9"
+                android:contentDescription="@string/ejemplo_practico"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+            <TextView android:id="@+id/videos1" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/video" android:textSize="30px"/>
+
 
             <!-- PREVENCION -->
-            <TextView android:id="@+id/realidad_prevenciones_title" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/realidad_prevenciones_title"/>
-            <TextView android:id="@+id/realidad_prevenciones_1" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/realidad_prevenciones_1"/>
-            <TextView android:id="@+id/realidad_prevenciones_2" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/realidad_prevenciones_2"/>
-            <TextView android:id="@+id/realidad_prevenciones_3" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/realidad_prevenciones_3"/>
-            <TextView android:id="@+id/realidad_prevenciones_4" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/realidad_prevenciones_4"/>
-            <TextView android:id="@+id/realidad_prevenciones_5" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/realidad_prevenciones_5"/>
+
+            <ImageView
+                android:id="@+id/ivConceptMap2"
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:src="@drawable/tt"
+                android:scaleType="fitCenter"/>
+            <TextView android:id="@+id/imagen4" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/imagen" android:textSize="30px"/>
+            <TextView android:id="@+id/imagen3" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/realidad_mejorar_title" android:textSize="30px"/>
+
 
             <TextView android:id="@+id/realidad_Conclusion_Title" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/realidad_conclusion_title"/>
             <TextView android:id="@+id/realidad_Conclusion_Text_1" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BodyText" android:text="@string/realidad_conclusion_text_1"/>

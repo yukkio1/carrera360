@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragments.Module7Fragment">
+
     <LinearLayout
         android:id="@+id/headerContainer"
         android:layout_width="match_parent"
@@ -16,27 +17,35 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
-    <!-- Título del módulo -->
         <ImageButton
             android:id="@+id/btn_Back"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:src="@drawable/ic_back_arrow"
-            android:contentDescription="@string/back_button_desc3"
+            android:contentDescription="@string/back_button_desc"
             android:background="?attr/selectableItemBackground"
             android:scaleType="fitCenter"
             android:adjustViewBounds="true"/>
-    <TextView
-        android:id="@+id/title_module7"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/module7_title"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:padding="16dp"
-        android:background="@color/primary"
-        android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/title_Result4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/module7_title"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:paddingStart="16dp"/>
+
+        <ImageView
+            android:id="@+id/ivConceptMap6"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:src="@drawable/icono"
+            android:adjustViewBounds="true"/>
+
     </LinearLayout>
 
     <!-- Contenedor Scroll -->
@@ -77,6 +86,34 @@
             </LinearLayout>
 
             <!-- Imagen representativa -->
+            <com.google.android.exoplayer2.ui.PlayerView
+                android:id="@+id/diente"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintDimensionRatio="16:9"
+                android:contentDescription="@string/ejemplo_practico"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+            <TextView android:id="@+id/videos1" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/video" android:textSize="30px"/>
+            <com.google.android.exoplayer2.ui.PlayerView
+                android:id="@+id/canino"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintDimensionRatio="16:9"
+                android:contentDescription="@string/ejemplo_practico"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+            <TextView android:id="@+id/videos2" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/video" android:textSize="30px"/>
+            <ImageView
+                android:id="@+id/ola"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/epico" />
+            <TextView android:id="@+id/imagen3" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/imagen" android:textSize="30px"/>
+
+            <TextView android:id="@+id/videos3" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/module7_ajo" android:textSize="30px"/>
 
             <!-- Introducción con icono -->
             <ImageView
@@ -86,6 +123,7 @@
                 android:layout_marginTop="16dp"
                 android:adjustViewBounds="true"
                 android:src="@drawable/skills_update_intro" />
+             <TextView android:id="@+id/imagen2" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/imagen" android:textSize="30px"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -125,6 +163,7 @@
                 android:src="@drawable/strategies_skills_update"
 
                 android:layout_marginBottom="16dp"/>
+            <TextView android:id="@+id/imagen4" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/imagen" android:textSize="30px"/>
 
             <TextView
                 android:id="@+id/strategies_text"

@@ -24,8 +24,7 @@ class Module2Fragment : Fragment(R.layout.fragment_module2) {
     private var _binding: FragmentModule2Binding? = null
     private val binding get() = _binding!!
     private var player1: ExoPlayer? = null
-    private var player2: ExoPlayer? = null
-    private var player3: ExoPlayer? = null
+
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -57,14 +56,18 @@ class Module2Fragment : Fragment(R.layout.fragment_module2) {
         setupBottomNavigation()
         setupPlayers()
         ajustarProporcion(binding.exoplayerParte1)
-        ajustarProporcion(binding.exoplayerParte2)
-        ajustarProporcion(binding.exoplayerParte3)
+
     }
 
     private fun setupButtons() {
         binding.btnBack.setOnClickListener {
             val action = Module2FragmentDirections.actionModule2ToLearn()
             findNavController().navigate(action)
+        }
+
+        // ✅ Botón para ir a la evaluación
+        binding.btnResponder.setOnClickListener {
+            findNavController().navigate(Module2FragmentDirections.actionModule2ToEvaluation2())
         }
     }
 
@@ -90,9 +93,8 @@ class Module2Fragment : Fragment(R.layout.fragment_module2) {
     }
 
     private fun setupPlayers() {
-        player1 = configurePlayer(binding.exoplayerParte1, "module2parte1")
-        player2 = configurePlayer(binding.exoplayerParte2, "module2parte2")
-        player3 = configurePlayer(binding.exoplayerParte3, "module2parte3")
+        player1 = configurePlayer(binding.exoplayerParte1, "gatito")
+
     }
 
     private fun configurePlayer(playerView: PlayerView, nombreArchivo: String): ExoPlayer {
@@ -111,14 +113,13 @@ class Module2Fragment : Fragment(R.layout.fragment_module2) {
         player.prepare()
 
         Log.d("ExoPlayer", "✅ Video $nombreArchivo listo para reproducirse.")
-
         return player
     }
 
     private fun ajustarProporcion(playerView: PlayerView) {
         val displayMetrics = resources.displayMetrics
         val screenWidth = displayMetrics.widthPixels
-        val screenHeight = (screenWidth / 16) * 9 // Calcula la altura basada en 16:9
+        val screenHeight = (screenWidth / 9) * 16 // Calcula la altura basada en 16:9
 
         val params = playerView.layoutParams
         params.width = ViewGroup.LayoutParams.MATCH_PARENT
@@ -129,8 +130,6 @@ class Module2Fragment : Fragment(R.layout.fragment_module2) {
     override fun onDestroyView() {
         super.onDestroyView()
         player1?.release()
-        player2?.release()
-        player3?.release()
         _binding = null
     }
 }

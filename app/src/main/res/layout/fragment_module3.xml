@@ -8,6 +8,7 @@
     tools:context=".fragments.Module3Fragment">
 
     <!-- Barra de Navegación Superior -->
+
     <LinearLayout
         android:id="@+id/headerContainer"
         android:layout_width="match_parent"
@@ -18,27 +19,35 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
-
         <ImageButton
             android:id="@+id/btn_Back"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:src="@drawable/ic_back_arrow"
-            android:contentDescription="@string/back_button_desc3"
+            android:contentDescription="@string/back_button_desc"
             android:background="?attr/selectableItemBackground"
             android:scaleType="fitCenter"
             android:adjustViewBounds="true"/>
 
         <TextView
-            android:id="@+id/title_Module3"
-            android:layout_width="match_parent"
+            android:id="@+id/title_Result4"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="@string/module_3_title"
             android:textSize="22sp"
             android:textStyle="bold"
             android:textColor="@color/white"
             android:gravity="center"
             android:paddingStart="16dp"/>
+
+        <ImageView
+            android:id="@+id/ivConceptMap6"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:src="@drawable/icono"
+            android:adjustViewBounds="true"/>
+
     </LinearLayout>
 
     <!-- Contenido deslizable -->
@@ -85,6 +94,7 @@
                 android:adjustViewBounds="true"
                 android:contentDescription="@string/evaluacion_imagen_desc"
                 android:paddingBottom="16dp"/>
+            <TextView android:id="@+id/imagen" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/imagen" android:textSize="30px"/>
 
 
 
@@ -105,6 +115,7 @@
                 android:layout_height="wrap_content"
                 android:contentDescription="@string/video2descripcion"
                 app:layout_constraintDimensionRatio="16:9"/>
+            <TextView android:id="@+id/videos1" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/video" android:textSize="30px"/>
 
             <TextView
                 android:id="@+id/reflexion_texto"
@@ -122,6 +133,7 @@
                 android:adjustViewBounds="true"
 
                 android:paddingBottom="16dp"/>
+            <TextView android:id="@+id/imagen2" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/imagen" android:textSize="30px"/>
 
             <!-- Herramientas Clave -->
             <TextView
@@ -141,6 +153,7 @@
                 android:adjustViewBounds="true"
                 android:contentDescription="@string/herramientas_imagen_desc"
                 android:paddingBottom="16dp"/>
+            <TextView android:id="@+id/imagen3" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SectionTitle" android:text="@string/imagen" android:textSize="30px"/>
 
             <!-- Botón de evaluación de usuario -->
             <Button
